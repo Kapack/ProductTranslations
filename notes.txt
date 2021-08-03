@@ -1,0 +1,4 @@
+If manSku and DevSku does not exists, create error file
+
+if looks does not exists in DB
+if colors does not exists in DB

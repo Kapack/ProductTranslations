@@ -1,0 +1,2581 @@
+ManName;ManSKU;DevSKU;DevName
+Apple;01;01;iPhone 3 / 3GS
+Apple;01;02;iPhone 4
+Apple;01;03;iPod nano 5
+Apple;01;04;iPod touch 4
+Apple;01;05;iPod Touch 3
+Apple;01;05;iPod Touch 2
+Apple;01;06;iPhone SE / 5 / 5S
+Apple;01;07;iPod Nano 6
+Apple;01;08;iPod Shuffle 3G
+Apple;01;09;iPhone 4S
+Apple;01;10;iPad 1
+Apple;01;11;iPad 2
+Apple;01;12;iPad 3
+Apple;01;13;MacBook Air 13.3
+Apple;01;14;MacBook Air 11.6
+Apple;01;15;MacBook Pro 15.4
+Apple;01;16;iPad Mini
+Apple;01;17;iPod Nano 7
+Apple;01;18;iPod Touch 5
+Apple;01;19;MacBook Pro 13
+Apple;01;21;iPad 4
+Apple;01;22;iPhone 5C
+Apple;01;23;iPad Air
+Apple;01;24;iPhone 6 / 6S
+Apple;01;25;MacBook Pro 13.3 Retina
+Apple;01;26;Macbook Pro 15.4 Retina
+Apple;01;27;iPhone 6 Plus / 6S Plus
+Apple;01;28;iPad Air 2
+Apple;01;29;iPad Mini 2 / Mini 3
+Apple;01;30;iPad Pro 12.9
+Apple;01;31;Macbook 12-Inch Retina (2015)
+Apple;01;32;Apple Watch Series 3/2/1 42mm
+Apple;01;33;iPad Mini 4
+Apple;01;34;iPod Touch 6
+Apple;01;35;Apple Watch Series 3/2/1 38mm
+Apple;01;36;iPad Pro 9.7
+Apple;01;37;TEST
+Apple;01;38;iPhone 7 / 8
+Apple;01;39;iPhone 7 Plus / 8 Plus
+Apple;01;40;iPhone 8
+Apple;01;41;iPad (2017)
+Apple;01;42;Airpods
+Apple;01;43;iPad Pro 10.5
+Apple;01;44;iPhone X
+Apple;01;45;Pencil
+Apple;01;46;iPad (2018)
+Apple;01;47;MacBook Pro 13 No Touchbar
+Apple;01;48;MacBook Pro 13 Touchbar (2016-)
+Apple;01;49;MacBook Pro 15 Touchbar (2016-2018)
+Apple;01;50;iPhone Xr
+Apple;01;51;iPhone Xs Max
+Apple;01;52;iPhone XS
+Apple;01;53;Watch Series 4
+Apple;01;54;Apple Watch Series 1 / 2 / 3
+Apple;01;55;Apple Watch Series 4 40mm
+Apple;01;56;Apple Watch Series 4 44mm
+Apple;01;57;iPad Pro 11 inch (2018)
+Apple;01;58;iPad Pro 12.9 inch (2018)
+Apple;01;59;Mac Mini 2018
+Apple;01;60;Pencil 2
+Apple;01;61;iPad Mini (2019)
+Apple;01;62;iPad Air (2019)
+Apple;01;63;iPhone 11 Pro
+Apple;01;64;iPhone 11 Pro Max
+Apple;01;65;iPod Touch (2019)
+Apple;01;66;iPhone 11
+Apple;01;67;iPad Pro 10.5 (2019)
+Apple;01;68;Apple Watch Series 5 40mm
+Apple;01;69;Apple Watch Series 5 44mm
+Apple;01;70;AirPods Pro
+Apple;01;71;iPad 10.2 (2019)
+Apple;01;72;MacBook Pro 16 (2019-)
+Apple;01;73;MacBook Air 13 (2018-)
+Apple;01;74;iPhone SE 2020
+Apple;01;75;iPhone 12 Mini
+Apple;01;76;iPhone 12 / 12 Pro
+Apple;01;77;iPhone 12 Pro Max
+Apple;01;78;iPad Pro 11 inch (2020)
+Apple;01;79;iPad Pro 12.9 inch (2020)
+Apple;01;80;Apple Watch Series 6 44mm
+Apple;01;81;Apple Watch Series 6 40mm
+Apple;01;82;Apple Watch SE 44mm
+Apple;01;83;Apple Watch SE 40mm
+Apple;01;84;Apple HomePod
+Apple;01;85;iPad Air (2020)
+Apple;01;86;iPad 10.2 (2020)
+Apple;01;87;Apple TV 4K
+Apple;01;88;Airpods Max
+Apple;01;89;Apple Magic Mouse 1
+Apple;01;90;Apple Magic Mouse 2
+Apple;01;91;MagSafe Charger
+Apple;01;92;Apple HomePod Mini
+Apple;01;93;AirTags
+Apple;01;94;Apple Watch 40mm
+Apple;01;95;Apple Watch 44mm
+HTC;02;01;Touch HD
+HTC;02;02;HD2
+HTC;02;03;Evo 4G
+HTC;02;05;Touch Diamond
+HTC;02;06;Touch Diamond 2
+HTC;02;07;Legend G6
+HTC;02;08;Tattoo G4
+HTC;02;09;Desire G7
+HTC;02;10;Wildfire G8
+HTC;02;11;HD7
+HTC;02;12;7 Mozart HD3
+HTC;02;13;Desire HD
+HTC;02;14;7 Trophy
+HTC;02;15;Incredible S
+HTC;02;16;Wildfire S
+HTC;02;17;Desire Z
+HTC;02;18;Desire S
+HTC;02;19;Flyer
+HTC;02;20;EVO 3D
+HTC;02;21;Sensation
+HTC;02;22;Salsa
+HTC;02;23;ChaCha
+HTC;02;24;Gratia
+HTC;02;25;Smart
+HTC;02;26;Magic
+HTC;02;27;Vigor
+HTC;02;28;EVO Design 4G
+HTC;02;29;Rhyme
+HTC;02;30;Radar
+HTC;02;31;Titan
+HTC;02;32;Sensation XL
+HTC;02;34;Explorer
+HTC;02;35;Sensation XE
+HTC;02;36;HD Mini
+HTC;02;37;One X
+HTC;02;38;Amaze 4G
+HTC;02;39;One S
+HTC;02;40;One V
+HTC;02;41;Desire C
+HTC;02;42;Windows Phone 8X
+HTC;02;43;Droid DNA
+HTC;02;44;One SC
+HTC;02;45;One ST
+HTC;02;46;Windows Phone 8S
+HTC;02;47;One
+HTC;02;48;One Mini
+HTC;02;49;Butterfly S
+HTC;02;50;Desire 500
+HTC;02;51;Desire 200
+HTC;02;52;Desire 601
+HTC;02;53;One Max
+HTC;02;54;Desire 300
+HTC;02;55;One (M8)
+HTC;02;56;Desire 816
+HTC;02;58;Desire 610
+HTC;02;59;One Mini 2
+HTC;02;60;One (E8)
+HTC;02;61;Desire 516
+HTC;02;62;Desire 616
+HTC;02;63;Desire 310
+HTC;02;64;Desire V
+HTC;02;65;Desire 510
+HTC;02;67;Desire 820
+HTC;02;68;Desire Eye
+HTC;02;69;One M9
+HTC;02;70;Desire 826
+HTC;02;71;One M9 Plus
+HTC;02;72;Desire 626
+HTC;02;73;One A9
+HTC;02;74;Desire 530
+HTC;02;75;10
+HTC;02;76;One A9s
+HTC;02;77;10 evo
+HTC;02;78;U Ultra
+HTC;02;79;U Play
+HTC;02;80;Desire 650
+HTC;02;81;U11
+HTC;02;82;U11 Plus
+HTC;02;83;U11 Life
+HTC;02;84;Desire 10 Lifestyle
+HTC;02;85;Desire 12
+HTC;02;86;Desire 12 Plus
+HTC;02;87;U12
+HTC;02;88;U12 Plus
+HTC;02;89;Desire 10 Pro
+HTC;02;90;Desire 628
+HTC;02;91;Desire 630
+HTC;02;92;Desire 825
+HTC;02;93;Desire 830
+HTC;02;94;One E9
+HTC;02;95;One (M7)
+HTC;02;96;U20
+HTC;02;97;U20 5G
+HTC;02;98;Desire 20 Plus
+HTC;02;99;Desire 21 Pro 5G
+Samsung;03;01;Galaxy S Plus
+Samsung;03;01;Galaxy S i9000
+Samsung;03;02;Nexus S i9020
+Samsung;03;03;Galaxy Ace
+Samsung;03;04;Star 2
+Samsung;03;05;Galaxy S2
+Samsung;03;06;Wave 575 S5750
+Samsung;03;07;Galaxy S Pro
+Samsung;03;08;Galaxy Mini S5570
+Samsung;03;09;Galaxy 5 i5500
+Samsung;03;10;Galaxy Tab P1000
+Samsung;03;11;Galaxy SL i9003
+Samsung;03;12;Omnia HD i8910
+Samsung;03;13;Galaxy Gio S5660
+Samsung;03;14;Wave 2 S5250
+Samsung;03;15;Monte S5620
+Samsung;03;16;Omnia 7 i8700
+Samsung;03;17;Galaxy Tab 10.1 P7100
+Samsung;03;18;Galaxy Tab 10.1 P7500
+Samsung;03;19;Galaxy Z
+Samsung;03;20;Galaxy Tab 8.9 P7300/P7310
+Samsung;03;21;Galaxy Pro
+Samsung;03;22;Galaxy Note
+Samsung;03;23;Galaxy Y
+Samsung;03;24;Galaxy W
+Samsung;03;25;Galaxy Nexus
+Samsung;03;26;Galaxy Tab 7.7 P6800
+Samsung;03;27;Galaxy 3 I5800
+Samsung;03;28;Galaxy Xcover
+Samsung;03;29;Wave 3
+Samsung;03;30;Galaxy S Advance
+Samsung;03;31;Galaxy Ace Plus
+Samsung;03;32;Wave Y
+Samsung;03;33;Galaxy Mini 2
+Samsung;03;34;Galaxy S3
+Samsung;03;35;Galaxy Ace 2
+Samsung;03;36;Galaxy Tab 2 10.1
+Samsung;03;37;Galaxy Tab 2 7.0
+Samsung;03;38;Galaxy Pocket
+Samsung;03;39;Galaxy Note 10.1
+Samsung;03;40;Omnia M
+Samsung;03;41;Galaxy Y Duos
+Samsung;03;42;Galaxy Note 2
+Samsung;03;43;Galaxy Trend
+Samsung;03;45;Galaxy Beam
+Samsung;03;46;Galaxy Ace Duos
+Samsung;03;47;Galaxy S3 Mini
+Samsung;03;48;Galaxy Premier
+Samsung;03;49;ATIV S
+Samsung;03;50;Galaxy Grand Duos
+Samsung;03;51;Galaxy S4
+Samsung;03;52;Galaxy Fit
+Samsung;03;53;Galaxy Note 8.0
+Samsung;03;54;Galaxy Fame
+Samsung;03;55;ATIV Smart PC
+Samsung;03;56;Galaxy Express
+Samsung;03;57;Galaxy Win
+Samsung;03;58;Galaxy Mega 6.3
+Samsung;03;59;Galaxy Tab 3 7.0
+Samsung;03;60;Galaxy Young
+Samsung;03;61;Galaxy Xcover 2
+Samsung;03;63;Galaxy Mega 5.8
+Samsung;03;64;Galaxy S4 Mini
+Samsung;03;65;Galaxy Core
+Samsung;03;66;Galaxy S4 Active
+Samsung;03;67;Galaxy S4 Zoom
+Samsung;03;69;Galaxy Tab 3 10.1
+Samsung;03;70;Galaxy Ace 3
+Samsung;03;71;Galaxy Tab 3 8.0
+Samsung;03;73;Galaxy Note 3
+Samsung;03;74;Galaxy Win Pro
+Samsung;03;75;Galaxy Grand 2
+Samsung;03;76;Galaxy Core Advance
+Samsung;03;77;Galaxy Pocket Neo
+Samsung;03;78;Galaxy Trend Lite
+Samsung;03;79;Galaxy Express 2
+Samsung;03;81;Galaxy Core Plus
+Samsung;03;82;Galaxy S5
+Samsung;03;83;Galaxy TabPRO 10.1
+Samsung;03;84;Galaxy TabPRO 8.4
+Samsung;03;85;Galaxy NotePRO / TabPRO 12.2
+Samsung;03;86;Galaxy Note 10.1 (2014)
+Samsung;03;87;Galaxy Tab 4 8.0
+Samsung;03;88;Galaxy K Zoom
+Samsung;03;89;Galaxy Tab 4 7.0
+Samsung;03;90;Galaxy Camera
+Samsung;03;91;Galaxy Tab 4 10.1
+Samsung;03;92;Galaxy Note 3 Neo
+Samsung;03;93;Galaxy S5 Mini
+Samsung;03;94;Galaxy Tab 3 Lite 7.0
+Samsung;03;95;Galaxy Trend Plus
+Samsung;03;96;Galaxy Trend 2 Duos
+Samsung;03;97;Galaxy Note 4
+Samsung;03;98;Galaxy Alpha
+Samsung;03;99;Galaxy S
+Samsung;03;100;Galaxy Tab S 10.5
+Samsung;03;101;Galaxy Tab S 8.4
+Samsung;03;102;Galaxy Ace NXT
+Samsung;03;103;Galaxy Pocket 2
+Samsung;03;104;Galaxy Note Edge
+Samsung;03;105;Galaxy Young 2
+Samsung;03;106;Galaxy Mega 2
+Samsung;03;107;Galaxy A3
+Samsung;03;108;Galaxy A7
+Samsung;03;109;Galaxy A5
+Samsung;03;110;Galaxy Grand Neo
+Samsung;03;111;Galaxy S6
+Samsung;03;112;Galaxy S5 Active
+Samsung;03;113;Galaxy S6 Edge
+Samsung;03;114;Xcover 3
+Samsung;03;115;Galaxy Tab A 8.0
+Samsung;03;116;Galaxy Tab A 9.7
+Samsung;03;117;Galaxy J1
+Samsung;03;118;Galaxy Ace 4
+Samsung;03;119;Galaxy Tab S2 8.0
+Samsung;03;120;Galaxy Tab S2 9.7
+Samsung;03;121;Galaxy S6 Edge Plus
+Samsung;03;122;Galaxy J5
+Samsung;03;123;Galaxy S5 Neo
+Samsung;03;124;Galaxy Tab Active 8.0
+Samsung;03;125;Galaxy Trend 2 lite
+Samsung;03;126;Galaxy Tab E 9.6
+Samsung;03;127;Galaxy S7
+Samsung;03;128;Galaxy S7 Edge
+Samsung;03;129;Galaxy A3 (2016)
+Samsung;03;130;Galaxy A5 (2016)
+Samsung;03;131;Galaxy A7 (2016)
+Samsung;03;132;TabPro S
+Samsung;03;133;Gear S2
+Samsung;03;134;Galaxy J1 (2016)
+Samsung;03;135;Galaxy J3 (2016)
+Samsung;03;136;Galaxy J5 (2016)
+Samsung;03;137;Galaxy Tab A 10.1 (2016)
+Samsung;03;138;Gear Fit2
+Samsung;03;139;Galaxy Note7
+Samsung;03;140;Galaxy Tab A 7.0
+Samsung;03;141;Gear S3
+Samsung;03;142;Galaxy A3 (2017)
+Samsung;03;143;Galaxy A5 (2017)
+Samsung;03;144;Galaxy Tab Pro 8.4
+Samsung;03;145;Galaxy J3 (2017)
+Samsung;03;146;Galaxy Tab S3
+Samsung;03;147;Galaxy S8
+Samsung;03;148;Galaxy S8+
+Samsung;03;149;Xcover 4
+Samsung;03;150;Galaxy Book 10
+Samsung;03;151;Galaxy Book 12
+Samsung;03;152;Galaxy J5 (2017)
+Samsung;03;153;Galaxy J7 (2017)
+Samsung;03;154;Galaxy Note 8
+Samsung;03;155;Gear Sport
+Samsung;03;156;Gear Fit2 Pro
+Samsung;03;157;Gear IconX
+Samsung;03;158;Galaxy A8 (2018)
+Samsung;03;159;NX300
+Samsung;03;160;GC200/GC110/GC100
+Samsung;03;161;Galaxy S9
+Samsung;03;162;Galaxy S9 Plus
+Samsung;03;163;Galaxy A7 (2017)
+Samsung;03;164;Galaxy A6 (2018)
+Samsung;03;165;Galaxy A6 Plus (2018)
+Samsung;03;166;Galaxy J6 (2018)
+Samsung;03;167;Galaxy J8 (2018)
+Samsung;03;168;Galaxy J3 (2018)
+Samsung;03;169;Galaxy Note9
+Samsung;03;170;Galaxy A8 (2016)
+Samsung;03;171;Galaxy C5
+Samsung;03;172;Galaxy C7
+Samsung;03;173;Galaxy E5
+Samsung;03;174;Galaxy E7
+Samsung;03;175;Galaxy Grand Prime
+Samsung;03;176;Galaxy J1 Ace
+Samsung;03;177;Galaxy J1 mini
+Samsung;03;178;Galaxy J2
+Samsung;03;179;Galaxy J2 Prime
+Samsung;03;180;Galaxy J3 Pro
+Samsung;03;181;Galaxy On5
+Samsung;03;182;Galaxy On7
+Samsung;03;183;Galaxy J5 Prime
+Samsung;03;184;Galaxy J7 Prime
+Samsung;03;185;Z3
+Samsung;03;186;Galaxy J7
+Samsung;03;187;Galaxy Note5
+Samsung;03;188;Galaxy Tab E 8.0
+Samsung;03;189;Galaxy Tab S3 9.7
+Samsung;03;190;Galaxy A9 Pro (2016)
+Samsung;03;191;Galaxy A8 Plus (2018)
+Samsung;03;192;Galaxy Tab S4
+Samsung;03;193;Galaxy Tab A 10.5
+Samsung;03;194;Galaxy J7 (2018)
+Samsung;03;195;Galaxy Watch (42mm)
+Samsung;03;196;Galaxy Watch (46mm)
+Samsung;03;197;Galaxy J4 (2018)
+Samsung;03;198;Galaxy A9 (2018)
+Samsung;03;199;Galaxy J4 Plus (2018)
+Samsung;03;200;Galaxy J6 Plus (2018)
+Samsung;03;201;Galaxy A7 (2018)
+Samsung;03;202;Galaxy S10
+Samsung;03;203;Galaxy S10e
+Samsung;03;204;Galaxy S10 Plus
+Samsung;03;205;Galaxy A50
+Samsung;03;206;Galaxy Watch Active
+Samsung;03;207;Galaxy Tab Active 2
+Samsung;03;208;Galaxy Tab S5e
+Samsung;03;209;Galaxy A10
+Samsung;03;210;Galaxy A80
+Samsung;03;211;Galaxy A70
+Samsung;03;212;Galaxy A40
+Samsung;03;213;Galaxy A20e
+Samsung;03;214;Galaxy A30
+Samsung;03;215;Galaxy Tab A 10.1 (2019)
+Samsung;03;216;Gear S3 Frontier
+Samsung;03;217;Galaxy Fit e
+Samsung;03;218;Gear 360 (2017)
+Samsung;03;219;Galaxy Note 10 Plus
+Samsung;03;220;Galaxy Note 10
+Samsung;03;221;Galaxy Xcover 4S
+Samsung;03;222;Galaxy S10 5G
+Samsung;03;223;Galaxy A60
+Samsung;03;224;Galaxy M20
+Samsung;03;225;Galaxy Fit
+Samsung;03;226;Galaxy Tab S6
+Samsung;03;227;Galaxy A10s
+Samsung;03;228;Galaxy M10
+Samsung;03;229;Galaxy A10e
+Samsung;03;230;Galaxy A20s
+Samsung;03;231;Galaxy Watch Active 2 - 40mm
+Samsung;03;232;Galaxy Watch Active 2 - 44mm
+Samsung;03;233;Gear S3 Active
+Samsung;03;234;Galaxy Tab A 8.0 (2019)
+Samsung;03;235;Galaxy Tab Active Pro
+Samsung;03;236;Galaxy M40
+Samsung;03;237;Galaxy M30
+Samsung;03;238;Galaxy M30s
+Samsung;03;239;Galaxy A70s
+Samsung;03;240;Galaxy A51
+Samsung;03;241;Galaxy S20 Plus
+Samsung;03;242;Galaxy A71
+Samsung;03;243;Galaxy S10 Lite
+Samsung;03;244;Galaxy S20 Ultra
+Samsung;03;245;Galaxy S20
+Samsung;03;246;Galaxy Note 10 Lite
+Samsung;03;247;Galaxy A90 5G
+Samsung;03;248;Galaxy Note 10 Lite
+Samsung;03;249;Galaxy A21
+Samsung;03;250;Galaxy A01
+Samsung;03;251;Galaxy M31
+Samsung;03;252;Galaxy A70e
+Samsung;03;253;Galaxy Xcover Pro
+Samsung;03;254;Galaxy A41
+Samsung;03;255;Galaxy A11
+Samsung;03;256;Galaxy M21
+Samsung;03;257;Galaxy A31
+Samsung;03;258;Galaxy M51
+Samsung;03;259;Galaxy A71e
+Samsung;03;260;Galaxy Z Flip
+Samsung;03;261;Galaxy M11
+Samsung;03;262;Galaxy A21s
+Samsung;03;263;Galaxy Note 20
+Samsung;03;264;Galaxy Note 20 Plus
+Samsung;03;265;Galaxy M01
+Samsung;03;266;Galaxy A71 5G
+Samsung;03;267;Galaxy Note 20 Ultra
+Samsung;03;268;Galaxy Watch 3 (45mm)
+Samsung;03;269;Galaxy Watch 3 (41mm)
+Samsung;03;270;Galaxy Watch 3 (46mm)
+Samsung;03;271;Galaxy M31s
+Samsung;03;272;Galaxy M01 Core
+Samsung;03;273;Galaxy A01 Core
+Samsung;03;274;Galaxy Fold 5G
+Samsung;03;275;Galaxy Fold
+Samsung;03;276;Galaxy M01s
+Samsung;03;277;Galaxy A51 5G
+Samsung;03;278;T7 Touch SSD
+Samsung;03;279;Gear 2
+Samsung;03;280;Galaxy Gear
+Samsung;03;281;Buds Live
+Samsung;03;282;Galaxy S20 FE
+Samsung;03;283;Galaxy A42 5G
+Samsung;03;284;Galaxy Z Fold2 5G
+Samsung;03;285;Galaxy S20 FE 5G
+Samsung;03;286;Galaxy F41
+Samsung;03;287;Galaxy A71s
+Samsung;03;288;Galaxy Tab S7
+Samsung;03;289;Galaxy Tab S7 Plus
+Samsung;03;290;Galaxy Tab A7 10.4 (2020)
+Samsung;03;291;Galaxy Tab A 8.4 (2020) 
+Samsung;03;292;Galaxy Tab A 8.0 + S Pen (2019)
+Samsung;03;293;Galaxy Tab Active 3
+Samsung;03;294;Galaxy Note 20 Ultra 5G
+Samsung;03;295;Galaxy Note 20 5G
+Samsung;03;296;Galaxy S21 Ultra
+Samsung;03;297;Galaxy S21
+Samsung;03;298;Galaxy S21 Plus
+Samsung;03;299;Galaxy A12 5G
+Samsung;03;300;Galaxy M31 Prime
+Samsung;03;301;Galaxy M21s
+Samsung;03;302;Galaxy A02s
+Samsung;03;303;Galaxy M12
+Samsung;03;304;Galaxy A32 5G
+Samsung;03;305;Galaxy Fit 2
+Samsung;03;306;Galaxy Buds Plus
+Samsung;03;307;Galaxy A72 5G
+Samsung;03;308;Galaxy A52 5G
+Samsung;03;309;Galaxy M02s
+Samsung;03;310;Galaxy A02
+Samsung;03;311;Galaxy M02
+Samsung;03;312;Galaxy F62
+Samsung;03;313;Galaxy M62
+Samsung;03;314;Galaxy A32
+Samsung;03;315;Galaxy Xcover 5
+Samsung;03;316;Gear Fit
+Samsung;03;317;Galaxy F12
+Samsung;03;318;Galaxy A22 5G
+Samsung;03;319;Galaxy F02s
+Samsung;03;320;Galaxy A22 4G
+Samsung;03;321;Galaxy A82 5G
+Samsung;03;322;Galaxy M42 5G
+Samsung;03;323;Galaxy A02s (166mm)
+Samsung;03;324;Galaxy Quantum 2
+Samsung;03;325;Galaxy F52 5G
+Samsung;03;326;Galaxy A03s
+Samsung;03;327;Galaxy SmartTag
+Samsung;03;328;Gear S2 Classic
+Nokia;04;01;N8
+Nokia;04;02;5800-5230
+Nokia;04;03;C7
+Nokia;04;04;X6
+Nokia;04;05;C5-03
+Nokia;04;06;E7
+Nokia;04;07;E72
+Nokia;04;08;X7
+Nokia;04;09;C6-01
+Nokia;04;10;N9
+Nokia;04;11;5250
+Nokia;04;12;E6
+Nokia;04;13;700
+Nokia;04;15;Lumia 800
+Nokia;04;16;603
+Nokia;04;17;701
+Nokia;04;18;Lumia 710
+Nokia;04;19;Lumia 900
+Nokia;04;20;Lumia 610
+Nokia;04;21;Asha 302
+Nokia;04;22;808 PureView
+Nokia;04;23;Lumia 810
+Nokia;04;24;Lumia 820
+Nokia;04;25;Lumia 920
+Nokia;04;26;Lumia 510
+Nokia;04;27;Asha 311
+Nokia;04;28;Asha 305
+Nokia;04;29;Lumia 620
+Nokia;04;30;Lumia 505
+Nokia;04;31;Lumia 720
+Nokia;04;32;Lumia 925
+Nokia;04;33;Lumia 520 / 525
+Nokia;04;34;Lumia 928
+Nokia;04;35;Lumia 1020
+Nokia;04;36;Lumia 625
+Nokia;04;37;Lumia 1520
+Nokia;04;38;515
+Nokia;04;39;Lumia 1320
+Nokia;04;40;Lumia 2520
+Nokia;04;41;Lumia 929
+Nokia;04;42;X
+Nokia;04;43;Lumia 630/635
+Nokia;04;44;XL
+Nokia;04;45;X2
+Nokia;04;46;Lumia 530
+Nokia;04;47;Lumia 830
+Nokia;04;48;Lumia 730
+Nokia;04;49;130
+Nokia;04;50;Lumia 735
+Nokia;04;52;215
+Nokia;04;53;225
+Nokia;04;54;3
+Nokia;04;55;5
+Nokia;04;56;6
+Nokia;04;57;3310
+Nokia;04;58;8
+Nokia;04;59;216
+Nokia;04;60;222
+Nokia;04;61;230
+Nokia;04;62;105
+Nokia;04;63;8 Sirocco
+Nokia;04;64;6 (2018)
+Nokia;04;65;7 Plus
+Nokia;04;66;1
+Nokia;04;67;2.1
+Nokia;04;68;3.1
+Nokia;04;69;5.1
+Nokia;04;70;X6
+Nokia;04;71;6.1
+Nokia;04;72;8110
+Nokia;04;73;5.1 Plus
+Nokia;04;74;6.1 Plus
+Nokia;04;75;7.1
+Nokia;04;76;8.1
+Nokia;04;77;Steel HR
+Nokia;04;78;3.1 Plus
+Nokia;04;79;9 PureView
+Nokia;04;80;1 Plus
+Nokia;04;81;4.2
+Nokia;04;82;7
+Nokia;04;83;3.2
+Nokia;04;84;210
+Nokia;04;85;6.2
+Nokia;04;86;2.2
+Nokia;04;87;8.1 Plus
+Nokia;04;88;220 4G
+Nokia;04;89;Nokia 105 (2019)
+Nokia;04;90;7.2
+Nokia;04;91;2.3
+Nokia;04;92;X71 
+Nokia;04;93;C2
+Nokia;04;94;8.3 5G
+Nokia;04;95;1.3
+Nokia;04;96;5.3
+Nokia;04;97;5310 (2020)
+Nokia;04;98;C1
+Nokia;04;99;C2 Tava
+Nokia;04;100;150 (2020)
+Nokia;04;101;125
+Nokia;04;102;C5 Endi
+Nokia;04;103;C2 Tennen
+Nokia;04;104;C3
+Nokia;04;105;2.4
+Nokia;04;106;3.4
+Nokia;04;107;2 V Tella
+Nokia;04;108;8 V 5G
+Nokia;04;109;5.4
+Nokia;04;110;6300 4G
+Nokia;04;111;C1 Plus
+Nokia;04;112;1.4
+Nokia;04;113;7.3
+Nokia;04;114;6.3
+Nokia;04;115;X10
+Nokia;04;116;X20
+Nokia;04;117;C10
+Nokia;04;118;C20
+Nokia;04;119;G10
+Nokia;04;120;G20
+Nokia;04;121;C01 Plus
+Nokia;04;122;C20 Plus
+Sony Ericsson;05;01;Xperia X10
+Sony Ericsson;05;02;Xperia X10 mini
+Sony Ericsson;05;03;Xperia X8
+Sony Ericsson;05;04;Xperia X10 Mini Pro
+Sony Ericsson;05;05;Xperia Arc S
+Sony Ericsson;05;05;Xperia Arc
+Sony Ericsson;05;06;Xperia Neo
+Sony Ericsson;05;07;Xperia Play
+Sony Ericsson;05;08;Vivaz
+Sony Ericsson;05;09;Xperia Ray
+Sony Ericsson;05;10;Xperia Mini
+Sony Ericsson;05;11;Xperia Mini Pro
+Sony Ericsson;05;12;Xperia Active
+Sony Ericsson;05;13;Live
+Blackberry;06;01;Curve 8520
+Blackberry;06;01;Curve 8530
+Blackberry;06;02;Curve 9300
+Blackberry;06;02;Curve 8900
+Blackberry;06;03;Torch 9800
+Blackberry;06;04;Bold 9020
+Blackberry;06;04;Bold 9700
+Blackberry;06;05;Bold 9900/9930
+Blackberry;06;06;Q10
+Blackberry;06;07;Z10
+Blackberry;06;08;KEY2
+Blackberry;06;09;KEY2 LE
+Blackberry;06;10;Keyone
+Blackberry;06;11;Priv
+LG;07;01;Optimus 2X P990
+LG;07;02;Optimus Black P970
+LG;07;03;Optimus 3D
+LG;07;04;Optimus 7
+LG;07;05;Cookie fresh
+LG;07;07;Cookie 3G
+LG;07;08;Optimus Me
+LG;07;09;Optimus One
+LG;07;10;Optimus Sol
+LG;07;11;Optimus L3
+LG;07;12;Optimus L5
+LG;07;13;Optimus L7
+LG;07;14;Optimus 4X HD
+LG;07;15;Optimus 3D MAX
+LG;07;16;Optimus Vu
+LG;07;17;Optimus L9
+LG;07;20;Optimus G
+LG;07;21;Optimus G Pro
+LG;07;22;Optimus L3 II
+LG;07;23;Optimus L5 II
+LG;07;24;Optimus F5
+LG;07;25;G2
+LG;07;26;Optimus F6
+LG;07;27;Optimus L4 II
+LG;07;28;Optimus L9 II
+LG;07;29;G Flex
+LG;07;30;Optimus L1 II
+LG;07;31;G Pro Lite
+LG;07;32;G Pad 8.3
+LG;07;33;Optimus L7 II
+LG;07;34;G2 Mini
+LG;07;35;L70
+LG;07;36;G3
+LG;07;37;L90
+LG;07;38;L80
+LG;07;40;G3 S
+LG;07;41;Optimus G Pro
+LG;07;42;F60
+LG;07;43;L50
+LG;07;44;L65
+LG;07;45;L40
+LG;07;46;L Bello
+LG;07;47;L Fino
+LG;07;48;G Pad 8.0
+LG;07;49;G3 Stylus
+LG;07;50;G Pad 10.1
+LG;07;51;G Pad 7.0
+LG;07;52;G Flex 2
+LG;07;53;Leon
+LG;07;54;G4
+LG;07;55;Spirit
+LG;07;57;Joy
+LG;07;58;G4 Stylus
+LG;07;59;G4c
+LG;07;60;G4s
+LG;07;61;G Pad II 10.1
+LG;07;62;L Bello II
+LG;07;63;V10
+LG;07;64;Zero
+LG;07;65;K7
+LG;07;66;K10
+LG;07;67;G5
+LG;07;68;Watch Urbane
+LG;07;69;G Watch R W110
+LG;07;70;G Watch W100
+LG;07;71;K4
+LG;07;72;K8
+LG;07;73;X Screen
+LG;07;74;G6
+LG;07;75;K4 2017
+LG;07;76;K8 2017
+LG;07;77;K10 2017
+LG;07;78;Q6
+LG;07;79;V30
+LG;07;80;G7 ThinQ
+LG;07;81;Watch Urbane 2 W200
+LG;07;82;Watch Style
+LG;07;83;Watch Sport
+LG;07;84;Q7
+LG;07;85;V30S
+LG;07;86;K9
+LG;07;87;K11
+LG;07;88;K10 (2018)
+LG;07;89;Watch W7
+LG;07;90;V40 ThinQ
+LG;07;91;G8 ThinQ
+LG;07;92;V50 ThinQ
+LG;07;93;K20 (2019)
+LG;07;94;K30 (2019)
+LG;07;95;G8X ThinQ
+LG;07;96;K40S
+LG;07;97;G8s ThinQ
+LG;07;98;W10
+LG;07;99;V50S ThinQ
+LG;07;100;K50S
+LG;07;101;W30
+LG;07;102;Q8 (2018)
+LG;07;103;Q70
+LG;07;104;K50
+LG;07;105;Q60
+LG;07;106;V60
+LG;07;107;K61
+LG;07;108;K51S
+LG;07;109;K41S
+LG;07;110;Q51
+LG;07;111;V60 ThinQ 5G
+LG;07;112;Stylus 2
+LG;07;113;V20
+LG;07;114;X Style
+LG;07;115;G Pro 2
+LG;07;116;G Vista
+LG;07;117;Stylo 6
+LG;07;118;K51
+LG;07;119;Velvet
+LG;07;120;Harmony 4
+LG;07;121;Aristo 5
+LG;07;122;Premier Pro Plus
+LG;07;123;K31
+LG;07;124;Q61
+LG;07;125;Phoenix 5
+LG;07;126;Fortune 3
+LG;07;127;Risio 4
+LG;07;128;Q92 5G
+LG;07;129;Style 3
+LG;07;130;Q31
+LG;07;131;K42
+LG;07;132;K22
+LG;07;133;K22 Plus
+LG;07;134;K92 5G
+LG;07;135;K52
+LG;07;136;K62
+LG;07;137;Q52
+LG;07;138;W11
+LG;07;139;W31
+LG;07;140;Wing 5G
+LG;07;141;Stylo 7 5G
+LG;07;142;Stylo 7 4G
+LG;07;143;K53
+Motorola;08;00;Xoom 2
+Motorola;08;01;Xoom
+Motorola;08;02;Defy
+Motorola;08;03;Atrix 2
+Motorola;08;04;Atrix 4G
+Motorola;08;05;Fire
+Motorola;08;06;Droid RAZR
+Motorola;08;07;Droid Razr Maxx
+Motorola;08;08;Defy +
+Motorola;08;09;Droid RAZR Maxx HD
+Motorola;08;10;Droid RAZR M
+Motorola;08;11;RAZR i
+Motorola;08;12;Moto X
+Motorola;08;13;Moto G
+Motorola;08;14;Moto X2
+Motorola;08;15;Droid Turbo
+Motorola;08;16;Moto G2
+Motorola;08;17;Nexus 6
+Motorola;08;18;Moto E
+Motorola;08;19;Moto G (3rd gen)
+Motorola;08;20;Moto X Play
+Motorola;08;21;Moto X Force
+Motorola;08;22;Moto X Style
+Motorola;08;23;Moto 360 - 46mm
+Motorola;08;24;Moto 360 - 42mm
+Motorola;08;25;G4 Play
+Motorola;08;26;G4 / G4 Plus
+Motorola;08;27;Moto Z
+Motorola;08;28;Moto Z Force
+Motorola;08;29;Moto G5 Plus
+Motorola;08;30;Moto G5
+Motorola;08;31;Moto E4
+Motorola;08;32;Moto E4 Plus
+Motorola;08;33;Moto Z2
+Motorola;08;34;Moto G5S
+Motorola;08;35;Moto G5S Plus
+Motorola;08;36;Moto X4
+Motorola;08;37;Moto Z2 Force
+Motorola;08;38;Moto Z2 Play
+Motorola;08;39;Moto C
+Motorola;08;40;Moto C Plus
+Motorola;08;41;Moto G6
+Motorola;08;42;Moto G6 Plus
+Motorola;08;43;Moto G6 Play
+Motorola;08;44;Moto E5
+Motorola;08;45;Moto Z3 Play
+Motorola;08;46;Moto E5 Plus
+Motorola;08;47;Moto Z3
+Motorola;08;48;One
+Motorola;08;49;Moto E5 Play
+Motorola;08;50;One Power
+Motorola;08;51;Moto E5 Play Go
+Motorola;08;52;Moto G7
+Motorola;08;53;Moto E6
+Motorola;08;54;
+Motorola;08;55;Moto G7 Play
+Motorola;08;56;Moto G7 Plus
+Motorola;08;57;Moto G7 Power
+Motorola;08;58;P40
+Motorola;08;59;Moto Z Play
+Motorola;08;60;Moto Z4 Play
+Motorola;08;61;Moto Z4
+Motorola;08;62;One Vision
+Motorola;08;63;One Zoom
+Motorola;08;64;Moto E6 Plus
+Motorola;08;65;One Action
+Motorola;08;66;Moto G8 Plus
+Motorola;08;67;Moto G8 Play
+Motorola;08;68;Moto E6 Play
+Motorola;08;69;Moto G8
+Motorola;08;70;P40 Power
+Motorola;08;71;Moto G8 Power
+Motorola;08;72;One Hyper
+Motorola;08;73;One Macro
+Motorola;08;74;Edge
+Motorola;08;75;Edge Plus
+Motorola;08;76;Moto E7
+Motorola;08;77;Moto E6s (2020)
+Motorola;08;78;Moto G Power
+Motorola;08;79;Moto G Stylus
+Motorola;08;80;One Fusion Plus
+Motorola;08;81;Moto G8 Power Lite
+Motorola;08;82;Moto G Pro
+Motorola;08;83;Moto E (2020)
+Motorola;08;84;Moto G Fast
+Motorola;08;85;One Fusion
+Motorola;08;86;Moto G 5G Plus
+Motorola;08;87;Moto G9 Play
+Motorola;08;88;Moto E7 Plus
+Motorola;08;89;Moto G9 Plus
+Motorola;08;90;One 5G
+Motorola;08;91;Moto G 5G
+Motorola;08;92;Moto G9 Power
+Motorola;08;93;Razr 5G
+Motorola;08;94;Moto G10 Play
+Motorola;08;95;Moto G Play (2021)
+Motorola;08;96;Moto G Power (2021)
+Motorola;08;97;Moto G Stylus (2021)
+Motorola;08;98;One 5G Ace
+Motorola;08;99;Moto E6i
+Motorola;08;100;Edge S
+Motorola;08;101;Moto G10
+Motorola;08;102;Moto G30
+Motorola;08;103;Moto E7 Power
+Motorola;08;104;Moto G100
+Motorola;08;105;Moto G10 Power
+Motorola;08;106;Moto G50
+Motorola;08;107;Moto G60
+Motorola;08;108;Moto G40 Fusion
+Motorola;08;109;Moto G20
+Motorola;08;110;Moto 360 (3rd Gen)
+Motorola;08;111;Moto G Stylus 5G
+Motorola;08;112;Defy (2021)
+Amazon;09;01;Kindle Fire
+Amazon;09;02;Kindle Voyage
+Amazon;09;03;Kindle Paperwhite
+Amazon;09;04;Kindle (2016)
+Amazon;09;05;Kindle Oasis
+Amazon;09;06;Fire 7 (2017)
+Amazon;09;07;Fire HD 8
+Amazon;09;08;Echo Show
+Amazon;09;09;Echo
+Amazon;09;10;Echo Dot 2
+Amazon;09;11;Fire HD 10
+Amazon;09;12;Kindle Oasis (2017)
+Amazon;09;13;Kindle Paperwhite 4 (2018)
+Amazon;09;14;Echo Dot
+Amazon;09;15;Tap
+Amazon;09;16;Kindle (2019)
+Amazon;09;17;Echo Show (2nd Generation)
+Amazon;09;18;Fire 7 (2019)
+Amazon;09;19;Kindle Oasis (2019)
+Amazon;09;20;Fire HDX 7
+Amazon;09;21;Fire HD 10 (2015)
+Amazon;09;22;Fire HD 10 (2019)
+Amazon;09;23;Fire HD 8 (2017)
+Amazon;09;24;Fire HD 8 (2020)
+Amazon;09;25;Fire HD 8 Plus (2020)
+Amazon;09;26;Echo Dot (3rd Gen)
+Amazon;09;27;Halo Band
+Sony;10;01;Xperia S
+Sony;10;02;Xperia P
+Sony;10;03;Xperia U
+Sony;10;04;Xperia Ion
+Sony;10;05;Xperia Sola
+Sony;10;06;PlayStation Vita
+Sony;10;07;Xperia Acro S
+Sony;10;08;Xperia Go
+Sony;10;09;Xperia Miro
+Sony;10;10;Xperia J
+Sony;10;11;Xperia T
+Sony;10;12;Xperia TX
+Sony;10;13;Xperia Neo L
+Sony;10;14;Xperia Tipo
+Sony;10;15;Xperia Z
+Sony;10;16;Xperia V
+Sony;10;17;Xperia SP
+Sony;10;18;Xperia L
+Sony;10;19;Xperia ZR
+Sony;10;20;Xperia Tablet Z
+Sony;10;21;Xperia ZL
+Sony;10;22;Xperia Z1
+Sony;10;23;Xperia C
+Sony;10;24;Xperia Z Ultra
+Sony;10;25;Xperia M
+Sony;10;26;Xperia Z1 Compact
+Sony;10;27;Xperia E
+Sony;10;28;Xperia E1
+Sony;10;29;Xperia T2 Ultra
+Sony;10;30;Xperia Z2
+Sony;10;32;Xperia M2
+Sony;10;33;Xperia Z2 Tablet
+Sony;10;34;Xperia T3
+Sony;10;35;Xperia Z2 Compact
+Sony;10;36;Xperia Z3
+Sony;10;37;Xperia Z3 Compact
+Sony;10;38;Xperia E3
+Sony;10;39;Xperia M2 Aqua
+Sony;10;40;Xperia Z3 Tablet Compact
+Sony;10;41;Xperia E4
+Sony;10;42;Xperia M4 Aqua
+Sony;10;43;Xperia Z3+
+Sony;10;44;Xperia E4G
+Sony;10;45;Xperia Z4 Tablet
+Sony;10;46;Xperia Z5
+Sony;10;47;Xperia Z5 Premium
+Sony;10;48;Xperia Z5 Compact
+Sony;10;49;Xperia M5
+Sony;10;50;SmartWatch 2
+Sony;10;51;SmartWatch 3
+Sony;10;52;Xperia X
+Sony;10;53;Xperia XA
+Sony;10;54;Xperia X Performance
+Sony;10;55;Xperia XA Ultra 
+Sony;10;56;Xperia E5
+Sony;10;57;Xperia XZ
+Sony;10;58;Xperia X Compact
+Sony;10;59;Xperia XZ Premium
+Sony;10;60;Xperia XZs
+Sony;10;61;Xperia XA1
+Sony;10;62;Xperia XA1 Ultra
+Sony;10;63;Xperia L1
+Sony;10;64;Smartband 2
+Sony;10;65;Alpha A6300/A6000
+Sony;10;66;Xperia XZ1
+Sony;10;67;Xperia XZ1 Compact
+Sony;10;68;Xperia XA2
+Sony;10;69;Alpha a7RII
+Sony;10;70;DSC-RX100 Mark III IV M3 M4
+Sony;10;71;Xperia L2
+Sony;10;72;Xperia XA2 Ultra
+Sony;10;73;A5000/A5100/NEX3N
+Sony;10;74;HX60/HX50/HX30
+Sony;10;75;a7II
+Sony;10;76;Alpha a7R
+Sony;10;77;Xperia XZ2 Compact
+Sony;10;78;Xperia XZ2
+Sony;10;79;NEX-F3
+Sony;10;80;Alpha A9
+Sony;10;81;Xperia C5 Ultra
+Sony;10;82;Xperia C4
+Sony;10;83;Xperia C3
+Sony;10;84;Alpha A6500
+Sony;10;85;Xperia XA2 Plus
+Sony;10;86;Xperia XZ2 Premium
+Sony;10;87;A7R III
+Sony;10;88;Xperia XZ3
+Sony;10;89;Xperia XA3
+Sony;10;90;Xperia XZ4
+Sony;10;91;Xperia XZ4 Compact
+Sony;10;92;Xperia L3
+Sony;10;93;SRS-XB10
+Sony;10;94;Xperia 10
+Sony;10;95;Xperia 10 Plus
+Sony;10;96;Xperia XA3 Ultra
+Sony;10;97;Xperia 1
+Sony;10;98;SRS-XB20
+Sony;10;99;PlayStation Classic
+Sony;10;100;SRS-XB41
+Sony;10;101;Xperia 2
+Sony;10;102;Xperia 20
+Sony;10;103;PlayStation 4 - PS4
+Sony;10;104;MDR-7506/MDR-CD900ST
+Sony;10;105;WF-1000XM3
+Sony;10;106;Xperia 5
+Sony;10;107;Xperia 8
+Sony;10;108;Xperia 1 II
+Sony;10;109;Xperia 5 Plus
+Sony;10;110;Xperia L4
+Sony;10;111;Xperia 10 II
+Sony;10;112;Alpha A6600
+Sony;10;113;WF-H800
+Sony;10;114;PSP Go
+Sony;10;115;Xperia 5 II
+Sony;10;116;ZV-1
+Sony;10;117;PlayStation 5 - PS5
+Sony;10;118;MDR-1000X
+Sony;10;119;WH-1000XM2
+Sony;10;120;Playstation Pulse 3D
+Sony;10;121;a7C
+Sony;10;122;SRS-XB22 
+Sony;10;123;Xperia Pro
+Sony;10;124;Xperia 10 III
+Sony;10;125;Xperia Ace 2
+Sony;10;126;Xperia 1 III
+Sony;10;127;Xperia 5 III
+Huawei;11;00;MediaPad 7 Youth
+Huawei;11;01;Honor
+Huawei;11;02;Sonic
+Huawei;11;03;Ascend P1
+Huawei;11;04;Ascend G300
+Huawei;11;05;Ascend G330D
+Huawei;11;07;Ascend G510
+Huawei;11;08;Ascend Mate 6.1
+Huawei;11;09;Ascend Y300
+Huawei;11;10;Ascend G610
+Huawei;11;11;Ascend P6
+Huawei;11;12;Ascend D2
+Huawei;11;13;Honor 3
+Huawei;11;14;Ascend P2
+Huawei;11;16;Ascend Y210
+Huawei;11;17;Ascend G700
+Huawei;11;18;MediaPad X1
+Huawei;11;19;Ascend P7
+Huawei;11;20;Ascend G6
+Huawei;11;21;Honor 6
+Huawei;11;22;Ascend P7 Mini
+Huawei;11;23;Y511
+Huawei;11;24;Ascend Mate7
+Huawei;11;25;Ascend Y550
+Huawei;11;26;Ascend G7
+Huawei;11;27;G620S
+Huawei;11;28;Ascend G630
+Huawei;11;29;Ascend G620
+Huawei;11;30;Ascend G750
+Huawei;11;31;Ascend Y530
+Huawei;11;32;Ascend G6 4G
+Huawei;11;33;Honor 6 Plus
+Huawei;11;34;Ascend P8
+Huawei;11;35;P8 Lite
+Huawei;11;36;MediaPad M1
+Huawei;11;38;Mate S
+Huawei;11;39;Honor Y6
+Huawei;11;40;Mate 8
+Huawei;11;41;Ascend G620S
+Huawei;11;43;MediaPad M2 8
+Huawei;11;44;P8
+Huawei;11;45;MediaPad M2 10
+Huawei;11;46;P9
+Huawei;11;47;Y5
+Huawei;11;48;Y625
+Huawei;11;49;Y360
+Huawei;11;50;Mediapad T1 10
+Huawei;11;51;Y330
+Huawei;11;52;Watch
+Huawei;11;53;MediaPad T1 7.0
+Huawei;11;54;P9 Lite
+Huawei;11;55;P9 Plus
+Huawei;11;56;Honor 8
+Huawei;11;57;Y6 II
+Huawei;11;59;MediaPad M3 8.4
+Huawei;11;60;Nova
+Huawei;11;61;Mate 9 Pro
+Huawei;11;62;Y6II Compact
+Huawei;11;63;Mate 9
+Huawei;11;64;P10
+Huawei;11;65;P10 Plus
+Huawei;11;66;Honor 8 Lite
+Huawei;11;67;P10 Lite
+Huawei;11;68;Honor 8 Pro
+Huawei;11;69;Honor 9
+Huawei;11;70;MediaPad T3 8.0
+Huawei;11;71;MediaPad T3 10
+Huawei;11;72;MediaPad T3 7
+Huawei;11;73;MediaPad M3 Lite 10.1
+Huawei;11;74;Watch 2
+Huawei;11;75;P9 Lite Mini
+Huawei;11;76;Y5 II
+Huawei;11;77;Y6 (2017)
+Huawei;11;78;Mate 10
+Huawei;11;79;Mate 10 Pro
+Huawei;11;80;Mate 10 Lite
+Huawei;11;81;TalkBand B3
+Huawei;11;82;Watch 2 Pro
+Huawei;11;83;P20
+Huawei;11;84;P20 Pro
+Huawei;11;85;P Smart
+Huawei;11;86;P20 Lite
+Huawei;11;87;Honor 6X
+Huawei;11;88;MediaPad M5 10
+Huawei;11;89;MediaPad M5 8
+Huawei;11;90;Nova 2
+Huawei;11;91;Y7
+Huawei;11;92;Honor 9 Lite
+Huawei;11;93;Honor 7X
+Huawei;11;94;Honor 10
+Huawei;11;95;P Smart 2019
+Huawei;11;96;Honor View 10
+Huawei;11;97;MediaPad T2 Pro 10.0
+Huawei;11;98;Y6 2018
+Huawei;11;99;Y6
+Huawei;11;100;Nexus 6P
+Huawei;11;101;Y9 (2018)
+Huawei;11;102;Honor 7A
+Huawei;11;103;TalkBand B5
+Huawei;11;104;Mate 20 Lite
+Huawei;11;105;MediaPad T5
+Huawei;11;106;P Smart Plus
+Huawei;11;107;Mate 20 Pro
+Huawei;11;108;Mate 20
+Huawei;11;109;MediaPad M5 Lite 10
+Huawei;11;110;Mate 20 X
+Huawei;11;111;P30
+Huawei;11;112;P30 Pro
+Huawei;11;113;P30 Lite
+Huawei;11;114;Watch GT
+Huawei;11;115;Y7 2019
+Huawei;11;116;Y6 2019
+Huawei;11;117;Honor FlyPods
+Huawei;11;118;Honor Band 4
+Huawei;11;119;Y6 Pro 2019
+Huawei;11;120;Y9 2019
+Huawei;11;121;Kid Watch K3 Pro
+Huawei;11;122;Fit
+Huawei;11;123;Watch 2 Classic
+Huawei;11;124;Watch Magic
+Huawei;11;125;Honor Band 3
+Huawei;11;126;Band 3 Pro
+Huawei;11;127;P Smart Z
+Huawei;11;128;MediaPad M6 8.4
+Huawei;11;129;MediaPad M6 10.8
+Huawei;11;130;Mate 30 Lite
+Huawei;11;131;Mate 30
+Huawei;11;132;Mate 30 Pro
+Huawei;11;133;Y5 2019
+Huawei;11;134;Band 2
+Huawei;11;135;Band 2 Pro
+Huawei;11;136;Band 3
+Huawei;11;137;Band 3 Pro
+Huawei;11;138;Kids Watch 3 Pro
+Huawei;11;139;Nova 5
+Huawei;11;140;Nova 6
+Huawei;11;141;Nova 6 SE
+Huawei;11;142;Y7 Pro (2019)
+Huawei;11;143;Nova 5 Pro
+Huawei;11;144;Nova 4
+Huawei;11;145;FreeBuds 3
+Huawei;11;146;Watch GT 2 42mm
+Huawei;11;147;Watch GT 2 46mm
+Huawei;11;148;Band 4 Pro
+Huawei;11;149;TalkBand B2 Active
+Huawei;11;150;P40
+Huawei;11;151;P40 Pro
+Huawei;11;152;P40 Lite
+Huawei;11;153;P40 Lite E
+Huawei;11;154;P40 Pro Plus
+Huawei;11;155;Nova 7 5G
+Huawei;11;156;Nova 7 Pro 5G
+Huawei;11;157;P Smart 2020
+Huawei;11;158;P40 Lite 5G
+Huawei;11;159;MediaPad M5 Lite 8
+Huawei;11;160;Y6p
+Huawei;11;161;Watch GT 2e
+Huawei;11;162;M-Pen Lite
+Huawei;11;163;Y5p
+Huawei;11;165;Y8s
+Huawei;11;166;Watch GT Elegant Edition
+Huawei;11;167;TalkBand B6
+Huawei;11;168;Watch GT2e 46mm
+Huawei;11;169;Enjoy 20 Plus 5G
+Huawei;11;170;Mate 40 Lite
+Huawei;11;171;Mate 40
+Huawei;11;172;Mate 40 Pro
+Huawei;11;173;Mate 40 Pro Plus
+Huawei;11;174;P Smart 2021
+Huawei;11;175;Y7A
+Huawei;11;176;Watch Fit
+Huawei;11;177;Watch GT 2 Pro
+Huawei;11;178;FreeBuds Pro
+Huawei;11;179;MatePad T10
+Huawei;11;180;MatePad T10s
+Huawei;11;181;Children's Watch 4X
+Huawei;11;182;Mate 40 RS Porsche Design
+Huawei;11;183;Nova 8 SE
+Huawei;11;184;Nova 8 Pro 5G
+Huawei;11;185;Nova 8 5G
+Huawei;11;186;Watch GT 2 Pro (Porsche Design)
+Huawei;11;187;P50 Pro
+Huawei;11;188;P50
+Huawei;11;189;P20 Lite (2019)
+Huawei;11;190;Watch 3 Pro
+Huawei;11;191;Watch 3
+Huawei;11;192;FreeBuds 4
+ASUS;12;02;Memo Pad 8
+ASUS;12;03;PadFone 2
+ASUS;12;04;PadFone Infinity
+ASUS;12;05;Memo Pad FHD 10
+ASUS;12;06;MeMo Pad 10
+ASUS;12;07;MeMo Pad 7
+ASUS;12;08;Fonepad 7 (2013)
+ASUS;12;09;Transformer Book T100 Mini
+ASUS;12;10;VivoTab RT
+ASUS;12;11;MeMo Pad HD7
+ASUS;12;12;Zenfone 6
+ASUS;12;13;Transformer Pad
+ASUS;12;14;VivoTab Note 8
+ASUS;12;15;MeMO Pad 8
+ASUS;12;16;Transformer Pad TF103C
+ASUS;12;17;Transformer Book T200TA
+ASUS;12;18;Fonepad 8
+ASUS;12;19;PadFone infinity A86
+ASUS;12;20;Zenfone 2
+ASUS;12;22;Transformer Pad TF303CL
+ASUS;12;23;Zenpad 7.0
+ASUS;12;24;ZenPad 10
+ASUS;12;25;ZenPad S 8.0
+ASUS;12;26;ZenPad 8.0
+ASUS;12;27;ZenPad C 7.0
+ASUS;12;28;Zenfone Max ZC550KL
+ASUS;12;29;Zenfone 3 ZE552KL
+ASUS;12;30;Zenpad 3S 10
+ASUS;12;31;Zenfone 3 Deluxe ZS570KL
+ASUS;12;32;Zenfone 3 ZE520KL
+ASUS;12;33;Zenfone 3 Max ZC553KL
+ASUS;12;34;Zenfone Zoom S (ZE553KL)
+ASUS;12;35;Zenfone AR (ZS571KL)
+ASUS;12;36;Zenfone Live (ZB501KL)
+ASUS;12;37;Zenfone 4 (ZE554KL)
+ASUS;12;38;Zenfone 4 Pro (ZS551KL)
+ASUS;12;39;Zenfone 4 Selfie Pro (ZD552KL)
+ASUS;12;40;Zenfone 4 Max 5.5 (ZC554KL)
+ASUS;12;41;Zenfone 4 Max 5.2 (ZC520KL)
+ASUS;12;42;ZenWatch 3
+ASUS;12;43;Transformer Book T103HAF
+ASUS;12;44;ZenFone 5 (ZE620KL)
+ASUS;12;45;ZenFone 5 Lite (ZC600KL)
+ASUS;12;46;ZenFone 5Z (ZS620KL)
+ASUS;12;47;ROG Phone
+ASUS;12;48;ZenFone Max Pro (ZB602KL)
+ASUS;12;49;ZenFone Max (M2)
+ASUS;12;50;ZenFone Max Pro (M2)
+ASUS;12;51;Chromebook Tablet CT100
+ASUS;12;52;Zenpad 3S 10 Z500M
+ASUS;12;53;Zenwatch 2 Small
+ASUS;12;54;Zenwatch 2 Large
+ASUS;12;55;ZenFone 6 ZS630KL
+ASUS;12;56;Zenfone Live L1
+ASUS;12;57;ROG Phone II
+ASUS;12;58;Zenfone Max Shot (ZB634KL)
+ASUS;12;59;ROG Phone 3
+ASUS;12;60;ROG Phone 3 Strix
+ASUS;12;61;Zenfone 7
+ASUS;12;62;Zenfone 7 Pro
+ASUS;12;63;ROG Phone 5
+ASUS;12;64;Zenfone 8
+ASUS;12;65;Zenfone 8 Flip
+ASUS;12;66;ROG Phone 5 Pro
+Microsoft;13;01;Surface
+Microsoft;13;02;Surface Pro / Pro 2
+Microsoft;13;03;Lumia 535
+Microsoft;13;04;Lumia 435
+Microsoft;13;05;Lumia 532
+Microsoft;13;06;Lumia 640
+Microsoft;13;07;Lumia 640 XL
+Microsoft;13;08;Lumia 950
+Microsoft;13;09;Lumia 950 XL
+Microsoft;13;10;Surface Pro 3
+Microsoft;13;11;Surface Pro 4
+Microsoft;13;12;Lumia 550
+Microsoft;13;13;Lumia 650
+Microsoft;13;14;Surface 3
+Microsoft;13;15;Surface Pro 4
+Microsoft;13;16;Lumia 540
+Microsoft;13;17;Surface Go 10
+Microsoft;13;18;Surface Pro 6
+Google;14;01;Nexus 10
+Google;14;02;Nexus 4
+Google;14;03;Nexus 7
+Google;14;04;Nexus 7 (2013)
+Google;14;05;Nexus 5
+Google;14;06;Nexus 9
+Google;14;07;Nexus 6P
+Google;14;08;Nexus 5X
+Google;14;09;Pixel
+Google;14;10;Pixel XL
+Google;14;11;Pixel 2
+Google;14;12;Pixel 2 XL
+Google;14;13;Pixel 3
+Google;14;14;Pixel 3 XL
+Google;14;15;Pixel 3 Lite
+Google;14;16;Pixel 3a
+Google;14;17;Pixel 3a XL
+Google;14;18;Pixel 4
+Google;14;19;Pixel 4 XL
+Google;14;20;Pixel 4a
+Google;14;21;Pixel 5
+Google;14;22;Pixel 5 XL
+Google;14;23;Pixel Buds 2
+Google;14;24;Pixel 4a 5G
+Google;14;25;Pixel 5a
+Google;14;26;Pixel 6
+Google;14;27;Pixel 6 Pro
+Nintendo;15;01;Wii U
+Nintendo;15;02;Switch
+Nintendo;15;03;Switch Lite
+Nintendo;15;04;2DS XL
+Nintendo;15;05;Switch Pro
+Acer;16;01;Iconia Tab
+Acer;16;02;Iconia Tab A3
+Acer;16;03;Iconia Tab 8
+Acer;16;04;Iconia Tab 10
+Acer;16;05;Iconia One 7
+Acer;16;06;Iconia A1-830
+Acer;16;07;Iconia Talk S
+Acer;16;08;Iconia One 8
+Acer;16;09;Iconia Tab 8 W
+Acer;16;10;Liquid E3
+Acer;16;11;Liquid Jade 
+Acer;16;12;Liquid Jade S
+Acer;16;13;Plus
+Acer;16;14;Liquid Z330
+Acer;16;15;7
+Acer;16;16;Aspire Switch 10
+Acer;16;17;One 10 B3-A10
+Acer;16;18;One 10 B3-A20
+Acer;16;19;Liquid Z530
+Acer;16;20;Liquid Zest
+Acer;16;21;Liquid Zest Plus
+Acer;16;22;Liquid Z200
+Acer;16;23;Liquid Z630
+Acer;16;24;Iconia Tab 10 A3-A40
+Acer;16;25;Iconia Tab 10 B3-A40
+Acer;16;26;Iconia Tab 10 B3-A30
+Acer;16;27;Iconia One 10 - B3-A50
+Acer;16;28;Iconia One 10 A3-A50
+HP;17;01;Slate 7
+Lenovo;18;01;K900
+Lenovo;18;02;S920
+Lenovo;18;03;S820
+Lenovo;18;04;YOGA Tablet 8
+Lenovo;18;05;IdeaTab S6000
+Lenovo;18;06;S660
+Lenovo;18;06;ThinkPad Tablet 2
+Lenovo;18;07;ThinkPad 8
+Lenovo;18;08;IdeaTab A1000
+Lenovo;18;09;Tab S8
+Lenovo;18;10;Yoga Tablet 2 8.0
+Lenovo;18;11;Yoga Tablet 2 10.1
+Lenovo;18;12;IdeaTab A8-50 A5500
+Lenovo;18;12;Yoga Tablet 2 13.3
+Lenovo;18;13;Yoga Tablet 2 Pro 13.3
+Lenovo;18;14;Miix 3-830 8.0
+Lenovo;18;15;ThinkPad 10 10.1
+Lenovo;18;16;Tab 2 A7-30
+Lenovo;18;17;Tab 2 A10-70
+Lenovo;18;18;IdeaTab A10-70
+Lenovo;18;19;Tab 2 A7-10
+Lenovo;18;20;Yoga Tab 3 Pro
+Lenovo;18;21;Yoga Tab 3 8.0
+Lenovo;18;22;Tab 2 A10-30
+Lenovo;18;23;Tab 2 A8-50
+Lenovo;18;24;Yoga Tab 3 10
+Lenovo;18;27;Miix 700
+Lenovo;18;28;K5
+Lenovo;18;29;Tab 3 A7-10F
+Lenovo;18;30;Miix 310
+Lenovo;18;31;Yoga Tab 3 8
+Lenovo;18;32;Yoga Book
+Lenovo;18;33;Tab 4 8
+Lenovo;18;34;Tab 4 10
+Lenovo;18;35;Phab 2
+Lenovo;18;36;Phab 2 Plus
+Lenovo;18;37;Tab 4 Plus 8
+Lenovo;18;38;Tab 4 Plus 10
+Lenovo;18;39;Tab 3 Plus 10
+Lenovo;18;40;Miix 320
+Lenovo;18;41;Yoga A12
+Lenovo;18;42;P2
+Lenovo;18;43;B
+Lenovo;18;44;Tab 7 Essential
+Lenovo;18;45;K6
+Lenovo;18;46;K6 Note
+Lenovo;18;47;A Plus
+Lenovo;18;48;Tab 10 TB-X103F
+Lenovo;18;49;Tab E7
+Lenovo;18;50;Tab E8
+Lenovo;18;51;Tab E10
+Lenovo;18;52;Tab P10
+Lenovo;18;53;Tab M10
+Lenovo;18;54;Yoga Tablet 3 X50L
+Lenovo;18;55;ThinkPad X1 Tablet
+Lenovo;18;56;ThinkPad Yoga 11e
+Lenovo;18;57;Ideapad D330
+Lenovo;18;58;Tab M7
+Lenovo;18;59;Tab M8
+Lenovo;18;60;Yoga Smart Tab 10.1
+Lenovo;18;61;S5 Pro
+Lenovo;18;62;K10 Plus
+Lenovo;18;63;Tab M10 FHD Plus
+Lenovo;18;64;Chromebook Duet
+Lenovo;18;65;Tab M10 FHD REL
+Lenovo;18;66;Tab M10 HD Gen 2
+Lenovo;18;67;Tab P11 Pro
+Lenovo;18;68;Tab P11
+Lenovo;18;69;Yoga 14c
+Lenovo;18;70;Yoga 14s
+Lenovo;18;71;Tab M8 (2nd Gen) FHD
+Lenovo;18;72;Pad Plus
+Lenovo;18;73;S2
+Lenovo;18;74;S2 Pro
+Dell;19;01;Venue 8
+Dell;19;02;Venue 11 Pro
+Dell;19;03;Venue 10 Pro
+ZTE;20;01;Blade III
+ZTE;20;02;Blade V8 Mini
+ZTE;20;03;Blade A310
+ZTE;20;04;Blade V7 Lite
+ZTE;20;05;Blade L110
+ZTE;20;06;Blade V8
+ZTE;20;07;Axon 7 Mini
+ZTE;20;08;Blade S7
+ZTE;20;09;Axon 7
+ZTE;20;10;Blade V9
+ZTE;20;11;Blade A520
+ZTE;20;12;Blade L130
+ZTE;20;13;Blade A7
+ZTE;20;14;Blade A5 2019
+ZTE;20;15;Blade A6 Lite
+ZTE;20;16;nubia Red Magic 3
+ZTE;20;17;Blade A3 (2019)
+ZTE;20;18;Blade V10 Vita
+ZTE;20;19;Axon 10 Pro
+ZTE;20;20;Blade V8 Lite
+ZTE;20;21;nubia Z11
+ZTE;20;22;Blade A4
+ZTE;20;23;Blade Max View
+ZTE;20;24;Blade Max 2s
+ZTE;20;25;Blade V10
+ZTE;20;26;nubia Z20
+ZTE;20;27;Blade A510
+ZTE;20;28;Blade A610
+ZTE;20;29;Blade L3
+ZTE;20;30;Blade S6
+ZTE;20;31;Blade A5 (2020)
+ZTE;20;32;Axon 10s Pro
+ZTE;20;33;Blade A3 (2020)
+ZTE;20;34;Axon 11
+ZTE;20;35;Blade A3 Lite
+ZTE;20;36;Axon Watch
+ZTE;20;37;Blade 20
+ZTE;20;38;Axon 11 SE 5G
+ZTE;20;39;Blade L210
+ZTE;20;40;Axon 20 4G
+ZTE;20;41;Axon 20 5G
+ZTE;20;42;nubia Red Magic 5G
+ZTE;20;43;nubia Red Magic 5S
+ZTE;20;44;Blade A7s 2020
+ZTE;20;45;nubia Red Magic 6 Pro
+ZTE;20;46;nubia Red Magic 6
+ZTE;20;47;Blade V2020 Smart
+ZTE;20;48;Axon 30 Pro 5G
+ZTE;20;49;Axon 30 Ultra 5G
+ZTE;20;50;Libero 5G
+Toshiba;21;01;Encore 8
+OnePlus;22;01;One
+OnePlus;22;02;2
+OnePlus;22;03;X
+OnePlus;22;04;3
+OnePlus;22;05;5
+OnePlus;22;06;5T
+OnePlus;22;07;6
+OnePlus;22;08;6T
+OnePlus;22;09;7
+OnePlus;22;10;7 Pro
+OnePlus;22;11;7T
+OnePlus;22;12;7T Pro
+OnePlus;22;13;8
+OnePlus;22;14;8 Pro
+OnePlus;22;15;Nord
+OnePlus;22;16;8T
+OnePlus;22;17;Buds
+OnePlus;22;18;Nord N100
+OnePlus;22;19;Nord N10 5G
+OnePlus;22;20;9
+OnePlus;22;21;9 Pro
+OnePlus;22;22;9R
+OnePlus;22;23;Watch
+OnePlus;22;24;Nord CE 5G
+OnePlus;22;25;Nord N200 5G
+Alcatel;23;01;OneTouch Idol Alpha
+Alcatel;23;02;OneTouch Idol 3 (5.5)
+Alcatel;23;03;OneTouch Idol 3 (4.7)
+Alcatel;23;04;One Touch Pixi 3
+Alcatel;23;05;Pixi 4 (5) 3G
+Alcatel;23;06;Pixi 3 (3.5)
+Alcatel;23;07;Pixi 3 (4.5)
+Alcatel;23;08;Pixi 3 (5)
+Alcatel;23;09;Pixi 4 (3.5)
+Alcatel;23;10;Pixi 4 (4)
+Alcatel;23;11;Pixi 4 (6)
+Alcatel;23;12;Idol 4
+Alcatel;23;13;Idol 4S
+Alcatel;23;14;Pop 4
+Alcatel;23;15;Pop 4PLUS
+Alcatel;23;16;X1
+Alcatel;23;17;Pixi 3 (4)
+Alcatel;23;18;Shine Lite
+Alcatel;23;19;Go Play
+Alcatel;23;20;U5
+Alcatel;23;21;A3
+Alcatel;23;22;A5
+Alcatel;23;23;Idol 5
+Alcatel;23;24;5T
+Alcatel;23;25;PIXI 4 (5) 4G
+Alcatel;23;26;3
+Alcatel;23;27;3T
+Alcatel;23;28;3X (2019)
+Alcatel;23;29;3v (2019)
+Alcatel;23;30;1v (2019)
+Alcatel;23;31;3 (2019)
+Alcatel;23;32;1B (2020)
+Alcatel;23;33;1S (2020)
+Alcatel;23;34;3L (2020)
+Alcatel;23;35;1V (2020)
+Alcatel;23;36;1SE (2020)
+Alcatel;23;37;3X (2020)
+Alcatel;23;38;1L (2021)
+Alcatel;23;39;3L (2021)
+Alcatel;23;40;A50
+Alcatel;23;41;5X (5061)
+Alcatel;23;42;3L (2019)
+Xiaomi;24;01;Mi 4
+Xiaomi;24;02;Redmi 3S
+Xiaomi;24;03;Mi Max
+Xiaomi;24;04;Redmi Pro
+Xiaomi;24;05;Redmi Note 4
+Xiaomi;24;06;Mi 5S
+Xiaomi;24;07;Mi 5S Plus
+Xiaomi;24;08;Mi 6
+Xiaomi;24;09;Mi Mix
+Xiaomi;24;10;Mi Max 2
+Xiaomi;24;11;Redmi 4X
+Xiaomi;24;12;Mi Note 2
+Xiaomi;24;13;Mi A1
+Xiaomi;24;14;Mi Mix 2
+Xiaomi;24;15;Mi Band 2
+Xiaomi;24;16;Redmi 5A
+Xiaomi;24;17;Redmi Note 5A Prime
+Xiaomi;24;18;Mi 8
+Xiaomi;24;19;Mi Band 3
+Xiaomi;24;20;Redmi S2
+Xiaomi;24;21;Mi Note 4
+Xiaomi;24;22;Mi MIX 2S
+Xiaomi;24;23;Redmi 6
+Xiaomi;24;24;Redmi Note 5
+Xiaomi;24;25;Mi A2
+Xiaomi;24;26;Redmi 6A
+Xiaomi;24;27;Pocophone F1
+Xiaomi;24;28;Redmi Note 6 Pro
+Xiaomi;24;29;Mi 8 Lite
+Xiaomi;24;30;Mi Mix 3
+Xiaomi;24;31;Redmi Note 7
+Xiaomi;24;32;Mi 9
+Xiaomi;24;33;Mi Smart Band 4
+Xiaomi;24;34;Redmi K20 Pro
+Xiaomi;24;35;Redmi 7
+Xiaomi;24;36;Mi A2 Lite
+Xiaomi;24;37;Redmi Note 8
+Xiaomi;24;38;Redmi Note 8 Pro
+Xiaomi;24;39;Redmi 7A
+Xiaomi;24;40;Mi 9 Lite
+Xiaomi;24;41;Mi 9 Pro
+Xiaomi;24;42;Mi A3
+Xiaomi;24;43;Redmi 8A
+Xiaomi;24;44;Redmi 8
+Xiaomi;24;45;Mi Watch
+Xiaomi;24;46;Redmi Note 7S
+Xiaomi;24;47;Redmi Note 7 Pro
+Xiaomi;24;48;Redmi Note 8T
+Xiaomi;24;49;Mi CC9 Pro
+Xiaomi;24;50;Mi Note 10
+Xiaomi;24;51;Mi Note 10 Pro
+Xiaomi;24;52;Redmi K30
+Xiaomi;24;53;Redmi K30 5G
+Xiaomi;24;54;Mi CC9e
+Xiaomi;24;55;Redmi Y3
+Xiaomi;24;56;Mi 8 SE
+Xiaomi;24;57;Mi 8 Pro
+Xiaomi;24;58;Mi 9 SE
+Xiaomi;24;59;Black Shark 2
+Xiaomi;24;60;Black Shark 2 Pro
+Xiaomi;24;61;Air 2
+Xiaomi;24;62;Mi Watch Premium Edition
+Xiaomi;24;63;Mi 10
+Xiaomi;24;64;Mi 10 Pro
+Xiaomi;24;65;Poco X2
+Xiaomi;24;66;Black Shark 3 Pro
+Xiaomi;24;67;Redmi Note 9 Pro
+Xiaomi;24;68;Redmi Note 9 Pro Max
+Xiaomi;24;69;Watch Color
+Xiaomi;24;70;Redmi K30 Pro
+Xiaomi;24;71;Redmi K30 Pro Zoom
+Xiaomi;24;72;Redmi Note 9S
+Xiaomi;24;73;Redmi Note 9
+Xiaomi;24;74;Mi 10 Lite 5G
+Xiaomi;24;75;Poco F2 Pro
+Xiaomi;24;76;Mi 10 Youth 5G
+Xiaomi;24;77;Black Shark 3
+Xiaomi;24;78;Mi Note 10 Lite
+Xiaomi;24;79;Redmi Watch
+Xiaomi;24;80;Redmi 9
+Xiaomi;24;81;Mi Band 5
+Xiaomi;24;82;Redmi 9A
+Xiaomi;24;83;Redmi 9C
+Xiaomi;24;84;Mi 10 Ultra
+Xiaomi;24;85;Redmi K30 Ultra
+Xiaomi;24;86;Poco X3 NFC
+Xiaomi;24;87;Poco X3
+Xiaomi;24;88;Poco M2 Pro
+Xiaomi;24;89;Mi 10T 5G
+Xiaomi;24;90;Mi 10T Pro 5G
+Xiaomi;24;91;Mi Watch Revolve
+Xiaomi;24;92;Mi Air 2 Pro
+Xiaomi;24;93;Redmi K30S
+Xiaomi;24;94;Mi 10T Lite 5G
+Xiaomi;24;95;Poco M3
+Xiaomi;24;96;Mi Watch Color Sports
+Xiaomi;24;97;Mibro Air
+Xiaomi;24;98;Mi 11
+Xiaomi;24;99;Redmi 9 Power
+Xiaomi;24;100;Redmi Note 9 5G
+Xiaomi;24;101;Redmi 9T
+Xiaomi;24;102;Redmi Note 10 Pro
+Xiaomi;24;103;Redmi Note 10S
+Xiaomi;24;104;Redmi Note 10 5G
+Xiaomi;24;105;Redmi Note 10 
+Xiaomi;24;106;Redmi Note 10 Pro Max
+Xiaomi;24;107;Redmi K40
+Xiaomi;24;108;Redmi K40 Pro
+Xiaomi;24;109;Redmi K40 Pro Plus
+Xiaomi;24;110;Mi Watch Lite
+Xiaomi;24;111;Redmi AirDots 3
+Xiaomi;24;112;Mi 10S
+Xiaomi;24;113;Poco F3
+Xiaomi;24;114;Mi 11 Lite
+Xiaomi;24;115;Black Shark 4
+Xiaomi;24;116;Poco X3 Pro
+Xiaomi;24;117;Mi 11 Lite 5G
+Xiaomi;24;118;Mi 11 Ultra
+Xiaomi;24;119;Mi 11 Pro
+Xiaomi;24;120;Mi 11i
+Xiaomi;24;121;Mi Smart Band 6
+Xiaomi;24;122;Black Shark 4 Pro
+Xiaomi;24;123;Redmi Note 9T
+Xiaomi;24;124;Imilab KW66
+Xiaomi;24;125;Mi Band 4C
+Xiaomi;24;126;Redmi Band
+Xiaomi;24;127;Mi Mix Fold
+Xiaomi;24;128;Redmi K40 Gaming
+Xiaomi;24;129;Poco M3 Pro 5G
+Xiaomi;24;130;Poco M3 Pro
+Xiaomi;24;131;Redmi Note 8 2021
+Xiaomi;24;132;Mi Watch Color
+Fitbit;26;01;Surge
+Fitbit;26;02;Flex
+Fitbit;26;03;Blaze
+Fitbit;26;04;Alta
+Fitbit;26;05;Charge 2
+Fitbit;26;06;Flex 2
+Fitbit;26;07;Ionic
+Fitbit;26;08;Charge HR
+Fitbit;26;10;Versa
+Fitbit;26;11;Ace
+Fitbit;26;12;Charge
+Fitbit;26;13;Charge 3
+Fitbit;26;14;Inspire / Inspire HR
+Fitbit;26;15;Versa Lite
+Fitbit;26;16;One
+Fitbit;26;17;Versa 2
+Fitbit;26;18;Charge 4
+Fitbit;26;19;Ace 2
+Fitbit;26;20;Versa 3
+Fitbit;26;21;Sense
+Fitbit;26;22;Inspire 2
+Fitbit;26;23;Ace 3
+Fitbit;26;24;Luxe
+Garmin;27;01;Forerunner (gps watches)
+Garmin;27;02;Vivoactive HR
+Garmin;27;03;Fenix 3
+Garmin;27;04;Vivosmart HR
+Garmin;27;05;Fenix 5
+Garmin;27;06;Fenix 5X
+Garmin;27;07;Fenix 5S
+Garmin;27;08;Forerunner 35
+Garmin;27;09;Forerunner 935
+Garmin;27;10;Vivosmart HR+
+Garmin;27;11;Vivosmart 3
+Garmin;27;12;Forerunner 630
+Garmin;27;13;Forerunner 235
+Garmin;27;14;Approach S2
+Garmin;27;15;Approach S4
+Garmin;27;16;Forerunner 225
+Garmin;27;17;Forerunner 10
+Garmin;27;18;Vivoactive 3
+Garmin;27;19;Vivofit 3
+Garmin;27;20;Forerunner 910XT
+Garmin;27;21;Approach S60
+Garmin;27;22;Vivomove HR
+Garmin;27;23;Edge 1030
+Garmin;27;24;Vivofit 4
+Garmin;27;25;Vivofit JR
+Garmin;27;26;Approach S3
+Garmin;27;27;Approach S6
+Garmin;27;28;Forerunner 735
+Garmin;27;29;Forerunner 620
+Garmin;27;30;Edge 800/810
+Garmin;27;31;Edge 820
+Garmin;27;32;Edge 1000
+Garmin;27;33;Forerunner 220
+Garmin;27;34;Forerunner 230
+Garmin;27;35;Forerunner 920XT
+Garmin;27;36;Forerunner 645
+Garmin;27;37;Approach G30 Golf
+Garmin;27;38;Forerunner 25
+Garmin;27;39;Descent MK1
+Garmin;27;40;Forerunner 735XT
+Garmin;27;41;Vivomove
+Garmin;27;42;Vivofit 1
+Garmin;27;43;Vivofit 2
+Garmin;27;44;Vivosmart 4
+Garmin;27;45;Instinct
+Garmin;27;46;Fenix 5X Plus
+Garmin;27;47;Fenix 5 Plus
+Garmin;27;48;Forerunner 245
+Garmin;27;49;Forerunner 245 Music
+Garmin;27;50;Forerunner 945
+Garmin;27;51;Forerunner 610
+Garmin;27;52;Approach G10
+Garmin;27;53;Vivoactive
+Garmin;27;54;Vivoactive 3 Music
+Garmin;27;55;Fenix 5S Plus
+Garmin;27;56;Forerunner 45S
+Garmin;27;57;Forerunner 45
+Garmin;27;58;Edge 200
+Garmin;27;59;Edge 500
+Garmin;27;60;Edge 520
+Garmin;27;61;Vivoactive 4
+Garmin;27;62;Fenix 6X
+Garmin;27;63;Fenix 6S
+Garmin;27;64;Fenix 6
+Garmin;27;65;Venu
+Garmin;27;66;Vivoactive Acetate
+Garmin;27;67;Swim
+Garmin;27;68;Edge 25
+Garmin;27;69;Edge 200
+Garmin;27;70;Edge 500
+Garmin;27;71;Edge 510
+Garmin;27;72;Edge 520
+Garmin;27;73;Vivomove 3
+Garmin;27;74;Vivomove Style
+Garmin;27;75;Vivomove Luxe
+Garmin;27;76;Vivomove 3S
+Garmin;27;77;Vivoactive 4S
+Garmin;27;78;Quatix 3
+Garmin;27;79;Quatix 5
+Garmin;27;80;Fenix 6X Pro
+Garmin;27;81;Quatix 5 Sapphire
+Garmin;27;82;Fenix 6S Pro
+Garmin;27;83;Swim 2
+Garmin;27;84;Forerunner 645 Music
+Garmin;27;85;Forerunner 410
+Garmin;27;86;Edge 830
+Garmin;27;87;Edge 130
+Garmin;27;88;Breton
+Garmin;27;89;Approach S1
+Garmin;27;90;Instinct Tactical
+Garmin;27;91;Instinct Tide
+Garmin;27;92;Approach S62
+Garmin;27;93;MARQ Driver
+Garmin;27;94;MARQ Aviator
+Garmin;27;95;MARQ Captain
+Garmin;27;96;MARQ Adventurer
+Garmin;27;97;Edge 530
+Garmin;27;98;Fenix 6 Pro
+Garmin;27;99;Approach S20
+Garmin;27;100;Approach S50
+Garmin;27;101;Tactix Delta
+Garmin;27;102;Legacy Hero
+Garmin;27;103;Legacy Saga
+Garmin;27;104;Forerunner 210
+Garmin;27;105;Approach S1
+Garmin;27;106;D2 Charlie
+Garmin;27;107;D2 Delta
+Garmin;27;108;Vivosport
+Garmin;27;109;Fenix Chronos
+Garmin;27;110;Fenix 6X Pro Solar
+Garmin;27;111;Fenix 6 Pro Solar
+Garmin;27;112;Approach S40
+Garmin;27;113;Vivoactive 3 Trainer
+Garmin;27;114;Edge G80
+Garmin;27;115;Forerunner 745
+Garmin;27;116;Instinct Solar
+Garmin;27;117;Venu Sq
+Garmin;27;118;Vivofit Jr 2
+Garmin;27;119;Vivofit Jr 3
+Garmin;27;120;Lily
+Garmin;27;121;Enduro
+Garmin;27;122;Descent Mk2
+Garmin;27;123;Descent Mk2i
+Garmin;27;124;Fenix 6S Solar Pro
+Garmin;27;125;Instinct Esports
+Garmin;27;126;Forerunner 310XT
+Garmin;27;127;Venu 2S
+Garmin;27;128;Venu 2
+Garmin;27;129;eTrex 201x
+Garmin;27;130;eTrex 309x
+Garmin;27;131;eTrex 32x
+Oppo;28;01;R7
+Oppo;28;02;R9
+Oppo;28;03;R7s
+Oppo;28;04;R7 Plus
+Oppo;28;05;R17 Pro
+Oppo;28;06;A7
+Oppo;28;07;F11 Pro
+Oppo;28;08;F11
+Oppo;28;09;Reno
+Oppo;28;10;Reno 10x Zoom
+Oppo;28;11;Reno Z
+Oppo;28;12;A9 (2020)
+Oppo;28;13;A5 (2020)
+Oppo;28;14;A1k
+Oppo;28;15;K1
+Oppo;28;16;RX17 Neo
+Oppo;28;17;Reno Ace
+Oppo;28;18;Reno2
+Oppo;28;19;Reno2 F
+Oppo;28;20;Reno2 Z
+Oppo;28;21;A3s
+Oppo;28;22;Reno3 Pro
+Oppo;28;23;Reno3
+Oppo;28;24;A8
+Oppo;28;25;A91
+Oppo;28;26;F15
+Oppo;28;27;A31
+Oppo;28;28;Find X2
+Oppo;28;29;Find X2 Pro
+Oppo;28;30;A72
+Oppo;28;31;A52
+Oppo;28;32;A92
+Oppo;28;33;Ace2
+Oppo;28;34;A92s
+Oppo;28;35;A12
+Oppo;28;36;A12e
+Oppo;28;37;Find X2 Lite
+Oppo;28;38;Find X2 Neo
+Oppo;28;39;Watch (46mm)
+Oppo;28;40;Watch (41mm)
+Oppo;28;41;Reno4 5G
+Oppo;28;42;Reno4 Pro 5G
+Oppo;28;43;A53
+Oppo;28;44;K7 5G
+Oppo;28;45;A72 5G
+Oppo;28;46;A73
+Oppo;28;47;Reno4 Lite
+Oppo;28;48;Reno4 SE
+Oppo;28;49;A93
+Oppo;28;50;F17
+Oppo;28;51;F17 Pro
+Oppo;28;52;A73 5G
+Oppo;28;53;A15
+Oppo;28;54;A53s
+Oppo;28;55;Reno4 F
+Oppo;28;56;Reno5 Pro 5G
+Oppo;28;57;Reno5 5G
+Oppo;28;58;A15s
+Oppo;28;59;Reno5 4G
+Oppo;28;60;A55
+Oppo;28;61;A93 5G
+Oppo;28;62;F19 Pro
+Oppo;28;63;F19 Pro Plus 5G
+Oppo;28;64;A94 
+Oppo;28;65;Reno5 F
+Oppo;28;66;Reno5 Pro Plus 5G
+Oppo;28;67;Find X3 Neo
+Oppo;28;68;Reno5 Z
+Oppo;28;69;Find X3
+Oppo;28;70;Find X3 Pro
+Oppo;28;71;A74 5G
+Oppo;28;72;A95 5G
+Oppo;28;73;Reno5 Lite
+Oppo;28;74;A54
+Oppo;28;75;Band Style
+Oppo;28;76;Band EVA Edition
+Oppo;28;77;Band
+Oppo;28;78;A53s 5G
+Oppo;28;79;F19
+Oppo;28;80;A94 5G
+Oppo;28;81;K9
+Oppo;28;82;A74
+Oppo;28;83;A54 5G
+Oppo;28;84;Reno6 5G
+Oppo;28;85;Reno6 Pro 5G
+Oppo;28;86;Reno6 Pro Plus 5G
+Nvidia;29;01;Shield K1
+JBL;30;01;Charge 2
+JBL;30;02;Pulse
+JBL;30;03;Pulse 3 / Charge 3
+JBL;30;04;Xtreme Sports
+JBL;30;05;Clip 2 / Clip 3
+JBL;30;06;Soundgear
+JBL;30;07;Flip 4
+JBL;30;08;Go 2
+JBL;30;09;Charge 4
+JBL;30;10;Flip 5
+JBL;30;11;Boombox
+JBL;30;12;Xtreme 2
+JBL;30;13;Clip 4
+JBL;30;14;Go 4
+JBL;30;15;Go 3
+JBL;30;16;Pulse 4
+JBL;30;17;Charge 5
+JBL;30;18;Tune 500BT
+JBL;30;19;Tune 600BT
+JBL;30;20;T450BT
+GoPro;31;01;HERO
+GoPro;31;02;HERO Session
+GoPro;31;03;Hero5
+GoPro;31;04;Fusion
+GoPro;31;05;HERO7 Black
+GoPro;31;06;HERO7 White/Silver
+GoPro;31;07;Hero 5 Session
+GoPro;31;08;Hero 8 Black
+GoPro;31;09;MAX
+GoPro;31;10;Hero 9
+GoPro;31;11;ARLO
+Fidget;32;01;Hand Spinner
+Fidget;32;02;Cube
+Polar;33;01;A360
+Polar;33;02;A300
+Polar;33;03;M200
+Polar;33;04;M400
+Polar;33;05;FT4
+Polar;33;06;FT7
+Polar;33;07;V800
+Polar;33;08;M430
+Polar;33;09;FT60
+Polar;33;10;Vantage V
+Polar;33;11;M600
+Polar;33;12;M450
+Polar;33;13;V650
+Polar;33;14;Vantage M
+Polar;33;15;M46
+Polar;33;16;Ignite
+Polar;33;17;Grit X
+Polar;33;18;A370
+Polar;33;19;Unite
+Polar;33;20;Vantage V2
+Suunto;34;01;Core Alu Black
+Suunto;34;02;Ambit
+Suunto;34;03;Ambit2
+Suunto;34;04;Ambit3
+Suunto;34;05;Essential
+Suunto;34;06;Spartan Sport
+Suunto;34;07;Traverse
+Suunto;34;08;Spartan Ultra
+Suunto;34;09;Kailash
+Suunto;34;10;D4i Novo
+Suunto;34;11;Quest M1 M2 M4 M5 
+Suunto;34;12;M1 M2 M4 M5 Male version
+Suunto;34;13;Core All Black
+Suunto;34;14;3 Fitness
+Suunto;34;15;Spartan Sport Wrist HR Baro
+Suunto;34;16;9
+Suunto;34;17;5
+Suunto;34;18;D6 Dive
+Suunto;34;19;D6i Novo
+Suunto;34;20;D6i Zulu
+Suunto;34;21;D5
+Suunto;34;22;Core
+Suunto;34;23;Spartan Trainer Wrist HR
+Suunto;34;24;Ambit3 Vertical
+Suunto;34;25;9 Baro
+Suunto;34;26;X-Lander
+Suunto;34;27;7
+Suunto;34;28;3
+Nikon;35;01;D7100 / D7200
+Nikon;35;02;1 J5
+Nikon;35;03;Coolpix P900S
+Nikon;35;04;D5600/D5300
+Nikon;35;05;D750
+Nikon;35;06;D7500
+Nikon;35;07;D850
+Nikon;35;08;D3400 DSLR
+Nikon;35;09;Z7
+Nikon;35;10;D3200 / D3300
+Nikon;35;11;D5300 / D5500
+Nikon;35;12;P1000
+Nikon;35;13;Z50
+Nikon;35;14;Z5
+Nikon;35;15;Z6
+Nikon;35;16;Z 6II
+Nikon;35;17;Z 7II
+Meizu;36;01;Pro 7
+Meizu;36;02;Pro 7 Plus
+Meizu;36;03;M5
+Meizu;36;04;M5c
+Meizu;36;05;M5 Note
+Meizu;36;06;M5s
+Meizu;36;07;MX6
+TomTom;37;01;Runner
+TomTom;37;02;Multi-Sport
+TomTom;37;03;Touch
+TomTom;37;04;Runner 2
+TomTom;37;05;Runner 3
+TomTom;37;06;Spark
+TomTom;37;07;Spark 3
+TomTom;37;08;Adventurer
+TomTom;37;09;Golfer 2
+TomTom;37;10;Runner 2 Cardio
+TomTom;37;11;Runner 2 Cardio + Music
+TomTom;37;12;Runner 2 Music
+TomTom;37;13;Runner 3 Cardio
+TomTom;37;14;Runner 3 Cardio + Music
+TomTom;37;15;Spark Cardio + Music
+TomTom;37;16;Spark Music
+TomTom;37;17;Spark 3 Cardio
+TomTom;37;18;Spark 3 Cardio + Music
+TomTom;37;19;Spark 3 Music
+TomTom;37;20;Golfer 2 SE
+TomTom;37;21;Runner 3 Music
+TomTom;37;22;Spark Cardio
+Tolino;37;01;Vision 4/3/2/1
+Tolino;37;02;Shine 2/1
+Canon;38;01;EOS 6D
+Canon;38;02;EOS 600D/650D/700D
+Canon;38;03;EOS M3
+Canon;38;04;PowerShot G9 X / S110 / S120
+Canon;38;05;EOS 5D Mark IV
+Canon;38;06;SX720 HS/SX700 HS
+Canon;38;07;PowerShot G15/G16
+Canon;38;08;EOSM/EOSM2/EOSM10
+Canon;38;09;EOS 7D
+Canon;38;10;EOS 5D Mark III
+Canon;38;11;EOS 6D/5DS/5DRS
+Canon;38;12;PowerShot G7X MarkII
+Canon;38;13;EOS 77D
+Canon;38;14;EOS M3
+Canon;38;15;EOS 800D
+Canon;38;16;EOS 80D
+Canon;38;17;EOS M6
+Canon;38;18;Powershot G1 X Mark III
+Canon;38;19;EOS M100
+Canon;38;20;EOS M50
+Canon;38;21;EOS 200D
+Canon;38;22;EOS 1300D
+Canon;38;23;EOS 1500D
+Canon;38;24;PowerShot G5 X
+Canon;38;25;EOS R
+Canon;38;26;7D Mark II
+Canon;38;27;100D
+Canon;38;28;EOS 200D II
+Canon;38;29;PowerShot G5 X Mark II
+Canon;38;30;PowerShot G7 X Mark II
+Canon;38;31;PowerShot G7 X Mark III
+Canon;38;32;EOS R6
+Canon;38;33;EOS 850D
+Canon;38;34;EOS R5
+BOSE;39;01;Soundlink Mini
+BOSE;39;02;Soundlink Mini II
+BOSE;39;03;Soundlink Revolve
+BOSE;39;04;Soundlink Revolve Plus
+BOSE;39;05;SoundSport Free
+BOSE;39;06;QC15 / QC25 / QC35
+BOSE;39;07;SoundWear
+BOSE;39;08;SoundLink Micro
+BOSE;39;09;SoundLink Color
+BOSE;39;10;SoundLink III
+BOSE;39;11;QuietComfort
+BOSE;39;12;AE1
+BOSE;39;13;OE1
+BOSE;39;14;OE2
+BOSE;39;15;Aviation X
+BOSE;39;16;Noise Cancelling Headphones 700
+BOSE;39;17;Portable Smart Speaker
+Fujifilm;40;01;X100 / X100F / X100S
+Fujifilm;40;02;X-T20
+Fujifilm;40;03;XQ1/XQ2
+Fujifilm;40;04;X-E1/X-E2
+Fujifilm;40;05;XM1/XA2/XA1
+Fujifilm;40;06;X10/X20
+Fujifilm;40;07;X30
+Fujifilm;40;08;XT-10
+Fujifilm;40;09;XF1/XQ2/XQ1
+Fujifilm;40;10;XA5
+Fujifilm;40;11;X-T2
+Fujifilm;40;12;X-E3
+Fujifilm;40;13;Instax Mini 8
+Fujifilm;40;14;X-H1
+Fujifilm;40;15;X-T100
+Fujifilm;40;16;XF10
+Fujifilm;40;17;X-T3
+Fujifilm;40;18;instax SQUARE SQ6
+Fujifilm;40;19;instax SQUARE SQ20
+Fujifilm;40;20;Instax Mini 9
+Fujifilm;40;21;Instax Mini 11
+Fujifilm;40;22;X-T200
+Fujifilm;40;23;X100V
+Fujifilm;40;24;X-T4
+Fujifilm;40;25;Instax mini LiPlay
+Fujifilm;40;26;X-S10
+Fujifilm;40;27;Instax Square SQ1
+Fujifilm;40;28;X-E4
+Olympus;41;01;OM-D E-M10 Mark II / E-M10
+Olympus;41;02;SH-2/SH-1
+Olympus;41;03;EM10/EM10II
+Olympus;41;04;E-PL6/E-PL5/E-PM2
+Olympus;41;05;PEN E-PL9
+Olympus;41;06;EM5II / E-M5 Mark II
+Olympus;41;07;O-MD E-M5 Mark III
+Panasonic;42;01;LX100
+Panasonic;42;02;DMC-GF8/GF7
+Panasonic;42;03;Lumix DMC-GM1/GM2
+Panasonic;42;04;Lumix LX7/LX5/LX3
+Panasonic;42;05;Lumix DMC-GF6
+Panasonic;42;06;Lumix DC-GH5
+Panasonic;42;07;Lumix DC-GF9
+Panasonic;42;08;Lumix DC-GF10
+Panasonic;42;09;Lumix DMC LX10
+Panasonic;42;10;Lumix S5
+Leica;43;01;D-LUX (Typ 109)
+Casio;44;01;ZR1000/1200/1100/1500
+Huami;45;01;Amazfit
+Huami;45;02;Amazfit Stratos 2 / 2s
+Huami;45;03;Amazfit 3
+Huami;45;04;Amazfit Bip
+Huami;45;05;Amazfit Verge 3
+Huami;45;06;Amazfit Youth
+Huami;45;07;Amazfit Cor 2
+Huami;45;08;Amazfit Verge
+Huami;45;09;Amazfit GTR 42mm
+Huami;45;10;Amazfit GTR 47mm
+Huami;45;11;Amazfit GTS
+Huami;45;12;Amazfit Bip Lite
+Huami;45;13;Amazfit Smartwatch 2
+Huami;45;14;Amazfit Stratos 3
+Huami;45;15;Pace
+Huami;45;16;Amazfit T-Rex
+Huami;45;17;Amazfit Cor
+Huami;45;18;Amazfit Neo
+Huami;45;19;Amazfit 1S
+Huami;45;20;Amazfit Ares
+Huami;45;21;Amazfit GTS 2
+Huami;45;22;Amazfit GTR 2
+Huami;45;23;Pop
+Huami;45;24;Bip U
+Huami;45;25;Amazfit GTR 2e
+Huami;45;26;Amazfit GTS 2e
+Huami;45;27;Amazfit GTS 2 Mini
+Huami;45;28;Amazfit Pop Pro
+Huami;45;29;Amazfit X
+Huami;45;30;Amazfit T-Rex Pro
+Huami;45;31;Amazfit Bip S
+Huami;45;32;Amazfit GTR 2 eSIM
+Huami;45;33;Amazfit Watch 3
+iRoar;46;01;iRoar Go
+Fossil;47;01;Q Marshal Gen 2
+Fossil;47;02;Gen 4 (40mm)
+Fossil;47;03;Scarlette
+Fossil;47;04;Sport Women's (41mm)
+Fossil;47;05;Tailor Hybrid
+Fossil;47;06;Venture
+Fossil;47;07;Commuter Hybrid
+Fossil;47;08;Crewmaster Hybrid
+Fossil;47;09;Explorist
+Fossil;47;10;Founder 2.0
+Fossil;47;11;Goodwin Hybrid
+Fossil;47;12;Grant Hybrid
+Fossil;47;13;Marshal Touch
+Fossil;47;14;Neutra Hybrid
+Fossil;47;15;Wander
+Fossil;47;16;Venture (Gen 3)
+Fossil;47;17;Explorist (Gen 3)
+Fossil;47;18;Venture HR (Gen 4)
+Fossil;47;19;Explorist HR (Gen 4)
+Fossil;47;20;Men's Sports 43mm
+Fossil;47;21;Gen 5
+Fossil;47;22;Gen 5 Carlyle HR
+Fossil;47;23;Gen 5 Julianna HR
+Fossil;47;24;Hybrid Smartwatch HR
+Fossil;47;25;Gen 4 Sloan HR
+Fossil;47;26;Gen 3 Control
+Fossil;47;27;Gen 5 Garrett HR
+Fossil;47;28;Founder
+Doro;48;01;8020X
+Doro;48;02;Liberto 825
+Doro;48;03;8030
+Doro;48;04;8035
+Doro;48;05;8040
+Ticwatch;49;01;S
+Ticwatch;49;02;Pro
+Ticwatch;49;03;TicBand
+Ticwatch;49;04;C2 Rose Gold
+Ticwatch;49;05;2
+Ticwatch;49;06;C2 Onyx
+Ticwatch;49;07;C2 Platinum
+Ticwatch;49;08;E
+Ticwatch;49;09;C2
+Ticwatch;49;10;E2
+Ticwatch;49;11;S2
+Ticwatch;49;12;GTX
+Ticwatch;49;13;1
+Ticwatch;49;14;Pro 3
+Kobo;50;01;Aura One 7.8
+Kobo;50;02;Clara HD
+Kobo;50;03;Forma
+Razer;51;01;Phone 2
+Razer;51;02;Kraken
+Razer;51;03;Kraken 7.1 V2
+Razer;51;04;Kraken Pro V2
+Razer;51;05;Electra V2
+B&O;52;01;Beoplay P2
+B&O;52;02;Beoplay P6
+B&O;52;03;Beoplay A2
+B&O;52;04;Beoplay H9i
+B&O;52;05;Beoplay M3
+B&O;52;06;Beoplay E8
+B&O;52;07;Beoplay A1
+B&O;52;08;BeoPlay H4
+B&O;52;09;BeoPlay H7
+B&O;52;10;BeoPlay H8
+B&O;52;11;BeoPlay H9
+Logitech;53;01;MX Master
+Logitech;53;02;MX Anywhere
+Logitech;53;03;MX Ergo
+Logitech;53;04;MX Vertical
+Logitech;53;05;M720/M705
+Logitech;53;06;MX Keys
+Logitech;53;07;M275
+Logitech;53;08;M330
+Logitech;53;09;MX Anywhere 3
+Logitech;53;10;M570
+DJI;54;01;Osmo Pocket
+DJI;54;02;Osmo Mobile 3
+DJI;54;03;Osmo Action
+DJI;54;04;Mavic 2
+DJI;54;05;Mavic Mini
+DJI;54;06;Mavic Air 2
+DJI;54;07;Mavic 2 Pro
+DJI;54;08;OM 4
+DJI;54;09;Osmo Pocket 2
+DJI;54;10;Mini 2
+DJI;54;11;FPV
+DJI;54;12;Mavic Pro
+Withings;55;01;Steel
+Withings;55;02;Steel HR (36mm)
+Withings;55;03;Activité Pop
+Withings;55;04;Activité Sapphire
+Withings;55;05;Steel HR (40mm)
+Withings;55;06;Steel HR Sport (40mm)
+Withings;55;07;Pulse HR
+Kronaby;56;01;Nord 38mm
+Kronaby;56;02;Carat 38mm
+Kronaby;56;03;Apex 41mm
+Kronaby;56;04;Sekel 41mm
+Kronaby;56;05;Nord 41mm
+Kronaby;56;06;Apex 43mm
+Kronaby;56;07;Sekel 43mm
+Michael Kors;57;01;Sofie
+Michael Kors;57;02;Bradshaw
+Skagen;58;01;Falster 2
+Skagen;58;02;Holst
+Skagen;58;03;Hagen
+Misfit;59;01;Command
+Misfit;59;02;Vapor
+Misfit;59;03;Vapor 2
+Pebble;60;01;Classic
+Pebble;60;02;Time
+Pebble;60;03;Time Steel
+Pebble;60;04;Time Round Large
+Vector;61;01;Luna
+Vector;61;02;Meridian
+Vivo;62;01;NEX S
+Vivo;62;02;V11
+Vivo;62;03;V15 Pro
+Vivo;62;04;Y85
+Vivo;62;05;V15
+Vivo;62;06;Y17
+Vivo;62;07;V17 Pro
+Vivo;62;08;Y19
+Vivo;62;09;S5
+Vivo;62;10;Y15
+Vivo;62;11;V17
+Vivo;62;12;Y9s
+Vivo;62;13;S1 Pro
+Vivo;62;14;NEX 3
+Vivo;62;15;U3
+Vivo;62;16;Y5s
+Vivo;62;17;X30
+Vivo;62;18;X30 Pro
+Vivo;62;19;iQOO 3 5G
+Vivo;62;20;Z6 5G
+Vivo;62;21;S6 5G
+Vivo;62;22;Y50
+Vivo;62;23;Y30
+Vivo;62;24;V19
+Vivo;62;25;Y20
+Vivo;62;26;Y20i
+Vivo;62;27;Watch 42mm
+Vivo;62;28;Watch 46mm
+Vivo;62;29;V20 Pro
+Vivo;62;30;S7 5G
+Vivo;62;31;V20
+Vivo;62;32;X50e 5G
+Vivo;62;33;S7e 5G
+Vivo;62;34;Y73s
+Vivo;62;35;Y52s
+Vivo;62;36;X60 5G
+Vivo;62;37;iQOO 7
+Vivo;62;38;S7t 
+Vivo;62;39;Y20G
+Vivo;62;40;Y31
+Vivo;62;41;Y20A
+Vivo;62;42;Y31s
+Vivo;62;43;V20 2021
+Vivo;62;44;Y20s
+Vivo;62;45;Y20 2021
+Vivo;62;46;Y72 5G
+Vivo;62;47;iQOO Z3
+Vivo;62;48;iQOO Neo5 5G
+Vivo;62;49;V21
+Vivo;62;50;V21 5G
+Vivo;62;51;X60 Pro
+Honor;63;01;8X
+Honor;63;02;View 20
+Honor;63;03;20
+Honor;63;04;20 Lite
+Honor;63;05;8A
+Honor;63;06;7S
+Honor;63;07;9X
+Honor;63;08;Play 3
+Honor;63;09;20 Pro
+Honor;63;10;Band 5
+Honor;63;11;V30
+Honor;63;12;V30 Pro
+Honor;63;13;20S
+Honor;63;14;10 Lite
+Honor;63;15;Play 4T Pro
+Honor;63;16;30
+Honor;63;17;30S
+Honor;63;18;MagicWatch 2 42mm
+Honor;63;19;30 Pro
+Honor;63;20;Play 9A
+Honor;63;21;8A 2020
+Honor;63;22;9A
+Honor;63;23;9X Pro
+Honor;63;24;Play 4T
+Honor;63;25;20e
+Honor;63;26;X10 5G
+Honor;63;27;9X Lite
+Honor;63;28;Play 4
+Honor;63;29;Play 4 Pro
+Honor;63;30;8S
+Honor;63;31;30 Youth
+Honor;63;32;X10 Max 5G
+Honor;63;33;MagicWatch 2 46mm
+Honor;63;34;S1
+Honor;63;35;Zero
+Honor;63;36;30i
+Honor;63;37;Watch GS Pro
+Honor;63;38;Watch ES
+Honor;63;39;10X Lite
+Honor;63;40;Watch Dream
+Honor;63;41;Band 5i
+Honor;63;42;V40 5G
+Honor;63;43;Band 6
+Honor;63;44;Play 5T Youth
+Honor;63;45;Play 20
+Honor;63;46;Play 5 5G
+Honor;63;47;50 SE
+Harman;64;01;Kardon Traveller
+Beats;65;01;Solo 2 / 3
+Beats;65;02;Monster Beats Solo
+Beats;65;03;Powerbeats Pro
+Beats;65;04;EP
+Beats;65;05;Studio 2.0
+Beats;65;06;Studio 3.0
+Beats;65;07;Solo Pro
+AKG;66;01;K518/K518DJ/K81/K518LE
+Audio-Technica;67;01;M50/M40/M30/M20
+Sennheiser;68;01;PXC450/HD380/HMEC250
+Sennheiser;68;02;PXC150/PXC250/PMX200
+Sennheiser;68;03;RS160/RS170/RS180
+Steelseries;69;01;Siberia V1/V2/V3
+Steelseries;69;02;Arctis 3
+Steelseries;69;03;Arctis 5
+Steelseries;69;04;Arctis 7
+Steelseries;69;05;Arctis Pro
+Anker;70;01;SoundCore Boost
+GulfBuddy;71;01;Voice GPS
+GulfBuddy;71;02;Voice 2 GPS
+Bushnell;72;01;Neo Ion
+Bushnell;72;02;Neo Ion2
+Bushnell;72;03;Neo Excel
+Texas Instruments;73;01;TI-84 Plus CE
+Texas Instruments;73;02;TI-84 Plus
+Xbox;74;01;One
+Xbox;74;02;One S
+Xbox;74;03;One X
+Xbox;74;04;Series S
+Philips;75;01;Norelco OneBlade
+Philips;75;02;OneBlade Pro
+Realme;76;01;5 Pro
+Realme;76;02;5
+Realme;76;03;5s
+Realme;76;04;3 Pro
+Realme;76;05;3
+Realme;76;06;2
+Realme;76;07;X
+Realme;76;08;X2 Pro
+Realme;76;09;X50 5G
+Realme;76;10;5i
+Realme;76;11;XT Pro
+Realme;76;12;6 Pro
+Realme;76;13;6
+Realme;76;14;C3
+Realme;76;15;X50 Pro 5G
+Realme;76;16;C11
+Realme;76;17;C12
+Realme;76;18;V5 5G
+Realme;76;19;C15
+Realme;76;20;V3
+Realme;76;21;X7
+Realme;76;22;7 Pro
+Realme;76;23;7i
+Realme;76;24;C17
+Realme;76;25;Narzo 20 Pro
+Realme;76;26;7 5G
+Realme;76;27;Watch S
+Realme;76;28;V15 5G
+Realme;76;29;C20
+Realme;76;30;X50M 5G
+Realme;76;31;X50T 5G
+Realme;76;32;V11 5G
+Realme;76;33;Watch
+Realme;76;34;8 Pro
+Realme;76;35;8
+Realme;76;36;GT 5G
+Realme;76;37;V13 5G
+Realme;76;38;7
+Realme;76;39;C25
+Realme;76;40;Narzo 30A
+Realme;76;41;Narzo 20
+Realme;76;42;GT Neo
+Realme;76;43;Q3 Pro 5G
+Realme;76;44;C20A
+Realme;76;45;C11 (2021)
+Realme;76;46;Watch 2 Pro
+Edifier;77;01;TWS2 Bluetooth Earbuds
+Insta360;78;01;ONE X
+Insta360;78;02;ONE R
+Insta360;78;03;One X2
+Insta360;78;04;Go2
+Plantronics;79;01;Voyager Legend
+Plantronics;79;02;Voyager 5200
+Plantronics;79;03;BackBeat Pro 2
+Diesel;80;01;Axial DZT2015
+Diesel;80;02;Axial DZT2014
+Diesel;80;03;Axial DZT2012
+Diesel;80;04;Axial DZT2011
+Diesel;80;05;Axial DZT2010
+Diesel;80;06;Axial DZT2009
+Diesel;80;07;Axial DZT2006
+Diesel;80;08;Axial DZT2002
+Jeep;81;01;F02
+Jabra;82;01;Elite Active 75t
+Jabra;82;02;Elite 65t
+Jabra;82;03;Elite Active 65t
+Haylou;83;01;SmartWatch
+Haylou;83;02;Solar
+Haylou;83;03;SmartWatch LS01
+Haylou;83;04;SmartWatch LS02
+Haylou;83;05;Solar LS05
+Haylou;83;06;Solar LS02
+Haylou;83;07;RS3
+Haylou;83;08;LS04 Solar
+Haylou;83;09;RT LS05S
+Revlon;84;01;One
+Universal;85;01;12mm
+Universal;85;02;14mm
+Universal;85;03;16mm
+Universal;85;04;18mm
+Universal;85;05;20mm
+Universal;85;06;22mm
+Universal;85;07;24mm
+Universal;85;08;26mm
+New Balance;86;01;RunIQ
+Cat;87;01;S62 Pro
+IQOS;88;01;3
+Seiko;89;01;SUN059
+Ultimate Ears;90;01;Megaboom 3
+Verizon;91;01;GizmoWatch Disney
+Oral-B;92;01;D16 D20 P2000 P3000 P4000
+Fimi;93;01;Palm 2
+TecTecTec;94;01;ULT-G Golf GPS
+Ricoh;95;01;GRIII
+Ricoh;95;02;GRII
+Ricoh;95;03;GR
+Yamay;96;01;SW022
+Yamay;96;02;SW0202
+Yamay;96;03;ID205
+Fairphone;97;01;3
+Fairphone;97;02;3 Plus
+Lemfo;98;01;LF26
+Tile;99;01;Mate
+Tile;99;02;Sport
+Marshall;100;01;Major I
+Marshall;100;02;Major II
+Marshall;100;03;Monitor
+Bryton;101;01;Bryton Rider 430
+Bryton;101;02;Bryton Rider 320
