@@ -1,4 +1,6 @@
-/import/*
+BC/*
+csv/decap
+import/*
 products.db
 .DS_Store
 *.pyc

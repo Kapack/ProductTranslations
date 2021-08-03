@@ -33,21 +33,21 @@ def main():
 	products = getCsv(week, country)	
 	products = getAttributes(country, products)
 	products = translateItems(country, products)
-	# products = makeDescriptions(country, products)
-	# issues(products)
-	# saveCsv(country, week, products)
+	products = makeDescriptions(country, products)
+	issues(products)
+	saveCsv(country, week, products)
 
 	# User Success Message
 	print('\x1b[0;30;42m' + 'Translations Complete' + '\x1b[0m')	
 
 # User Input
 def userInput():	
-	# week = raw_input("Week number?: ")
-	# country = raw_input("Write country abbreviation (eg. dk, se, fi, de, nl etc.): ").lower()
+	week = raw_input("Week number?: ")
+	country = raw_input("Write country abbreviation (eg. dk, se, fi, de, nl etc.): ").lower()
 	createDatabaseMsg = raw_input("Do you want to update the database? / Has any .csv files been updated? [y/n] ").lower()
 
-	week = '002'
-	country = 'dk'	
+	# week = '002'
+	# country = 'dk'	
 
 	return [week, country, createDatabaseMsg]
 
@@ -82,7 +82,10 @@ def getAttributes(country, products):
 # Translate
 def translateItems(country, products):	
 	translate = Translate(country, products)
-	translate.makeBeforeAfterLastDash()	
+	products = translate.makeBeforeLastDash(products)	
+	products = translate.makeAfterLastDash(products)
+
+	#print products
 
 	# if country == 'dk' or country == 'se':
 	# 	translate.productPrepositions()

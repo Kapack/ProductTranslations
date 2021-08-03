@@ -6,7 +6,7 @@ from lib.Helper import Helper
 from lib.Issue import Issue
 #
 from lib.Translate.TranslateBeforeLastDash import TranslateBeforeLastDash
-#from lib.Translate.TranslateAfterLastDash import TranslateAfterLastDash
+from lib.Translate.TranslateAfterLastDash import TranslateAfterLastDash
 
 # Fixing can't encode unichar issue
 reload(sys)
@@ -17,27 +17,25 @@ class Translate:
 		self.country = country		
 		self.products = products
 
-	# Before Last Dash
-	def makeBeforeAfterLastDash(self):
-		translateBeforeLastDash = TranslateBeforeLastDash()
-		products = self.products
+	# Translate Words BEFORE Last Dash
+	def makeBeforeLastDash(self, products):
+		translateBeforeLastDash = TranslateBeforeLastDash()		
+
+		for product in products:			
+			products[product]['name'] = translateBeforeLastDash.make(productName=products[product]['name'], productType=products[product]['productType'], country=self.country)			
+		
+		# Return
+		return products
+	
+	# Translate Words AFTER Last Dash
+	def makeAfterLastDash(self, products):
+		translateAfterLastDash = TranslateAfterLastDash()		
 
 		for product in products:
-			if products[product]['productType'] == 'cover' or products[product]['productType'] == 'case':
-				products[product]['name'] = translateBeforeLastDash.make(products[product]['name'], self.country)
-
-			print products[product]['name']
-		#
-
-
-	
-	# # After Last Dash
-	# def makeAfterLastDash(self):
-	# 	translateAfterLastDash = TranslateAfterLastDash()
-	# 	translateAfterLastDash.make()
-		
-
-
+			products[product]['name'] = translateAfterLastDash.make(productName=products[product]['name'], productType=products[product]['productType'], country=self.country)
+						
+		# Return
+		return products	
 
 	# Replacing / Translate Prepositions (with, in, and, for)
 	def productPrepositions(self):
@@ -344,8 +342,6 @@ class Translate:
 			i += 1
 
 		return products
-
-
 
 	# Replace productType / Flip case, Cover, Leather flip case etc.
 	def productNameType(self):

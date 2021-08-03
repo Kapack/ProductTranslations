@@ -2,20 +2,23 @@ from db.Select import Select
 from lib.Helper import Helper
 from lib.Issue import Issue
 
+# Translates all words BEFORE last dash (Material, feature etc.)
+
 class TranslateBeforeLastDash:
-	def make(self, productName, country):
+	def make(self, productName, productType, country):
 		helper = Helper()
 		# Break up name
 		beforeAndAfterLastDash = helper.beforeAndAfterLastDash(productName)
 		beforeLastDash = beforeAndAfterLastDash[0]
 		afterLastDash = beforeAndAfterLastDash[1]
 
-		# Go Trough methods
-		beforeLastDash = self.productFeature(beforeLastDash, country)
-		beforeLastDash = self.productMaterial(beforeLastDash, country)
-		beforeLastDash = self.productNameType(beforeLastDash, country)
-
-
+		# Go Trough Translations methods
+		if productType == 'cover' or productType == 'case':
+			beforeLastDash = self.productFeature(beforeLastDash, country)
+			beforeLastDash = self.productMaterial(beforeLastDash, country)
+			beforeLastDash = self.productNameType(beforeLastDash, country)
+			beforeLastDash = self.productPrepositions(beforeLastDash, country)
+			
 		# Converting [afterLastDash] to a String				
 		afterLastDashString = ' '.join([str(elem) for elem in afterLastDash])
 		# Create new name
@@ -63,4 +66,28 @@ class TranslateBeforeLastDash:
 				else:
 					issue.criticalErrorMsg(productTypes[productType] + ' missing translated version')					
 		
-		return beforeLastDash		
+		return beforeLastDash
+
+	# Replacing / Translate Prepositions (with, in, and, for)
+	def productPrepositions(self, beforeLastDash, country):
+		select = Select(country)
+		prepositions = select.prepositions()
+		helper = Helper()
+
+		# Convert afterLastDash into a List
+		beforeLastDashList = beforeLastDash.split()
+
+		# Loops trough every word beforeLastDash
+		i = 0
+		for currentWord in beforeLastDashList:
+			# If currentWord exists as a dict.key and has a translated version
+			if currentWord in prepositions.keys() and prepositions[currentWord]:
+				beforeLastDashList[i] = prepositions[currentWord]
+			i += 1
+		
+		# Converting [afterLastDash] to a String				
+		beforeLastDashString = ' '.join([str(elem) for elem in beforeLastDashList])
+		return beforeLastDashString	
+
+
+
