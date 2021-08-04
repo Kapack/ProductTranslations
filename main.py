@@ -11,9 +11,9 @@
 # The translated files are found in the ~/import folder
 
 from db.Database import Database
-from lib.CreateFolder import CreateFolder
+from lib.Create.CreateFolder import CreateFolder
 from lib.Opencsv import OpenCsv
-from lib.CreateCsv import CreateCsv
+from lib.Create.CreateCsv import CreateCsv
 from lib.Append import Append
 from lib.Translate.Translate import Translate
 from lib.Description import Description
@@ -83,22 +83,10 @@ def getAttributes(country, products):
 def translateItems(country, products):	
 	translate = Translate(country, products)
 	products = translate.makeBeforeLastDash(products)	
-	products = translate.makeAfterLastDash(products)
-
-	#print products
-
-	# if country == 'dk' or country == 'se':
-	# 	translate.productPrepositions()
-	# 	translate.productVerbs()
-	# 	translate.productSingularMotifAndColor()
-	# 	translate.productPluralMotifAndColor()
-	
-	# translate.productNameColor()	
-	# translate.productMaterial()
-	# translate.productFeature()
-	# translate.productNameType()
-	# products = translate.done()
-	
+	products = translate.makeAfterLastDash(products)	
+	products = translate.makeScreenProtector(products)
+	products = translate.makeWatchstrap(products)
+		
 	return products
 
 # Make Description from productTemplates

@@ -136,66 +136,9 @@ class Append:
 						# If permutation exists as a productTemplates_keys					
 						if ' '.join(permutation) in product2020Templates.keys():						
 							# Give product the template key							
-							products[i]['template'] = ' '.join(permutation)
-							# print products[i]['template']
+							products[i]['template'] = ' '.join(permutation)							
 										
-			i += 1		
-
-
-		# i = 0
-		# for key in products:
-		# 	beforeLastDash = products[i]['name'].split(' - ')[0].lower()
-		# 	templateKey = ''
-
-		# 	# For Covers and Cases Only
-		# 	if products[i]['productType'] == 'cover' or products[i]['productType'] == 'case':
-					
-		# 		# We are using IF and NOT elif because we want to overwrite templates eg. fantasy, fantasy marble
-		# 		# If FIRST word in ProductName exists as a productTemplate[Key], give the productTemplate[Value] / description
-		# 		if ''.join(products[i]['name'].split()[0]).lower() in productTemplates.keys():
-		# 			# Template Key (The first word)					
-		# 			templateKey = ''.join(products[i]['name'].split()[0]).lower()
-		# 			# products[i]['template'] = templateKey
-
-		# 		#If first TWO words in ProductName exists. Will Overwrite if we have templates eg. fantasy, fantasy marble
-		# 		if ' '.join(products[i]['name'].split()[:2]).lower() in productTemplates.keys():
-		# 			# Template Key (The first TWO words)
-		# 			templateKey = ' '.join(products[i]['name'].split()[:2]).lower()					
-		# 			# products[i]['template'] = templateKey
-
-		# 		# If first THREE words in ProductName exists
-		# 		if ' '.join(products[i]['name'].split()[:3]).lower() in productTemplates.keys():
-		# 			# Template Key (The first THREE words)
-		# 			templateKey = ' '.join(products[i]['name'].split()[:3]).lower()					
-		# 			# products[i]['template'] = templateKey
-				
-		# 		# If any combination of words exists as a template key / Arg. Permutation of 2 words
-		# 		# beforeLastDash is converted into list
-		# 		for permutation in permutations(beforeLastDash.split( ), 2):
-		# 			# If permutation exists. Use it as template key 					
-		# 			if ' '.join(permutation) in productTemplates.keys():
-		# 				products[i]['template'] = ' '.join(permutation)	
-
-		# 		# Same as above but with 3 words
-		# 		for permutation in permutations(beforeLastDash.split( ), 3):
-		# 			# If permutation exists. Use it as template key 					
-		# 			if ' '.join(permutation) in productTemplates.keys():
-		# 				products[i]['template'] = ' '.join(permutation)
-			
-		# 	# Screen Protectors
-		# 	if products[i]['productType'] == 'screenprotector':								
-		# 		# If First word exists as a productTemplate key 				
-		# 		if ''.join(beforeLastDash.split()[0].lower()) in productTemplates.keys():
-		# 			# Template Key (The first word)					
-		# 			templateKey = ''.join(beforeLastDash.split()[0]).lower()					
-
-		# 		if ' '.join(beforeLastDash.split()[:2]).lower()  in productTemplates.keys():
-		# 			templateKey = ' '.join(beforeLastDash.split()[:2]).lower()
-
-		# 	# Give template key to product dict
-		# 	products[i]['template'] = templateKey				
-
-		# 	i += 1				
+			i += 1					
 
 	# Return final dict
 	def done(self):

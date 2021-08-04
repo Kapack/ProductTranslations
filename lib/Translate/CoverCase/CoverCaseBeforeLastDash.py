@@ -2,22 +2,24 @@ from db.Select import Select
 from lib.Helper import Helper
 from lib.Issue import Issue
 
-# Translates all words BEFORE last dash (Material, feature etc.)
+"""
+Translates all words BEFORE last dash (Material, feature etc.)
+Translated Product Types: Covers and Cases.
+"""
 
-class TranslateBeforeLastDash:
-	def make(self, productName, productType, country):
+class CoverCaseBeforeLastDash:
+	def make(self, productName, country):
 		helper = Helper()
 		# Break up name
 		beforeAndAfterLastDash = helper.beforeAndAfterLastDash(productName)
 		beforeLastDash = beforeAndAfterLastDash[0]
 		afterLastDash = beforeAndAfterLastDash[1]
 
-		# Go Trough Translations methods
-		if productType == 'cover' or productType == 'case':
-			beforeLastDash = self.productFeature(beforeLastDash, country)
-			beforeLastDash = self.productMaterial(beforeLastDash, country)
-			beforeLastDash = self.productNameType(beforeLastDash, country)
-			beforeLastDash = self.productPrepositions(beforeLastDash, country)
+		# Go Trough Translations methods		
+		beforeLastDash = self.productFeature(beforeLastDash, country)
+		beforeLastDash = self.productMaterial(beforeLastDash, country)
+		beforeLastDash = self.productNameType(beforeLastDash, country)
+		beforeLastDash = self.productPrepositions(beforeLastDash, country)
 			
 		# Converting [afterLastDash] to a String				
 		afterLastDashString = ' '.join([str(elem) for elem in afterLastDash])
@@ -61,7 +63,7 @@ class TranslateBeforeLastDash:
 				# If there is a translated version as productTypes.value():
 				if productTypes[productType] != '':					
 					# Replace substring, with spaces " MAN DEV Xcover Case - Red"
-					beforeLastDash = beforeLastDash.replace(productType, productTypes[productType].capitalize())
+					beforeLastDash = beforeLastDash.replace(productType, productTypes[productType])
 
 				else:
 					issue.criticalErrorMsg(productTypes[productType] + ' missing translated version')					
