@@ -62,3 +62,31 @@ class Helper:
 		newStringList = ' '.join([str(elem) for elem in newStringList])
 		# Return list
 		return newStringList
+
+	def checkIfTranslatedExists(self, typeDict, word, key=None):
+		# Check if translated version exists. 
+		# If True return translated. If False return original (English)
+		issue = Issue()		
+
+		if key:
+			# If translated version exists
+			if typeDict[word][key]:
+				# Replace Word
+				word = typeDict[word][key]
+
+			# Else Give Error Message
+			else:
+				issue.criticalErrorMsg(key + ' : ' + word + ' Missing Translated Version')		
+		else:			
+			# If translated version exists
+			if typeDict[word]:
+				# Replace Word
+				word = typeDict[word]
+
+			# Else Give Error Message
+			else:
+				issue.criticalErrorMsg(word + ' Missing Translated Version')
+
+		# Return Word
+		return word
+

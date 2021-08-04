@@ -23,8 +23,6 @@ class Database:
 		self.insertColors()
 		self.createProductTypesTable()
 		self.insertProductTypes()	
-		self.createLooksTable()
-		self.insertLooks()
 		self.createLookWordsTable()
 		self.insertLookWords()
 		self.createColorWordsTable()
@@ -87,19 +85,6 @@ class Database:
 			i = 1
 			for row in reader:			
 				c.execute('INSERT INTO productTypes VALUES (?, ?, ?, ?, ?, ?, ?, ?)', (i, str(row['type']).lower(), str(row['se']), str(row['dk']), str(row['no']), str(row['fi']), str(row['de']), str(row['nl'])) )
-				i += 1
-				conn.commit()
-
-	def createLooksTable(self):
-		sql = 'CREATE TABLE if not exists looks (id integer primary key not null, look text, se text, dk text, no text, fi text, de text, nl text)'
-		c.execute(sql)
-
-	def insertLooks(self):
-		with open(os.getcwd() + '/csv/looks.csv', 'r') as file: 
-			reader = csv.DictReader(file, delimiter=';')
-			i = 1		
-			for row in reader:						
-				c.execute('INSERT INTO looks VALUES (?, ?, ?, ?, ?, ?, ?, ?)', (i, str(row['look']).lower(), str(row['se']), str(row['dk']), str(row['no']), str(row['fi']), str(row['de']), str(row['nl'])) )
 				i += 1
 				conn.commit()
 
