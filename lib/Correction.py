@@ -25,13 +25,15 @@ class Correction:
 				if word.islower():
 					word = word.capitalize()		
 
-				# Special Cases
+				# Special Names
 				# Apple
 				if word.lower() == 'iphone':					
-					word = 'iPhone'
-				
+					word = 'iPhone'				
 				if word.lower() == 'ipad':
 					word = 'iPad'
+
+				if word.lower() == 'caseme':
+					word = 'CaseMe'
 
 				# Append word to new name
 				newName += word + ' '

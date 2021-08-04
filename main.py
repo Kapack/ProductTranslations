@@ -46,13 +46,13 @@ def main():
 
 # User Input
 def userInput():	
-	# week = raw_input("Week number?: ")
-	# country = raw_input("Write country abbreviation (eg. dk, se, fi, de, nl etc.): ").lower()
-	#createDatabaseMsg = raw_input("Do you want to update the database? / Has any .csv files been updated? [y/n] ").lower()
+	week = raw_input("Week number?: ")
+	country = raw_input("Write country abbreviation (eg. dk, se, fi, de, nl etc.): ").lower()
+	createDatabaseMsg = raw_input("Do you want to update the database? / Has any .csv files been updated? [y/n] ").lower()
 
-	createDatabaseMsg = 'n'
-	week = '002'
-	country = 'de'	
+	# week = '002'
+	# country = 'dk'	
+	# createDatabaseMsg = 'n'
 
 	return [week, country, createDatabaseMsg]
 

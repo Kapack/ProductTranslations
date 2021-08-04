@@ -52,21 +52,26 @@ class CoverCaseBeforeLastDash:
 
 	# Replace productType / Flip case, Cover, Leather flip case etc.
 	def productNameType(self, beforeLastDash, country):		
+		helper = Helper()
 		select = Select(country)
 		productTypes = select.productTypes()
 		issue = Issue()
 
-		# Loop trough product types keys. Sorted by length of key, so flip case will get translated first
-		for productType in sorted(productTypes.keys(), key=len, reverse=True):
-			# If productTypes.keys() exists as a substring in name (Last three words, beforelastdash)										
-			if productType in ' '.join(beforeLastDash.split()[3:]).lower():
-				# If there is a translated version as productTypes.value():
-				if productTypes[productType] != '':					
-					# Replace substring, with spaces " MAN DEV Xcover Case - Red"
-					beforeLastDash = beforeLastDash.replace(productType, productTypes[productType])
+		beforeLastDash = helper.dictKeyInString(productTypes, beforeLastDash)
+		
 
-				else:
-					issue.criticalErrorMsg(productTypes[productType] + ' missing translated version')					
+		# # Loop trough product types keys. Sorted by length of key, so flip case will get translated first
+		# for productType in sorted(productTypes.keys(), key=len, reverse=True):
+		# 	# If productTypes.keys() exists as a substring in name (Last three words, beforelastdash)										
+		# 	if productType in ' '.join(beforeLastDash.split()[3:]).lower():
+		# 		# If there is a translated version as productTypes.value():
+		# 		if productTypes[productType] != '':					
+		# 			# Replace substring, with spaces " MAN DEV Xcover Case - Red"
+		# 			beforeLastDash = beforeLastDash.replace(productType, productTypes[productType])
+		# 			print beforeLastDash
+
+		# 		else:
+		# 			issue.warningErrorMsg(productTypes[productType] + ' missing translated version')					
 		
 		return beforeLastDash
 
