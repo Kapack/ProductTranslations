@@ -18,6 +18,7 @@ from lib.Append import Append
 from lib.Translate.Translate import Translate
 from lib.Description import Description
 from lib.Issue import Issue
+from lib.Correction import Correction
 
 
 def main():			
@@ -34,6 +35,9 @@ def main():
 	products = getAttributes(country, products)
 	products = translateItems(country, products)
 	products = makeDescriptions(country, products)
+	products = corrections(country, products)
+	
+
 	issues(products)
 	saveCsv(country, week, products)
 
@@ -87,7 +91,7 @@ def translateItems(country, products):
 	products = translate.makeAfterLastDash(products)	
 	products = translate.makeScreenProtector(products)
 	products = translate.makeWatchstrap(products)
-		
+
 	return products
 
 # Make Description from productTemplates
@@ -95,6 +99,13 @@ def makeDescriptions(country, products):
 	template = Description(country, products)
 	template.productTemplate()
 	products = template.done()
+	return products
+
+# Corrections
+def corrections(country, products):
+	correct = Correction()
+	products = correct.formatName(country, products)
+
 	return products
 
 # Check for common errors

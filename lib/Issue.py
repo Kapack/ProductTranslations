@@ -12,5 +12,8 @@ class Issue:
 				self.criticalErrorMsg(products[product]['sku'] + ' is missing manName or devName. You need to update the device list.')
 
 	# User Messages
+	def warningErrorMsg(self, msg):
+		print('\x1b[1;30;43m' + msg + '\x1b[0m')	
+
 	def criticalErrorMsg(self, msg):
-		print('\x1b[3;37;41m' + msg + '\x1b[0m')		
+		print('\x1b[3;37;41m' + msg + '\x1b[0m')

@@ -46,7 +46,7 @@ class CoverCaseBeforeLastDash:
 		productMaterials = select.productMaterials()				
 
 		# if material exist in beforeLastDash
-		beforeLastDash = helper.dictKeyInString(productMaterials, beforeLastDash)
+		beforeLastDash = helper.dictKeyInString(productMaterials, beforeLastDash)		
 
 		return beforeLastDash
 

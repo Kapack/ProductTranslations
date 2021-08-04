@@ -10,7 +10,7 @@ class Helper:
 		return [beforeLastDash, afterLastDash]
 
 	def createName(self, beforeLastDash, afterLastDashString):
-		productName = beforeLastDash + ' - ' + afterLastDashString.capitalize()
+		productName = beforeLastDash + ' - ' + afterLastDashString
 
 		return productName
 
@@ -23,19 +23,20 @@ class Helper:
 		newStringList = []
 
 		# Loop trough the list of strings, save index and word to variable
-		for (index, word) in enumerate(stringList):
+		for (index, word) in enumerate(stringList):			
 			# Saving currentWord to a variable
 			currentWord = stringList[index]
 
 			# If currentWord (Single word / Watchband) is in typeDict key
-			if currentWord in typeDict.keys():								
+			if currentWord in typeDict.keys():
+
 				# If translated version exists
 				if typeDict[currentWord]:
-					# Replace currentWord					
+					# Replace currentWord									
 					currentWord = typeDict[currentWord]
 				# Give error message, if translated version does not exists
 				else:
-					issue.criticalErrorMsg(currentWord + ' Missing Translated Version')
+					issue.warningErrorMsg(currentWord + ' Missing Translated Version')
 
 			# Double words / CurrentWord + NextWord (Watch Band)
 			# If the index number +1 is lower than the length of stringList, we can check if currentWord or currentWord + nextWord has a match
@@ -53,13 +54,14 @@ class Helper:
 
 					# Give error message, if translated version does not exists
 					else:
-						issue.criticalErrorMsg(currentWord + ' ' + nextWord + ' Missing Translated Version')								
+						issue.warningErrorMsg(currentWord + ' ' + nextWord + ' Missing Translated Version')								
 
 			# Append Word (translated or english)			
-			newStringList.append(currentWord)
+			newStringList.append(currentWord)			
 
 		# Convert list back to a string again
 		newStringList = ' '.join([str(elem) for elem in newStringList])
+				
 		# Return list
 		return newStringList
 
@@ -76,7 +78,7 @@ class Helper:
 
 			# Else Give Error Message
 			else:
-				issue.criticalErrorMsg(key + ' : ' + word + ' Missing Translated Version')		
+				issue.warningErrorMsg(key + ' : ' + word + ' Missing Translated Version')		
 		else:			
 			# If translated version exists
 			if typeDict[word]:
@@ -85,7 +87,7 @@ class Helper:
 
 			# Else Give Error Message
 			else:
-				issue.criticalErrorMsg(word + ' Missing Translated Version')
+				issue.warningErrorMsg(word + ' Missing Translated Version')
 
 		# Return Word
 		return word

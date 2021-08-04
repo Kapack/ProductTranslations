@@ -45,6 +45,6 @@ class Screenprotector:
 			## ERROR MSG
 			# If permutation exists but translated version is empty
 			if permutation in productTypes.keys() and productTypes[permutation] == '':
-				issue.criticalErrorMsg(permutation + ' missing translated version')
+				issue.warningErrorMsg(permutation + ' missing translated version')
 
 		return productName

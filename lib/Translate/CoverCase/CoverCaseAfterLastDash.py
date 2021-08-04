@@ -82,15 +82,13 @@ class CoverCaseAfterLastDash:
 				 	if lookSingularWords[currentWord]['indefinite_article'] == '2':				 		
 						# replace with neutrum color
 						afterLastDashList[i - 1] = helper.checkIfTranslatedExists(typeDict=colorSingularWords, word=previousWord, key='neutrum')																												
-						#afterLastDashList[i - 1] = colorSingularWords[previousWord]['neutrum']
+						
 					else:
-						afterLastDashList[i - 1] = helper.checkIfTranslatedExists(typeDict=colorSingularWords, word=previousWord, key='local')
-						# afterLastDashList[i - 1] = colorSingularWords[previousWord]['local']
+						afterLastDashList[i - 1] = helper.checkIfTranslatedExists(typeDict=colorSingularWords, word=previousWord, key='local')						
 
 				# If previousWord exists as adjective
 				if previousWord in adjectives.keys():
-					afterLastDashList[i - 1] = helper.checkIfTranslatedExists(typeDict=adjectives, word=previousWord, key='singular')
-					#afterLastDashList[i - 1] = adjectives[previousWord]['singular']		
+					afterLastDashList[i - 1] = helper.checkIfTranslatedExists(typeDict=adjectives, word=previousWord, key='singular')					
 			i += 1
 
 		# Converting [afterLastDash] to a String								
@@ -124,18 +122,15 @@ class CoverCaseAfterLastDash:
 			if currentWord in lookPluralWords:
 				# Replace word in afterLastDash at current index
 				afterLastDashList[i] = helper.checkIfTranslatedExists(typeDict=lookPluralWords, word=currentWord)
-				#afterLastDashList[i] = lookPluralWords[currentWord]
 						
 				# If previousWord exists in colorPluralWords. 						
 				if previousWord in colorPluralWords.keys():
 					# Replace with plural color
 					afterLastDashList[i - 1] = helper.checkIfTranslatedExists(typeDict=colorPluralWords, word=previousWord)
-					#afterLastDashList[i - 1] = colorPluralWords[previousWord]
 
 				# If previousWord exists as adjective
 				if previousWord in adjectives.keys():
 					afterLastDashList[i - 1] = helper.checkIfTranslatedExists(typeDict=adjectives, word=previousWord)
-					# afterLastDashList[i - 1] = adjectives[previousWord]
 
 			i += 1
 		
@@ -158,9 +153,7 @@ class CoverCaseAfterLastDash:
 			# if currentWord exists as verb
 			if currentWord in verbs.keys():
 				# replace currentWord with translated verb
-				afterLastDashList[i] = helper.checkIfTranslatedExists(typeDict=verbs, word=currentWord)				
-				#afterLastDashList[i] = verbs[currentWord]	
-
+				afterLastDashList[i] = helper.checkIfTranslatedExists(typeDict=verbs, word=currentWord)								
 			i += 1
 		
 		# Converting [afterLastDash] to a String				
@@ -182,22 +175,11 @@ class CoverCaseAfterLastDash:
 			# If currentWord exists as a dict.key
 			if currentWord in prepositions.keys():
 				afterLastDashList[i] = helper.checkIfTranslatedExists(typeDict=prepositions, word=currentWord)
-				#afterLastDashList[i] = prepositions[currentWord]
 			i += 1
 		
 		# Converting [afterLastDash] to a String				
 		afterLastDashString = ' '.join([str(elem) for elem in afterLastDashList])
 		return afterLastDashString
-
-
-
-
-
-
-
-
-
-
 
 
 

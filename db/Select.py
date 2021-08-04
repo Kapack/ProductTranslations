@@ -110,7 +110,7 @@ class Select:
 		sql = 'SELECT material,' + self.country + ' FROM materials'
 		c.execute(sql)
 		rows = c.fetchall()
-		productMaterials = { material[0].lower() : material[1].lower() for material in rows }
+		productMaterials = { material[0].lower() : material[1] for material in rows }
 		return productMaterials
 
 	def productFeatures(self):
