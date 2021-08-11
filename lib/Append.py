@@ -93,12 +93,12 @@ class Append:
 		i = 0
 		for product in products:
 			beforeAndAfterLastDash = helper.beforeAndAfterLastDash(products[product]['name'])
-			beforeLastDash = beforeAndAfterLastDash[0]
+			beforeLastDash = beforeAndAfterLastDash[0]			
 			
 			# Looping trough each key			
 			for key in product2021Templates:
 				# if key exists in part of beforeLastDash
-				if key in beforeLastDash:
+				if key in beforeLastDash.lower():
 					# Assign key to productDict
 					products[i]['template'] = key
 

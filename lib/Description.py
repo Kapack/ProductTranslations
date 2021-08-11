@@ -14,7 +14,8 @@ class Description:
 		product2020Templates = select.product2020Templates()		
 
 		# Loop trough products
-		for product in products:		
+		for product in products:
+			
 			# If product has a template attribute
 			if products[product]['template'] != '':
 				# Find correct template value, from productTemplates[key]. Searching for 
