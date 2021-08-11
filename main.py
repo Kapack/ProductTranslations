@@ -21,7 +21,7 @@ from lib.Issue import Issue
 from lib.Correction import Correction
 
 
-def main():			
+def main():
 	userAnswer = userInput()
 	week = userAnswer[0]
 	country = userAnswer[1]
@@ -37,7 +37,6 @@ def main():
 	products = makeDescriptions(country, products)
 	products = corrections(country, products)
 	
-
 	issues(products)
 	saveCsv(country, week, products)
 
@@ -52,7 +51,7 @@ def userInput():
 
 	# week = '002'
 	# country = 'dk'	
-	# createDatabaseMsg = 'n'
+	# createDatabaseMsg = 'y'
 
 	return [week, country, createDatabaseMsg]
 
@@ -81,7 +80,6 @@ def getAttributes(country, products):
 	append.product2021Template()
 	append.product2020Template()
 	products = append.done()
-
 	return products
 
 # Translate
@@ -91,7 +89,6 @@ def translateItems(country, products):
 	products = translate.makeAfterLastDash(products)	
 	products = translate.makeScreenProtector(products)
 	products = translate.makeWatchstrap(products)
-
 	return products
 
 # Make Description from productTemplates
@@ -105,7 +102,6 @@ def makeDescriptions(country, products):
 def corrections(country, products):
 	correct = Correction()
 	products = correct.formatName(country, products)
-
 	return products
 
 # Check for common errors

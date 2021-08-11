@@ -19,8 +19,8 @@ class Database:
 	def createAndInsertTables(self):
 		self.createDeviceList()
 		self.insertDeviceList()
-		self.createColorsTable()
-		self.insertColors()
+		# self.createColorsTable()
+		# self.insertColors()
 		self.createProductTypesTable()
 		self.insertProductTypes()	
 		self.createLookWordsTable()
@@ -49,7 +49,7 @@ class Database:
 
 	def insertDeviceList(self):
 		# Open Correct csv
-		with open(os.getcwd() + '/csv/deviceList.csv', 'r') as file:
+		with open(os.getcwd() + '/db/csv/deviceList.csv', 'r') as file:
 			reader = csv.DictReader(file, delimiter=';')
 			# Loop trough .csv and insert every row to corresponding column
 			i = 1
@@ -58,29 +58,29 @@ class Database:
 				i += 1
 				conn.commit()
 
-	# Create Colors Table
-	def createColorsTable(self):	
-		sql = 'CREATE TABLE if not exists colors (id integer primary key not null, color text, se text, dk text, no text, fi text, de text, nl text)'
-		c.execute(sql)
+	# # Create Colors Table
+	# def createColorsTable(self):	
+	# 	sql = 'CREATE TABLE if not exists colors (id integer primary key not null, color text, se text, dk text, no text, fi text, de text, nl text)'
+	# 	c.execute(sql)
 
-	# Insert Colors into table
-	def insertColors(self):
-		# Open csv
-		with open(os.getcwd() + '/csv/colors.csv', 'r') as file:
-			reader = csv.DictReader(file, delimiter=';')		
-			# Loop trough CSV and insert
-			i = 1
-			for row in reader:			
-				c.execute('INSERT INTO colors VALUES (?, ?, ?, ?, ?, ?, ?, ?)', (i, str(row['color']).lower(), str(row['se']), str(row['dk']), str(row['no']), str(row['fi']), str(row['de']), str(row['nl'])) )
-				i += 1
-				conn.commit()
+	# # Insert Colors into table
+	# def insertColors(self):
+	# 	# Open csv
+	# 	with open(os.getcwd() + '/db/csv/colors.csv', 'r') as file:
+	# 		reader = csv.DictReader(file, delimiter=';')		
+	# 		# Loop trough CSV and insert
+	# 		i = 1
+	# 		for row in reader:			
+	# 			c.execute('INSERT INTO colors VALUES (?, ?, ?, ?, ?, ?, ?, ?)', (i, str(row['color']).lower(), str(row['se']), str(row['dk']), str(row['no']), str(row['fi']), str(row['de']), str(row['nl'])) )
+	# 			i += 1
+	# 			conn.commit()
 
 	def createProductTypesTable(self):
 		sql = 'CREATE TABLE if not exists productTypes (id integer primary key not null, type text, se text, dk text, no text, fi text, de text, nl text)'
 		c.execute(sql)
 
 	def insertProductTypes(self):
-		with open(os.getcwd() + '/csv/productTypes.csv', 'r') as file: 
+		with open(os.getcwd() + '/db/csv/productTypes.csv', 'r') as file: 
 			reader = csv.DictReader(file, delimiter=';')
 			i = 1
 			for row in reader:			
@@ -94,7 +94,7 @@ class Database:
 		c.execute(sql)
 
 	def insertLookWords(self):
-		with open(os.getcwd() + '/csv/lookWords.csv', 'r') as file: 
+		with open(os.getcwd() + '/db/csv/lookWords.csv', 'r') as file: 
 			reader = csv.DictReader(file, delimiter=';')
 			i = 1		
 			for row in reader:						
@@ -108,7 +108,7 @@ class Database:
 		c.execute(sql)
 
 	def insertColorWords(self):
-		with open(os.getcwd() + '/csv/colorWords.csv', 'r') as file: 
+		with open(os.getcwd() + '/db/csv/colorWords.csv', 'r') as file: 
 			reader = csv.DictReader(file, delimiter=';')
 			i = 1		
 			for row in reader:									
@@ -122,7 +122,7 @@ class Database:
 		c.execute(sql)
 
 	def insertPrepositions(self):
-		with open(os.getcwd() + '/csv/prepositions.csv', 'r') as file:
+		with open(os.getcwd() + '/db/csv/prepositions.csv', 'r') as file:
 			reader = csv.DictReader(file, delimiter=';')
 			i = 1
 			for row in reader:
@@ -135,7 +135,7 @@ class Database:
 		c.execute(sql)
 
 	def insertAdjectives(self):
-		with open(os.getcwd() + '/csv/adjectives.csv', 'r') as file:
+		with open(os.getcwd() + '/db/csv/adjectives.csv', 'r') as file:
 			reader = csv.DictReader(file, delimiter=';')
 			i = 1
 			for row in reader:		
@@ -148,7 +148,7 @@ class Database:
 		c.execute(sql)
 
 	def insertVerbs(self):
-		with open(os.getcwd() + '/csv/verbs.csv', 'r') as file:
+		with open(os.getcwd() + '/db/csv/verbs.csv', 'r') as file:
 			reader = csv.DictReader(file, delimiter=';')
 			i = 1
 			for row in reader:		
@@ -162,7 +162,7 @@ class Database:
 		c.execute(sql)
 
 	def insertMaterialsTable(self):
-		with open(os.getcwd() + '/csv/materials.csv', 'r') as file:
+		with open(os.getcwd() + '/db/csv/materials.csv', 'r') as file:
 			reader = csv.DictReader(file, delimiter=';')
 			i = 1
 			for row in reader:		
@@ -176,7 +176,7 @@ class Database:
 		c.execute(sql)
 
 	def insertFeaturesTable(self):
-		with open(os.getcwd() + '/csv/features.csv', 'r') as file:
+		with open(os.getcwd() + '/db/csv/features.csv', 'r') as file:
 			reader = csv.DictReader(file, delimiter=';')
 			i = 1
 			for row in reader:
@@ -190,7 +190,7 @@ class Database:
 		c.execute(sql)
 
 	def insertProduct2020Templates(self):
-		with open(os.getcwd() + '/csv/product2020Templates.csv', 'r') as file: 
+		with open(os.getcwd() + '/db/csv/productTemplates/product2020Templates.csv', 'r') as file: 
 			reader = csv.DictReader(file, delimiter=';')		
 			i = 1
 			for row in reader:								
@@ -204,7 +204,7 @@ class Database:
 		c.execute(sql)
 
 	def insertProduct2021Templates(self):
-		with open(os.getcwd() + '/csv/product2021Templates.csv', 'r') as file: 
+		with open(os.getcwd() + '/db/csv/productTemplates/product2021Templates.csv', 'r') as file: 
 			reader = csv.DictReader(file, delimiter=';')		
 			i = 1
 			for row in reader:								

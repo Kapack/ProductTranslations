@@ -9,9 +9,10 @@ class Correction:
 
 	def formatName(self, country, products):
 		select = Select(country)
-		productMaterials = select.productMaterials()
+		# productMaterials = select.productMaterials()
+		prepositions = select.prepositions()
 
-		#print productMaterials.lower().values()
+		# print prepositions.values()		
 
 		for product in products:
 			newName = str('')
@@ -32,8 +33,17 @@ class Correction:
 				if word.lower() == 'ipad':
 					word = 'iPad'
 
+				# Brands
 				if word.lower() == 'caseme':
 					word = 'CaseMe'
+				
+				if word.lower() == 'dg.ming':
+					word = 'DG.Ming'
+				
+				# Translated Prepositions with lowercase
+				if word.lower() in prepositions.values():
+					word = word.lower()
+
 
 				# Append word to new name
 				newName += word + ' '
