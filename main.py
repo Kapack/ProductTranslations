@@ -13,6 +13,7 @@
 from db.Database import Database
 from lib.Create.CreateFolder import CreateFolder
 from lib.Opencsv import OpenCsv
+from lib.CommonError import CommonError
 from lib.Create.CreateCsv import CreateCsv
 from lib.Append import Append
 from lib.Translate.Translate import Translate
@@ -31,7 +32,8 @@ def main():
 		createDatabase(createDatabaseMsg)
 	
 	createFolders(week, country)	
-	products = getCsv(week, country)	
+	products = getCsv(week, country)
+	commonErrors(products)
 	products = getAttributes(country, products)
 	products = translateItems(country, products)
 	products = makeDescriptions(country, products)
@@ -51,7 +53,7 @@ def userInput():
 
 	# week = '002'
 	# country = 'dk'	
-	# createDatabaseMsg = 'y'
+	# createDatabaseMsg = 'n'
 
 	return [week, country, createDatabaseMsg]
 
@@ -71,6 +73,12 @@ def getCsv(week, country):
 	# File Needs SKU, Name and Description
 	products = openCsv.initFile()
 	return products
+
+# Check for common errors, before any changes have been made
+def commonErrors(products):
+	commonError = CommonError(products)
+	commonError.dobuleDash()
+
 
 # Analyse Skus and Names. Append correct Attributes
 def getAttributes(country, products):
@@ -104,9 +112,9 @@ def corrections(country, products):
 	products = correct.formatName(country, products)
 	return products
 
-# Check for common errors
+# Check for common issues
 def issues(products):
-	issue = Issue(products)
+	issue = Issue(products)	
 	issue.checkForEmptyManAndDevName()
 
 # Create CSV and Folder
