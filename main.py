@@ -21,7 +21,6 @@ from lib.Description import Description
 from lib.Issue import Issue
 from lib.Correction import Correction
 
-
 def main():
 	userAnswer = userInput()
 	week = userAnswer[0]
@@ -47,13 +46,13 @@ def main():
 
 # User Input
 def userInput():	
-	# week = raw_input("Week number?: ")
-	# country = raw_input("Write country abbreviation (eg. dk, se, fi, de, nl etc.): ").lower()
-	# createDatabaseMsg = raw_input("Do you want to update the database? / Has any .csv files been updated? [y/n] ").lower()
+	week = raw_input("Week number?: ")
+	country = raw_input("Write country abbreviation (eg. dk, se, fi, de, nl etc.): ").lower()
+	createDatabaseMsg = raw_input("Do you want to update the database? / Has any .csv files been updated? [y/n] ").lower()
 
-	week = '002'
-	country = 'dk'	
-	createDatabaseMsg = 'n'
+	# week = '002'
+	# country = 'dk'	
+	# createDatabaseMsg = 'n'
 
 	return [week, country, createDatabaseMsg]
 
@@ -78,7 +77,6 @@ def getCsv(week, country):
 def commonErrors(products):
 	commonError = CommonError(products)
 	commonError.dobuleDash()
-
 
 # Analyse Skus and Names. Append correct Attributes
 def getAttributes(country, products):
@@ -108,8 +106,9 @@ def makeDescriptions(country, products):
 
 # Corrections
 def corrections(country, products):
-	correct = Correction()
-	products = correct.formatName(country, products)
+	correct = Correction(country)
+	products = correct.formatName(products)
+	products = correct.formatDeviceName(products)
 	return products
 
 # Check for common issues
