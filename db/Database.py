@@ -37,6 +37,8 @@ class Database:
 		self.insertMaterialsTable()
 		self.createFeaturesTable()
 		self.insertFeaturesTable()
+		self.createSizeTable()
+		self.insertSizeTable()
 		self.createProduct2020TemplatesTable()
 		self.insertProduct2020Templates()
 		self.createProduct2021TemplatesTable()
@@ -181,6 +183,20 @@ class Database:
 			i = 1
 			for row in reader:
 				c.execute('INSERT INTO features VALUES(?,?,?,?,?,?,?,?,?)', (i, str(row['feature']), str(row['se']), str(row['dk']), str(row['no']), str(row['fi']), str(row['de']), str(row['nl']), str(row['fr']) ))
+				i += 1
+				conn.commit()
+
+	# Sizes
+	def createSizeTable(self):
+		sql = 'CREATE TABLE sizes (id integer primary key not null, size text, se text, dk text, no text, fi text, de text, nl text, fr text)'
+		c.execute(sql)
+
+	def insertSizeTable(self):
+		with open(os.getcwd() + '/db/csv/sizes.csv', 'r') as file:
+			reader = csv.DictReader(file, delimiter=';')
+			i = 1
+			for row in reader:
+				c.execute('INSERT INTO sizes VALUES(?,?,?,?,?,?,?,?,?)', (i, str(row['size']), str(row['se']), str(row['dk']), str(row['no']), str(row['fi']), str(row['de']), str(row['nl']), str(row['fr']) ))
 				i += 1
 				conn.commit()
 

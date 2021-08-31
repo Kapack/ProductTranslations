@@ -33,8 +33,27 @@ class Correction:
 				if word.lower() == 'dg.ming':
 					word = 'DG.Ming'
 
-				if word.lower() == 'Lc.imeeke':
+				if word.lower() == 'lc.imeeke':
 					word = 'LC.Imeeke'
+
+				if word.lower() == 'mofi':
+					word = 'MOFi'
+
+				if word.lower() == 'lcd':			
+					word = 'LCD'
+
+				if word.lower() == 'usb':
+					word = 'USB'
+
+				if word.lower() == 'fhd':
+					word = 'FHD'
+
+				if word.lower() == 'iphone':
+					word = 'iPhone'
+
+				if word.lower() == 'ipad':
+					word = 'iPad'
+
 				
 				# Translated Prepositions with lowercase
 				if word.lower() in prepositions.values():
@@ -54,8 +73,14 @@ class Correction:
 
 		for product in products:
 			# if devName in lowercase exists in productName string in lowercase
-			if products[product]['devName'].lower() in products[product]['name'].lower():
+			if products[product]['devName'].lower() in products[product]['name'].lower() or products[product]['manName'].lower() in products[product]['name'].lower():
+
+				# Format manName
+				src_str = re.compile(products[product]['manName'], re.IGNORECASE)
+				products[product]['name'] = src_str.sub(products[product]['manName'], products[product]['name'])
+
+				# Format devName
 				src_str = re.compile(products[product]['devName'], re.IGNORECASE)
-				products[product]['name'] = src_str.sub(products[product]['devName'], products[product]['name'])
+				products[product]['name'] = src_str.sub(products[product]['devName'], products[product]['name'])				
 
 		return products

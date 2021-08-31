@@ -25,7 +25,8 @@ class CoverCaseAfterLastDash:
 		afterLastDash = beforeAndAfterLastDash[1]
 
 		# Go Trough Translations methods		
-		afterLastDash = self.productNameColor(afterLastDash, country)		
+		afterLastDash = self.productNameSingleColor(afterLastDash, country)
+		# afterLastDash = self.productNameLongColor(afterLastDash, country)								
 		afterLastDash = self.productSingularMotifAndColor(str(afterLastDash), country)
 		afterLastDash = self.productPluralMotifAndColor(str(afterLastDash), country)
 		afterLastDash = self.productVerbs(str(afterLastDash), country)
@@ -38,13 +39,18 @@ class CoverCaseAfterLastDash:
 		# Return new name
 		return productName
 
-	# Replace Colors (Where afterLastDash only exists of colors, and not motif)
-	# Translated Single Colors (Incl. slashes ) in afterLastDash
-	def productNameColor(self, afterLastDash, country):
+	# Translated Single Colors (Incl. slashes) in afterLastDash
+	def productNameSingleColor(self, afterLastDash, country):
 		shared = Shared()		
-		afterLastDashString = shared.productNameColor(afterLastDash, country)
+		afterLastDashString = shared.productNameSingleColor(afterLastDash, country)		
 		return afterLastDashString
 
+	# Replace Colors (Where afterLastDash only exists of colors, and not motif)
+	# Translate "Long" Colors (Dark Blue, Wine Red)
+	def productNameLongColor(self, afterLastDash, country):		
+		shared = Shared()		
+		afterLastDashString = shared.productNameLongColor(afterLastDash, country)		
+		return afterLastDashString
 
 	# SINGULAR LOOK WORDS: (Single Mofif words / Green Leaf, Yellow Owl)
 	def productSingularMotifAndColor(self, afterLastDash, country):
@@ -180,6 +186,3 @@ class CoverCaseAfterLastDash:
 		# Converting [afterLastDash] to a String				
 		afterLastDashString = ' '.join([str(elem) for elem in afterLastDashList])
 		return afterLastDashString
-
-
-

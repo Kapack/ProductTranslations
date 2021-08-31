@@ -8,22 +8,22 @@ Translated Product Types: Screenprotectors
 """
 
 class Screenprotector:
-	def make(self, productName, country):		
+	def make(self, productName, country, product):		
 		# Go Trough Translations methods		
-		productName = self.prepositions(productName, country)
+		productName = self.prepositions(productName, country, product)
 		productName = self.productNameType(productName, country)
 		
 		# Return new name		
 		return productName
 
 	# Replaces / Translate Prepositions (with, in, and, for)
-	def prepositions(self, productName, country):
+	def prepositions(self, productName, country, product):
 		select = Select(country)		
 		helper = Helper()
 		prepositions = select.prepositions()
 
 		# Check if prepositionsKey is in name, and replace
-		productName = helper.dictKeyInString(prepositions, productName)
+		productName = helper.dictKeyInString(prepositions, productName, product)
 
 		return productName
 

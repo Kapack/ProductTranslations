@@ -113,12 +113,21 @@ class Select:
 		productMaterials = { material[0].lower() : material[1] for material in rows }
 		return productMaterials
 
+	# Product Features
 	def productFeatures(self):
 		sql = 'SELECT feature,' + self.country + ' FROM features'
 		c.execute(sql)
 		rows = c.fetchall()
 		productFeatures = { feature[0].lower() : feature[1].lower() for feature in rows }
 		return productFeatures
+
+	# Product Sizes
+	def productSizes(self):
+		sql = 'SELECT size,' + self.country + ' FROM sizes'
+		c.execute(sql)
+		rows = c.fetchall()
+		productSizes = { size[0].lower() : size[1].lower() for size in rows }
+		return productSizes
 
 	# 2020 Templates
 	def product2020Templates(self):				

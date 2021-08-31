@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*- 
+# Fixing can't encode unichar issue
+import sys
+reload(sys)
+sys.setdefaultencoding('utf8')
+
 import csv
 import os
 from slugify import slugify	

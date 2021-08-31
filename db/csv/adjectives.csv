@@ -1,14 +1,12 @@
 adjective;se_singular;se_plural;dk_singular;dk_plural;no_singular;no_plural;fi_singular;fi_plural;de_singular;de_plural;nl_singular;nl_plural;fr_singular;fr_plural
-cute;söt;;sød;søde;søt;søte;;;;;;;;
+cute;söt;söta;sød;søde;søt;søte;;;;;;;;
 beautiful;skön;;smuk;smukke;nydelig;nydelige;;;;;;;;
 vivid;;;livlig;livlige;livlig;livlige;;;;;;;;
 adorable;;;yndig;yndige;bedårende ;bedårende;;;;;;;;
-flowered;;;blomstret;blomstrede;blomstret;blomstrende;;;;;;;;
+flowered;blommig;;blomstret;blomstrede;blomstret;blomstrende;;;;;;;;
 colorized;;;farvet;farvede;farget;farget;;;;;;;;
 lovely;härlig;härliga;herlig;herlige;herlig;herlige;;;;;;;;
 pretty;;;pæn;pæne;pen;pene;;;;;;;;
-angry;;;vred;vrede;sint;sinte;;;;;;;;
-exquisite;;;udsøgt;;utsøkt;;;;;;;;;
-little;;;lille;små;;;;;;;;;;
-dancing;;;dansende;;;;;;;;;;;
-standing;;;stående;;;;;;;;;;;
+angry;arg;arga;vred;vrede;sint;sinte;;;;;;;;
+exquisite;utsökt;utsökta;udsøgt;udsøgte;utsøkt;;;;;;;;;
+little;liten;;lille;små;;;;;;;;;;

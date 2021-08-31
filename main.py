@@ -25,12 +25,12 @@ def main():
 	userAnswer = userInput()
 	week = userAnswer[0]
 	country = userAnswer[1]
-	createDatabaseMsg = userAnswer[2]	
+	createDatabaseMsg = userAnswer[2]
 	# If any .csv has been updated, so database will be updated
 	if (createDatabaseMsg == 'y'):
 		createDatabase(createDatabaseMsg)
 	
-	createFolders(week, country)	
+	createFolders(week, country)
 	products = getCsv(week, country)
 	commonErrors(products)
 	products = getAttributes(country, products)
@@ -46,14 +46,14 @@ def main():
 
 # User Input
 def userInput():	
-	week = raw_input("Week number?: ")
-	country = raw_input("Write country abbreviation (eg. dk, se, fi, de, nl etc.): ").lower()
-	createDatabaseMsg = raw_input("Do you want to update the database? / Has any .csv files been updated? [y/n] ").lower()
+	# week = raw_input("Week number?: ")
+	# country = raw_input("Write country abbreviation (eg. dk, se, fi, de, nl etc.): ").lower()
+	# createDatabaseMsg = raw_input("Do you want to update the database? / Has any .csv files been updated? [y/n] ").lower()
 
-	# week = '002'
-	# country = 'dk'	
-	# createDatabaseMsg = 'n'
-
+	week = '002'
+	country = 'dk'
+	createDatabaseMsg = 'n'
+	
 	return [week, country, createDatabaseMsg]
 
 # Create Database

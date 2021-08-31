@@ -15,13 +15,38 @@ Translated Product Types: Shared Methods
 class Shared:
 
 	# Replace Colors (Where afterLastDash only exists of colors, and not motif)
+	def productNameLongColor(self, afterLastDash, country):
+		select = Select(country)
+		colors = select.colorWords()
+		colorLong = colors[1]
+		helper = Helper()
+		issue = Issue()	
+
+		# print type(afterLastDash)
+		# print type(afterLastDash)
+		# Convert AfterLastDash from List to String, with space between elements
+		afterLastDashString = str('')
+		for ele in afterLastDash:						
+			afterLastDashString += str(ele) + ''						
+
+		# print(afterLastDashString)
+
+		# Loop through colorLong.keys()
+		for key in colorLong:						
+			# afterLastDashString exists as key 
+			if afterLastDashString.find(key) == 0:				
+				afterLastDashString = afterLastDashString.replace(key, colorLong[key])
+
+		# return
+		return afterLastDashString
+
 	# Translated Single Colors (Incl. slashes ) in afterLastDash
-	def productNameColor(self, afterLastDash, country):		
+	def productNameSingleColor(self, afterLastDash, country):		
 		select = Select(country)
 		colors = select.colorWords()
 		colorSingle = colors[0]
 		helper = Helper()
-		issue = Issue()				
+		issue = Issue()						
 
 		# Convert AfterLastDash from List to String, with space between elements
 		afterLastDashString = str('')
@@ -30,18 +55,18 @@ class Shared:
 
 		# If words has a space, and exists as a key in colorSingle
 		# Mistakes happens: Sometimes the product name has a "invisible" space at the end
-		if len(afterLastDash) > 1 and ' '.join(afterLastDash) in colorSingle.keys():
+		if len(afterLastDash) > 1 and ' '.join(afterLastDash) in colorSingle.keys():			
 			# If translated version exists
 			if colorSingle[' '.join(afterLastDash)]['local']:
 				afterLastDash = colorSingle[' '.join(afterLastDash)]['local']
 			# Else give a error message (If transled color missing)
 			else:
-				issue.criticalErrorMsg(''.join(afterLastDash) + ' Missing Translated Version')				
+				issue.criticalErrorMsg(''.join(afterLastDash) + ' Missing Translated Version')							
 			# Converting [afterLastDash] to a proper String				
 			afterLastDashString = ''.join([str(elem) for elem in afterLastDash])
 
 		# If afterLastDash is separated with spaces
-		if '/' in afterLastDashString:					
+		if '/' in afterLastDashString:
 			# Split afterLastDashToString with /
 			afterLastDashSplit = afterLastDashString.split('/')
 			for string in afterLastDashSplit:				
@@ -59,7 +84,7 @@ class Shared:
 
 		# # Translate Single Words				
 		# # If afterLastDash contains a single word And exists as a color keys
-		if len(afterLastDash) == 1 and ''.join(afterLastDash) in colorSingle.keys():													
+		if len(afterLastDash) == 1 and ''.join(afterLastDash) in colorSingle.keys():			
 			# If there is a translated version.
 			if colorSingle[''.join(afterLastDash)]['local']:						
 				# Replace first index, with translated color					
@@ -69,7 +94,6 @@ class Shared:
 				issue.criticalErrorMsg(''.join(afterLastDash) + ' Missing Translated Version')
 
 			# Converting [afterLastDash] to a proper String				
-			afterLastDashString = ''.join([str(elem) for elem in afterLastDash])
-
+			afterLastDashString = ''.join([str(elem) for elem in afterLastDash])				
 		# Return
 		return afterLastDashString

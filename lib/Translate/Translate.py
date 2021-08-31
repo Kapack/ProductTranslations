@@ -21,7 +21,8 @@ class Translate:
 
 		for product in products:
 			if products[product]['productType'] == 'cover' or products[product]['productType'] == 'case':			
-				products[product]['name'] = translateBeforeLastDash.make(productName=products[product]['name'], country=self.country)		
+				products[product]['name'] = translateBeforeLastDash.make(productName=products[product]['name'], country=self.country, product=products[product])
+		
 		# Return
 		return products
 	
@@ -31,7 +32,7 @@ class Translate:
 
 		for product in products:
 			if products[product]['productType'] == 'cover' or products[product]['productType'] == 'case':
-				products[product]['name'] = translateAfterLastDash.make(productName=products[product]['name'], country=self.country)						
+				products[product]['name'] = translateAfterLastDash.make(productName=products[product]['name'], country=self.country)
 		# Return
 		return products
 
@@ -41,16 +42,16 @@ class Translate:
 
 		for product in products:
 			if products[product]['productType'] == 'screenprotector':
-				products[product]['name'] = translateScreenProtector.make(productName=products[product]['name'], country=self.country)
+				products[product]['name'] = translateScreenProtector.make(productName=products[product]['name'], country=self.country, product=products[product])
 
 		return products
 
 	# ProductType: Watchstraps
-	def makeWatchstrap(self, products):
+	def makeWatchstrap(self, products):		
 		translateWatchstrap = Watchstrap()
 
 		for product in products:
 			if products[product]['productType'] == 'watchstrap':
-				products[product]['name'] = translateWatchstrap.make(productName=products[product]['name'], country=self.country)		
+				products[product]['name'] = translateWatchstrap.make(productName=products[product]['name'], country=self.country, product=products[product])
 
 		return products

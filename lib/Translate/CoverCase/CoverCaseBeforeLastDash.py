@@ -8,7 +8,7 @@ Translated Product Types: Covers and Cases.
 """
 
 class CoverCaseBeforeLastDash:
-	def make(self, productName, country):
+	def make(self, productName, country, product=None):
 		helper = Helper()
 		# Break up name
 		beforeAndAfterLastDash = helper.beforeAndAfterLastDash(productName)
@@ -16,9 +16,9 @@ class CoverCaseBeforeLastDash:
 		afterLastDash = beforeAndAfterLastDash[1]
 
 		# Go Trough Translations methods		
-		beforeLastDash = self.productFeature(beforeLastDash, country)
-		beforeLastDash = self.productMaterial(beforeLastDash, country)
-		beforeLastDash = self.productNameType(beforeLastDash, country)
+		beforeLastDash = self.productFeature(beforeLastDash, country, product)
+		beforeLastDash = self.productMaterial(beforeLastDash, country, product)
+		beforeLastDash = self.productNameType(beforeLastDash, country, product)
 		beforeLastDash = self.productPrepositions(beforeLastDash, country)
 			
 		# Converting [afterLastDash] to a String				
@@ -29,35 +29,35 @@ class CoverCaseBeforeLastDash:
 		return productName
 
 	# Product Feature
-	def productFeature(self, beforeLastDash, country):
+	def productFeature(self, beforeLastDash, country, product):
 		helper = Helper()
 		select = Select(country)
 		productFeatures = select.productFeatures()
 
 		# if feature exist in beforeLastDash
-		beforeLastDash = helper.dictKeyInString(productFeatures, beforeLastDash)
+		beforeLastDash = helper.dictKeyInString(productFeatures, beforeLastDash, product)
 
 		return beforeLastDash
 
 	# Product Material
-	def productMaterial(self, beforeLastDash, country):
+	def productMaterial(self, beforeLastDash, country, product):
 		helper = Helper()
 		select = Select(country)		
 		productMaterials = select.productMaterials()				
 
 		# if material exist in beforeLastDash
-		beforeLastDash = helper.dictKeyInString(productMaterials, beforeLastDash)		
+		beforeLastDash = helper.dictKeyInString(productMaterials, beforeLastDash, product)		
 
 		return beforeLastDash
 
 	# Replace productType / Flip case, Cover, Leather flip case etc.
-	def productNameType(self, beforeLastDash, country):		
+	def productNameType(self, beforeLastDash, country, product):		
 		helper = Helper()
 		select = Select(country)
 		productTypes = select.productTypes()
 		issue = Issue()
 
-		beforeLastDash = helper.dictKeyInString(productTypes, beforeLastDash)
+		beforeLastDash = helper.dictKeyInString(productTypes, beforeLastDash, product)
 		
 
 		# # Loop trough product types keys. Sorted by length of key, so flip case will get translated first

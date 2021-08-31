@@ -58,21 +58,21 @@ class Append:
 				if products[i]['productType'] == 'cover' or products[i]['productType'] == 'case':
 					# Get Product Manufacturer and Device SKUs
 					manSku = products[i]['sku'].split('-')[0][2:4]
-					devSku = products[i]['sku'].split('-')[1]					
+					devSku = products[i]['sku'].split('-')[1]
 
 				# If screen protectors
-				elif products[i]['productType'] == 'screenprotector':					
+				elif products[i]['productType'] == 'screenprotector':
 					manSku = products[i]['sku'].split('-')[0][3:5]
 					devSku = products[i]['sku'].split('-')[1]
 
 				# If watchstrap
-				elif products[i]['productType'] == 'watchstrap':					
+				elif products[i]['productType'] == 'watchstrap':
 					manSku = products[i]['sku'].split('-')[0][3:5]
 					devSku = products[i]['sku'].split('-')[1]
-
+				
 				# Assigning Correct Man and Dev Names
-				# If manSku has a match in deviceList				
-				if manSku == deviceList[ii]['manSku'] and devSku == deviceList[ii]['devSku']:					
+				# If manSku has a match in deviceList
+				if manSku == deviceList[ii]['manSku'] and devSku == deviceList[ii]['devSku']:
 					products[i]['manName'] = deviceList[ii]['manName']
 					products[i]['devName'] = deviceList[ii]['devName']
 

@@ -15,7 +15,7 @@ class OpenCsv:
 			# Iteration as primary key
 			i = 0
 			for key in reader:
-				products[i] = {'sku': key['sku'], 'name': key['name'], 'description': key['description'], 'manName': '', 'devName': '', 'template': ''}
+				products[i] = {'sku': key['sku'], 'name': key['name'], 'description': key['description'], 'manName': '', 'devName': '', 'template': '', 'productType': ''}
 				i += 1
 
 			return products

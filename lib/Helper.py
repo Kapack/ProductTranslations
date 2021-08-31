@@ -4,31 +4,39 @@ from lib.Issue import Issue
 class Helper:
 
 	def beforeAndAfterLastDash(self, productName):
-		beforeLastDash = productName.split(' - ')[0]
-		afterLastDash = productName.split(' - ')[-1].lower().split(' ')
+
+		if ' - ' in productName:
+			beforeLastDash = productName.split(' - ')[0]
+			afterLastDash = productName.split(' - ')[-1].lower().split(' ')
+
+		else:
+			beforeLastDash = productName
+			afterLastDash = ''
 
 		return [beforeLastDash, afterLastDash]
 
 	def createName(self, beforeLastDash, afterLastDashString):
-		productName = beforeLastDash + ' - ' + afterLastDashString
-
+		if afterLastDashString == '':
+			productName = beforeLastDash
+		else:
+			productName = beforeLastDash + ' - ' + afterLastDashString
 		return productName
 
-	def dictKeyInString(self, typeDict, string):
+	def dictKeyInString(self, typeDict, string, product):		
 		issue = Issue()
 
 		# String into a list / We a splitting the list into. a string, so we replace standalone words.
 		stringList = string.lower().split()		
 		# New stringList / We will convert this to a string lastly
-		newStringList = []
+		newStringList = []		
 
 		# Loop trough the list of strings, save index and word to variable
-		for (index, word) in enumerate(stringList):			
+		for (index, word) in enumerate(stringList):
 			# Saving currentWord to a variable
 			currentWord = stringList[index]
 
-			# If currentWord (Single word / Watchband) is in typeDict key
-			if currentWord in typeDict.keys():
+			# If currentWord (Single word / Watchband) is in typeDict key, but not if current word is part of the devName (LG Style 3)
+			if currentWord in typeDict.keys() and currentWord not in product['devName'].lower():
 
 				# If translated version exists
 				if typeDict[currentWord]:
