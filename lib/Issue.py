@@ -9,7 +9,13 @@ class Issue:
 		for product in products:
 			if len(products[product]['manName']) == 0 or len(products[product]['devName']) == 0:
 				# Error Message
-				self.criticalErrorMsg(products[product]['sku'] + ' is missing manName or devName. You need to update the device list.')
+				self.warningErrorMsg(products[product]['sku'] + ' is missing manName or devName. Update the device list or the product fits multiple products.')
+
+	def doubleSpace(self):
+		products = self.products
+		for product in products:
+			if '  ' in products[product]['description']:
+				self.criticalErrorMsg(products[product]['sku'] + ' Has a double dash in description. Fix it manual with device name ')	
 
 	# User Messages
 	def warningErrorMsg(self, msg):

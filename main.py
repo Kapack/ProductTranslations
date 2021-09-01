@@ -21,106 +21,114 @@ from lib.Description import Description
 from lib.Issue import Issue
 from lib.Correction import Correction
 
-def main():
-	userAnswer = userInput()
-	week = userAnswer[0]
-	country = userAnswer[1]
-	createDatabaseMsg = userAnswer[2]
-	# If any .csv has been updated, so database will be updated
-	if (createDatabaseMsg == 'y'):
-		createDatabase(createDatabaseMsg)
-	
-	createFolders(week, country)
-	products = getCsv(week, country)
-	commonErrors(products)
-	products = getAttributes(country, products)
-	products = translateItems(country, products)
-	products = makeDescriptions(country, products)
-	products = corrections(country, products)
-	
-	issues(products)
-	saveCsv(country, week, products)
+class Main:
+	def __init__(self):
+		userAnswer = self.userInput()
+		week = userAnswer[0]
+		country = userAnswer[1]
+		createDatabaseMsg = userAnswer[2]
+		# If any .csv has been updated, so database will be updated
+		if (createDatabaseMsg == 'y'):
+			self.createDatabase(createDatabaseMsg)
+		
+		self.createFolders(week, country)
+		products = self.getCsv(week, country)
+		self.commonErrors(products)
+		products = self.getAttributes(country, products)
+		products = self.translateItems(country, products)
+		products = self.makeDescriptions(country, products)
+		products = self.corrections(country, products)
+		
+		self.issues(products)
+		self.saveCsv(country, week, products)
 
-	# User Success Message
-	print('\x1b[0;30;42m' + 'Translations Complete' + '\x1b[0m')	
+		# User Success Message
+		print('\x1b[0;30;42m' + 'Translations Complete' + '\x1b[0m')	
 
-# User Input
-def userInput():	
-	# week = raw_input("Week number?: ")
-	# country = raw_input("Write country abbreviation (eg. dk, se, fi, de, nl etc.): ").lower()
-	# createDatabaseMsg = raw_input("Do you want to update the database? / Has any .csv files been updated? [y/n] ").lower()
+	# User Input
+	def userInput(self):	
+		# week = raw_input("Week number?: ")
+		# country = raw_input("Write country abbreviation (eg. dk, se, fi, de, nl etc.): ").lower()
+		# createDatabaseMsg = raw_input("Do you want to update the database? / Has any .csv files been updated? [y/n] ").lower()
 
-	week = '002'
-	country = 'dk'
-	createDatabaseMsg = 'n'
-	
-	return [week, country, createDatabaseMsg]
+		week = 'test'
+		country = 'dk'
+		createDatabaseMsg = 'n'
+		
+		return [week, country, createDatabaseMsg]
 
-# Create Database
-def createDatabase(createDatabaseMsg):
-	database = Database(createDatabaseMsg)
-	database.createAndInsertTables()
+	# Create Database
+	def createDatabase(self, createDatabaseMsg):
+		print('Creating database...')
+		database = Database(createDatabaseMsg)
+		database.createAndInsertTables()		
 
-# Create Folders
-def createFolders(week, country):
-	createFolder = CreateFolder(week, country)
-	createFolder.folder()
+	# Create Folders
+	def createFolders(self, week, country):
+		createFolder = CreateFolder(week, country)
+		createFolder.folder()
 
-# Get CSV Items
-def getCsv(week, country):
-	openCsv = OpenCsv(week, country)
-	# File Needs SKU, Name and Description
-	products = openCsv.initFile()
-	return products
+	# Get CSV Items
+	def getCsv(self, week, country):
+		openCsv = OpenCsv(week, country)
+		# File Needs SKU, Name and Description
+		products = openCsv.initFile()
+		return products
 
-# Check for common errors, before any changes have been made
-def commonErrors(products):
-	commonError = CommonError(products)
-	commonError.dobuleDash()
+	# Check for common errors, before any changes have been made
+	def commonErrors(self, products):
+		commonError = CommonError(products)
+		commonError.dobuleDash()
 
-# Analyse Skus and Names. Append correct Attributes
-def getAttributes(country, products):
-	append = Append(country, products)
-	append.productType()
-	append.deviceAndModel()
-	append.product2021Template()
-	append.product2020Template()
-	products = append.done()
-	return products
+	# Analyse Skus and Names. Append correct Attributes
+	def getAttributes(self, country, products):
+		append = Append(country, products)
+		append.productType()
+		append.deviceAndModel()
+		append.product2021Template()
+		append.product2020Template()
+		products = append.done()
+		return products
 
-# Translate
-def translateItems(country, products):	
-	translate = Translate(country, products)
-	products = translate.makeBeforeLastDash(products)	
-	products = translate.makeAfterLastDash(products)	
-	products = translate.makeScreenProtector(products)
-	products = translate.makeWatchstrap(products)
-	return products
+	# Translate
+	def translateItems(self, country, products):	
+		print('Translating...')
+		translate = Translate(country, products)
+		products = translate.makeBeforeLastDash(products)	
+		products = translate.makeAfterLastDash(products)	
+		products = translate.makeScreenProtector(products)
+		products = translate.makeWatchstrap(products)
+		return products
 
-# Make Description from productTemplates
-def makeDescriptions(country, products):
-	template = Description(country, products)
-	template.productTemplate()
-	products = template.done()
-	return products
+	# Make Description from productTemplates
+	def makeDescriptions(self, country, products):
+		print('Adding template descriptions...')
+		template = Description(country, products)
+		template.productTemplate()
+		products = template.done()
+		return products
 
-# Corrections
-def corrections(country, products):
-	correct = Correction(country)
-	products = correct.formatName(products)
-	products = correct.formatDeviceName(products)
-	return products
+	# Corrections
+	def corrections(self, country, products):
+		print('Making corrections...')
+		correct = Correction(country)
+		products = correct.formatName(products)
+		products = correct.formatDeviceName(products)
+		return products
 
-# Check for common issues
-def issues(products):
-	issue = Issue(products)	
-	issue.checkForEmptyManAndDevName()
+	# Check for common issues
+	def issues(self, products):
+		issue = Issue(products)	
+		issue.checkForEmptyManAndDevName()
+		issue.doubleSpace()
 
-# Create CSV and Folder
-def saveCsv(week, country, products):
-	createCsv = CreateCsv(country, week, products)
-	createCsv.saveFile()
+	# Create CSV and Folder
+	def saveCsv(self, week, country, products):
+		print('Saving files...')
+		createCsv = CreateCsv(country, week, products)
+		createCsv.saveFile()
 
 # Calling Main
 if __name__ == '__main__':
-	main()
+	Main()
+	

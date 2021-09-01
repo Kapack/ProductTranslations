@@ -84,6 +84,7 @@ class Append:
 		return products
 
 	def product2021Template(self):
+		# Templates for productTypes?
 		products = self.products
 		select = Select(self.country)
 		helper = Helper()

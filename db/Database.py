@@ -106,7 +106,7 @@ class Database:
 
 	# Color Words
 	def createColorWordsTable(self):	
-		sql = 'CREATE TABLE if not exists colorWords (id integer primary key not null, color text, se_singular text, se_plural text, se_neutrum text, dk_singular text, dk_plural text, dk_neutrum text, no_singular text, no_plural text, no_neutrum text, fi_singular text, fi_plural text, fi_neutrum text, de_singular text, de_plural text, de_neutrum text)'
+		sql = 'CREATE TABLE if not exists colorWords (id integer primary key not null, color text, se_singular text, se_plural text, se_neutrum text, dk_singular text, dk_plural text, dk_neutrum text, no_singular text, no_plural text, no_neutrum text, fi_singular text, fi_plural text, fi_neutrum text, de_singular text, de_plural text, de_neutrum text, nl_singular text, nl_plural text, nl_neutrum text)'
 		c.execute(sql)
 
 	def insertColorWords(self):
@@ -114,13 +114,13 @@ class Database:
 			reader = csv.DictReader(file, delimiter=';')
 			i = 1		
 			for row in reader:									
-				c.execute('INSERT INTO colorWords VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', ( i, str(row['color']).lower(), str(row['se_singular']).lower(), str(row['se_plural']).lower(), str(row['se_neutrum']).lower(), str(row['dk_singular']).lower(), str(row['dk_plural']).lower(), str(row['dk_neutrum']).lower(), str(row['no_singular']).lower(), str(row['no_plural']).lower(), str(row['no_neutrum']).lower(), str(row['fi_singular']).lower(), str(row['fi_plural']).lower(), str(row['fi_neutrum']).lower(), str(row['de_singular']).lower(), str(row['de_plural']).lower(), str(row['de_neutrum']).lower() ))
+				c.execute('INSERT INTO colorWords VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', ( i, str(row['color']).lower(), str(row['se_singular']).lower(), str(row['se_plural']).lower(), str(row['se_neutrum']).lower(), str(row['dk_singular']).lower(), str(row['dk_plural']).lower(), str(row['dk_neutrum']).lower(), str(row['no_singular']).lower(), str(row['no_plural']).lower(), str(row['no_neutrum']).lower(), str(row['fi_singular']).lower(), str(row['fi_plural']).lower(), str(row['fi_neutrum']).lower(), str(row['de_singular']).lower(), str(row['de_plural']).lower(), str(row['de_neutrum']).lower(), str(row['nl_singular']).lower(), str(row['nl_plural']).lower(), str(row['nl_neutrum']).lower() ))
 				i += 1
 				conn.commit()
 
 	# Prepositions
 	def createPrepositionsTable(self):
-		sql = 'CREATE TABLE if not exists prepositions (id integer primary key not null, preposition text, se text, dk text, no text, fi text, de text)'
+		sql = 'CREATE TABLE if not exists prepositions (id integer primary key not null, preposition text, se text, dk text, no text, fi text, de text, nl text)'
 		c.execute(sql)
 
 	def insertPrepositions(self):
@@ -128,7 +128,7 @@ class Database:
 			reader = csv.DictReader(file, delimiter=';')
 			i = 1
 			for row in reader:
-				c.execute('INSERT INTO prepositions VALUES(?, ?, ?, ?, ?, ?, ?)', ( i, str(row['preposition']), str(row['se']), str(row['dk']), str(row['no']), str(row['fi']), str(row['de']) ))
+				c.execute('INSERT INTO prepositions VALUES(?, ?, ?, ?, ?, ?, ?, ?)', ( i, str(row['preposition']), str(row['se']), str(row['dk']), str(row['no']), str(row['fi']), str(row['de']), str(row['nl']) ))
 				i += 1
 				conn.commit()
 	# Adjectives

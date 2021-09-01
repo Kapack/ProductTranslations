@@ -1,12 +1,12 @@
 adjective;se_singular;se_plural;dk_singular;dk_plural;no_singular;no_plural;fi_singular;fi_plural;de_singular;de_plural;nl_singular;nl_plural;fr_singular;fr_plural
-cute;söt;söta;sød;søde;søt;søte;;;;;;;;
-beautiful;skön;;smuk;smukke;nydelig;nydelige;;;;;;;;
-vivid;;;livlig;livlige;livlig;livlige;;;;;;;;
-adorable;;;yndig;yndige;bedårende ;bedårende;;;;;;;;
-flowered;blommig;;blomstret;blomstrede;blomstret;blomstrende;;;;;;;;
-colorized;;;farvet;farvede;farget;farget;;;;;;;;
-lovely;härlig;härliga;herlig;herlige;herlig;herlige;;;;;;;;
-pretty;;;pæn;pæne;pen;pene;;;;;;;;
-angry;arg;arga;vred;vrede;sint;sinte;;;;;;;;
-exquisite;utsökt;utsökta;udsøgt;udsøgte;utsøkt;;;;;;;;;
-little;liten;;lille;små;;;;;;;;;;
+cute;söt;söta;sød;søde;søt;søte;;;niedlich;niedlich;snoezig;snoezige;;
+beautiful;skön;;smuk;smukke;nydelig;nydelige;;;schön;schön;mooi;mooie;;
+vivid;;;livlig;livlige;livlig;livlige;;;lebendig;lebendig;levendig;levendige;;
+adorable;;;yndig;yndige;bedårende ;bedårende;;;liebenswert;liebenswert;schattig;schattige;;
+flowered;blommig;;blomstret;blomstrede;blomstret;blomstrende;;;geblümt;geblümt;gebloemd;gebloemde;;
+colorized;;;farvet;farvede;farget;farget;;;koloriert;koloriert;gekleurd;gekleurde;;
+lovely;härlig;härliga;herlig;herlige;herlig;herlige;;;schön;schön;leuk;leuke;;
+pretty;;;pæn;pæne;pen;pene;;;hübsch;hübsch;mooi;mooie;;
+angry;arg;arga;vred;vrede;sint;sinte;;;wütend;wütend;boos;boze;;
+exquisite;utsökt;utsökta;udsøgt;udsøgte;utsøkt;;;;exquisit;exquisit;prachtig;prachtige;;
+little;liten;;lille;små;;;;;wenig;wenig;klein;kleine;;
