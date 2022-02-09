@@ -34,12 +34,13 @@ class CreateCsv:
 		# Write .csv File for each country
 		for country in countries:			
 			with open(path + 'week-'+week+'-'+country+'-translation.csv', 'w') as file:
-				fieldnames = ['sku', 'name', 'description', 'url_key', 'store_view_code']
+				fieldnames = ['sku', 'name', 'description', 'url_key', 'store_view_code', 'product_type']
 				writer = csv.DictWriter(file, fieldnames=fieldnames, delimiter=';')
 				writer.writeheader()
 
 				# iterate			
 				i = 0
 				for product in products:								
-					writer.writerow({'sku': products[i]['sku'], 'name': products[i]['name'].encode('utf-8'), 'description': products[i]['description'].encode('utf-8'), 'url_key': slugify(products[i]['name']), 'store_view_code': country})
+					writer.writerow({'sku': products[i]['sku'], 'name': products[i]['name'].encode('utf-8'), 'description': products[i]['description'].encode('utf-8'), 'url_key': slugify(products[i]['name']), 'store_view_code': country, 'product_type': 'simple' })					
+
 					i += 1

@@ -1,3 +1,5 @@
+#!/usr/bin/env python2.7
+
 # DO NOT CHANGE ANY FILE NAMES!
 
 # This program translate the columns in import.csv - The columns HAS to be names sku, name and description
@@ -47,13 +49,13 @@ class Main:
 
 	# User Input
 	def userInput(self):	
-		# week = raw_input("Week number?: ")
-		# country = raw_input("Write country abbreviation (eg. dk, se, fi, de, nl etc.): ").lower()
-		# createDatabaseMsg = raw_input("Do you want to update the database? / Has any .csv files been updated? [y/n] ").lower()
+		week = raw_input("Week number?: ")
+		country = raw_input("Write country abbreviation (eg. dk, se, fi, de, nl etc.): ").lower()
+		createDatabaseMsg = raw_input("Do you want to update the database? / Has any .csv files been updated? [y/n] ").lower()
 
-		week = 'test'
-		country = 'dk'
-		createDatabaseMsg = 'n'
+		# week = 'new-test'
+		# country = 'dk'
+		# createDatabaseMsg = 'n'
 		
 		return [week, country, createDatabaseMsg]
 
@@ -80,22 +82,25 @@ class Main:
 		commonError = CommonError(products)
 		commonError.dobuleDash()
 
-	# Analyse Skus and Names. Append correct Attributes
+	# Analyse Skus and Names. Append correct values to products = {...}
 	def getAttributes(self, country, products):
 		append = Append(country, products)
 		append.productType()
-		append.deviceAndModel()
+		append.deviceAndModel()		
+		append.attributeColor()
+		append.attributeMaterial()
+		append.attributeFeature()
+		append.attributeSize()
 		append.product2021Template()
-		append.product2020Template()
-		products = append.done()
+		products = append.product2020Template()
 		return products
 
 	# Translate
 	def translateItems(self, country, products):	
 		print('Translating...')
 		translate = Translate(country, products)
-		products = translate.makeBeforeLastDash(products)	
-		products = translate.makeAfterLastDash(products)	
+		products = translate.makeBeforeLastDash(products)
+		products = translate.makeAfterLastDash(products)
 		products = translate.makeScreenProtector(products)
 		products = translate.makeWatchstrap(products)
 		return products
@@ -103,9 +108,8 @@ class Main:
 	# Make Description from productTemplates
 	def makeDescriptions(self, country, products):
 		print('Adding template descriptions...')
-		template = Description(country, products)
-		template.productTemplate()
-		products = template.done()
+		products = Description(country, products)
+		products = products.loopProducts()
 		return products
 
 	# Corrections

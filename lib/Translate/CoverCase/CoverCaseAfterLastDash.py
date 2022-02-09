@@ -17,7 +17,7 @@ Translated Product Types: Covers and Cases.
 """
 
 class CoverCaseAfterLastDash:
-	def make(self, productName, country):
+	def make(self, productName, country, product):		
 		helper = Helper()
 		# Break up name
 		beforeAndAfterLastDash = helper.beforeAndAfterLastDash(productName)
@@ -25,8 +25,8 @@ class CoverCaseAfterLastDash:
 		afterLastDash = beforeAndAfterLastDash[1]
 
 		# Go Trough Translations methods		
-		afterLastDash = self.productNameSingleColor(afterLastDash, country)
-		# afterLastDash = self.productNameLongColor(afterLastDash, country)								
+		afterLastDash = self.productNameSingleColor(afterLastDash, country)		
+		# afterLastDash = self.productNameLongColor(afterLastDash, country)		
 		afterLastDash = self.productSingularMotifAndColor(str(afterLastDash), country)
 		afterLastDash = self.productPluralMotifAndColor(str(afterLastDash), country)
 		afterLastDash = self.productVerbs(str(afterLastDash), country)
@@ -42,7 +42,7 @@ class CoverCaseAfterLastDash:
 	# Translated Single Colors (Incl. slashes) in afterLastDash
 	def productNameSingleColor(self, afterLastDash, country):
 		shared = Shared()		
-		afterLastDashString = shared.productNameSingleColor(afterLastDash, country)		
+		afterLastDashString = shared.productNameSingleColor(afterLastDash, country)			
 		return afterLastDashString
 
 	# Replace Colors (Where afterLastDash only exists of colors, and not motif)
@@ -63,15 +63,16 @@ class CoverCaseAfterLastDash:
 		lookSingularWords = lookWords[0]
 		
 		# Colors
-		colorWords = select.colorWords()
-		colorSingularWords = colorWords[0]
+		colors = select.colors()
+		colorSingularWords = colors[0]
 
 		# Adjectives
 		adjectiveWords = select.adjectives()		
 		adjectives = adjectiveWords[0]
 		
 		# Convert afterLastDash into a List
-		afterLastDashList = afterLastDash.split()
+		afterLastDashList = afterLastDash.split()		
+		
 		# Loops trough every word afterLastDashList
 		i = 0
 		for currentWord in afterLastDashList:
@@ -85,9 +86,9 @@ class CoverCaseAfterLastDash:
 				# Check if previousWord is a color and there is a translated version						
 				if previousWord in colorSingularWords.keys() and colorSingularWords[previousWord]:					
 					# Get the indefinite_article of current word, is it 2 use color_neutrum
-				 	if lookSingularWords[currentWord]['indefinite_article'] == '2':				 		
+					if lookSingularWords[currentWord]['indefinite_article'] == '2':				 		
 						# replace with neutrum color
-						afterLastDashList[i - 1] = helper.checkIfTranslatedExists(typeDict=colorSingularWords, word=previousWord, key='neutrum')																												
+						afterLastDashList[i - 1] = helper.checkIfTranslatedExists(typeDict=colorSingularWords, word=previousWord, key='neutrum')
 						
 					else:
 						afterLastDashList[i - 1] = helper.checkIfTranslatedExists(typeDict=colorSingularWords, word=previousWord, key='local')						
@@ -109,9 +110,10 @@ class CoverCaseAfterLastDash:
 		# Looks
 		lookWords = select.lookWords()		
 		lookPluralWords = lookWords[1]
+
 		# Colors
-		colorWords = select.colorWords()		
-		colorPluralWords = colorWords[1]
+		colors = select.colors()		
+		colorPlurals = colors[1]
 		# Adjectives
 		adjectiveWords = select.adjectives()		
 		adjectives = adjectiveWords[1]
@@ -130,9 +132,9 @@ class CoverCaseAfterLastDash:
 				afterLastDashList[i] = helper.checkIfTranslatedExists(typeDict=lookPluralWords, word=currentWord)
 						
 				# If previousWord exists in colorPluralWords. 						
-				if previousWord in colorPluralWords.keys():
+				if previousWord in colorPlurals.keys():
 					# Replace with plural color
-					afterLastDashList[i - 1] = helper.checkIfTranslatedExists(typeDict=colorPluralWords, word=previousWord)
+					afterLastDashList[i - 1] = helper.checkIfTranslatedExists(typeDict=colorPlurals, word=previousWord)
 
 				# If previousWord exists as adjective
 				if previousWord in adjectives.keys():

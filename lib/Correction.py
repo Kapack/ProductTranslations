@@ -39,6 +39,9 @@ class Correction:
 				if word.lower() == 'mofi':
 					word = 'MOFi'
 
+				if word.lower() == 'tpu':
+					word = 'TPU'
+
 				if word.lower() == 'lcd':			
 					word = 'LCD'
 
@@ -54,6 +57,11 @@ class Correction:
 				if word.lower() == 'ipad':
 					word = 'iPad'
 
+				if word.lower() == 'tgvi\'s':
+					word = 'TGVI\'S'
+
+				if word.lower() == 'etrex':
+					word = 'eTrex'
 				
 				# Translated Prepositions with lowercase
 				if word.lower() in prepositions.values():
@@ -73,14 +81,14 @@ class Correction:
 
 		for product in products:
 			# if devName in lowercase exists in productName string in lowercase
-			if products[product]['devName'].lower() in products[product]['name'].lower() or products[product]['manName'].lower() in products[product]['name'].lower():
+			if products[product]['device']['devName'].lower() in products[product]['name'].lower() or products[product]['device']['manName'].lower() in products[product]['name'].lower():
 
 				# Format manName
-				src_str = re.compile(products[product]['manName'], re.IGNORECASE)
-				products[product]['name'] = src_str.sub(products[product]['manName'], products[product]['name'])
+				src_str = re.compile(products[product]['device']['manName'], re.IGNORECASE)
+				products[product]['name'] = src_str.sub(products[product]['device']['manName'], products[product]['name'])
 
 				# Format devName
-				src_str = re.compile(products[product]['devName'], re.IGNORECASE)
-				products[product]['name'] = src_str.sub(products[product]['devName'], products[product]['name'])				
+				src_str = re.compile(products[product]['device']['devName'], re.IGNORECASE)
+				products[product]['name'] = src_str.sub(products[product]['device']['devName'], products[product]['name'])				
 
 		return products

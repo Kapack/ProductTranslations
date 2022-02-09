@@ -99,6 +99,15 @@ Apple;01;97;iPhone 13 Pro
 Apple;01;98;iPhone 13 Pro Max
 Apple;01;99;iPhone 13 Mini
 Apple;01;100;TV 4K (2021)
+Apple;01;101;Magsafe 2
+Apple;01;102;AirPods Pro 2
+Apple;01;103;Apple Watch (41mm)
+Apple;01;104;Apple Watch (45mm)
+Apple;01;105;AirPods 3
+Apple;01;106;iPad Mini 6 (2021)
+Apple;01;107;iPad Pro 11 (2021)
+Apple;01;108;iPad Pro 12.9 (2021)
+Apple;01;109;iPad 10.2 (2021)
 HTC;02;01;Touch HD
 HTC;02;02;HD2
 HTC;02;03;Evo 4G
@@ -520,6 +529,38 @@ Samsung;03;327;Galaxy SmartTag
 Samsung;03;328;Gear S2 Classic
 Samsung;03;329;Galaxy M32
 Samsung;03;330;Galaxy S21 FE
+Samsung;03;331;Galaxy S21 Plus 5G
+Samsung;03;332;Galaxy M21 2021
+Samsung;03;333;Galaxy Watch 4 (40mm)
+Samsung;03;334;Galaxy Watch 4 (44mm)
+Samsung;03;335;Galaxy Watch 4 Classic (42mm)
+Samsung;03;336;Galaxy Watch 4 Classic (46mm)
+Samsung;03;337;Galaxy Buds Pro
+Samsung;03;338;Galaxy Z Flip3 5G
+Samsung;03;339;Galaxy Z Fold3 5G
+Samsung;03;340;Galaxy Z Flip 5G
+Samsung;03;341;Galaxy A12 Nacho
+Samsung;03;342;Galaxy S21 Ultra 5G
+Samsung;03;343;Galaxy A52
+Samsung;03;344;Galaxy A52s 5G
+Samsung;03;345;Galaxy M32 5G
+Samsung;03;346;Galaxy M22
+Samsung;03;347;Galaxy M52 5G
+Samsung;03;348;Galaxy S22 Plus
+Samsung;03;349;Galaxy S22 Ultra
+Samsung;03;350;Galaxy S22
+Samsung;03;351;Galaxy A13 5G
+Samsung;03;352;Galaxy A03
+Samsung;03;353;Galaxy A53 5G
+Samsung;03;354;Galaxy A33 5G
+Samsung;03;355;Galaxy A50s
+Samsung;03;356;Galaxy A30s
+Samsung;03;357;Galaxy A13 4G
+Samsung;03;358;Galaxy A03 Core
+Samsung;03;359;Galaxy A73
+Samsung;03;360;Galaxy A20
+Samsung;03;361;Galaxy M10s
+Samsung;03;362;Galaxy F22
 Nokia;04;01;N8
 Nokia;04;02;5800-5230
 Nokia;04;03;C7
@@ -640,6 +681,13 @@ Nokia;04;119;G10
 Nokia;04;120;G20
 Nokia;04;121;C01 Plus
 Nokia;04;122;C20 Plus
+Nokia;04;123;C1 2nd Edition
+Nokia;04;124;C30
+Nokia;04;125;XR20
+Nokia;04;126;G50
+Nokia;04;127;G300
+Nokia;04;128;X100
+Nokia;04;129;6310 (2021)
 Sony Ericsson;05;01;Xperia X10
 Sony Ericsson;05;02;Xperia X10 mini
 Sony Ericsson;05;03;Xperia X8
@@ -730,7 +778,7 @@ LG;07;64;Zero
 LG;07;65;K7
 LG;07;66;K10
 LG;07;67;G5
-LG;07;68;Watch Urbane
+LG;07;68;Watch Urbane W150
 LG;07;69;G Watch R W110
 LG;07;70;G Watch W100
 LG;07;71;K4
@@ -860,7 +908,6 @@ Motorola;08;50;One Power
 Motorola;08;51;Moto E5 Play Go
 Motorola;08;52;Moto G7
 Motorola;08;53;Moto E6
-Motorola;08;54;
 Motorola;08;55;Moto G7 Play
 Motorola;08;56;Moto G7 Plus
 Motorola;08;57;Moto G7 Power
@@ -920,6 +967,30 @@ Motorola;08;110;Moto 360 (3rd Gen)
 Motorola;08;111;Moto G Stylus 5G
 Motorola;08;112;Defy (2021)
 Motorola;08;113;One 5G UW
+Motorola;08;114;Edge 20
+Motorola;08;115;Edge 20 Pro
+Motorola;08;116;Edge 20 Lite
+Motorola;08;117;Moto G60s
+Motorola;08;118;Edge 20 Fusion
+Motorola;08;119;Edge (2021)
+Motorola;08;120;Moto E20
+Motorola;08;121;Moto G50 5G
+Motorola;08;122;G Pure
+Motorola;08;123;Moto E40
+Motorola;08;124;Moto E30
+Motorola;08;125;Moto G51
+Motorola;08;126;Moto Watch 100
+Motorola;08;127;Moto G Power (2022)
+Motorola;08;128;Moto G Stylus (2022)
+Motorola;08;129;Moto E7i Power
+Motorola;08;130;Moto G31
+Motorola;08;131;Moto G71 5G
+Motorola;08;132;Edge 30 Ultra
+Motorola;08;133;Moto G51 5G
+Motorola;08;134;Moto G200 5G
+Motorola;08;135;Moto G41
+Motorola;08;136;Edge S30
+Motorola;08;137;Edge X30
 Amazon;09;01;Kindle Fire
 Amazon;09;02;Kindle Voyage
 Amazon;09;03;Kindle Paperwhite
@@ -948,6 +1019,11 @@ Amazon;09;25;Fire HD 8 Plus (2020)
 Amazon;09;26;Echo Dot (3rd Gen)
 Amazon;09;27;Halo Band
 Amazon;09;28;Fire TV Stick 4K
+Amazon;09;29;Echo Buds 2
+Amazon;09;30;Fire TV Stick Lite
+Amazon;09;31;Fire TV Stick 4K (3rd)
+Amazon;09;32;Fire TV Stick 4K (2nd)
+Amazon;09;33;Halo View
 Sony;10;01;Xperia S
 Sony;10;02;Xperia P
 Sony;10;03;Xperia U
@@ -1074,6 +1150,20 @@ Sony;10;124;Xperia 10 III
 Sony;10;125;Xperia Ace 2
 Sony;10;126;Xperia 1 III
 Sony;10;127;Xperia 5 III
+Sony;10;128;MDR-100ABN
+Sony;10;129;WH-H900N
+Sony;10;130;WH-H800
+Sony;10;131;WF-SP800N
+Sony;10;132;Xperia 10 III Lite
+Sony;10;133;ZV-E10
+Sony;10;134;MDR-XB650BT
+Sony;10;135;MDR-HW700
+Sony;10;136;WH-1000XM4
+Sony;10;137;WH-XB900N
+Sony;10;138;MDR-Z7
+Sony;10;139;Xperia Pro-I
+Sony;10;140;DSC-WX500
+Sony;10;141;PlayStation Portable
 Huawei;11;00;MediaPad 7 Youth
 Huawei;11;01;Honor
 Huawei;11;02;Sonic
@@ -1164,7 +1254,7 @@ Huawei;11;91;Y7
 Huawei;11;92;Honor 9 Lite
 Huawei;11;93;Honor 7X
 Huawei;11;94;Honor 10
-Huawei;11;95;P Smart 2019
+Huawei;11;95;Honor 10
 Huawei;11;96;Honor View 10
 Huawei;11;97;MediaPad T2 Pro 10.0
 Huawei;11;98;Y6 2018
@@ -1261,6 +1351,18 @@ Huawei;11;189;P20 Lite (2019)
 Huawei;11;190;Watch 3 Pro
 Huawei;11;191;Watch 3
 Huawei;11;192;FreeBuds 4
+Huawei;11;193;FreeBuds 4i
+Huawei;11;194;HW22 Pro Max
+Huawei;11;195;Nova 9
+Huawei;11;196;Watch Fit Mini
+Huawei;11;197;Watch GT 3 (46mm)
+Huawei;11;198;Watch GT 3 (42mm)
+Huawei;11;199;Nova 9 Pro
+Huawei;11;200;Nova 8i
+Huawei;11;201;Watch GT Runner
+Huawei;11;202;FreeBuds Lipstick
+Huawei;11;203;Band 6 Pro
+Huawei;11;204;Band 6
 ASUS;12;02;Memo Pad 8
 ASUS;12;03;PadFone 2
 ASUS;12;04;PadFone Infinity
@@ -1325,6 +1427,11 @@ ASUS;12;63;ROG Phone 5
 ASUS;12;64;Zenfone 8
 ASUS;12;65;Zenfone 8 Flip
 ASUS;12;66;ROG Phone 5 Pro
+ASUS;12;67;ROG Delta Aura
+ASUS;12;68;ROG STRIX Fusion 300
+ASUS;12;69;ROG STRIX Fusion 500
+ASUS;12;70;ROG STRIX Fusion 700
+ASUS;12;71;ROG Centurion
 Microsoft;13;01;Surface
 Microsoft;13;02;Surface Pro / Pro 2
 Microsoft;13;03;Lumia 535
@@ -1370,11 +1477,13 @@ Google;14;24;Pixel 4a 5G
 Google;14;25;Pixel 5a
 Google;14;26;Pixel 6
 Google;14;27;Pixel 6 Pro
+Google;14;28;Pixel 6a
 Nintendo;15;01;Wii U
 Nintendo;15;02;Switch
 Nintendo;15;03;Switch Lite
 Nintendo;15;04;2DS XL
 Nintendo;15;05;Switch Pro
+Nintendo;15;06;Switch OLED
 Acer;16;01;Iconia Tab
 Acer;16;02;Iconia Tab A3
 Acer;16;03;Iconia Tab 8
@@ -1494,7 +1603,7 @@ ZTE;20;10;Blade V9
 ZTE;20;11;Blade A520
 ZTE;20;12;Blade L130
 ZTE;20;13;Blade A7
-ZTE;20;14;Blade A5 2019
+ZTE;20;14;Blade A5 (2019)
 ZTE;20;15;Blade A6 Lite
 ZTE;20;16;nubia Red Magic 3
 ZTE;20;17;Blade A3 (2019)
@@ -1535,6 +1644,12 @@ ZTE;20;51;Red Magic Watch
 ZTE;20;52;Blade A51
 ZTE;20;53;Watch GT
 ZTE;20;54;Watch Live
+ZTE;20;55;Blade A71
+ZTE;20;56;Blade A31
+ZTE;20;57;Axon 30 5G
+ZTE;20;58;Blade V30 Vita
+ZTE;20;59;Blade V30
+ZTE;20;60;Libero 5G II
 Toshiba;21;01;Encore 8
 OnePlus;22;01;One
 OnePlus;22;02;2
@@ -1561,6 +1676,11 @@ OnePlus;22;22;9R
 OnePlus;22;23;Watch
 OnePlus;22;24;Nord CE 5G
 OnePlus;22;25;Nord N200 5G
+OnePlus;22;26;Nord 2 5G
+OnePlus;22;27;Buds Pro
+OnePlus;22;28;9RT 5G
+OnePlus;22;29;Nord N20 5G
+OnePlus;22;30;10 Pro
 Alcatel;23;01;OneTouch Idol Alpha
 Alcatel;23;02;OneTouch Idol 3 (5.5)
 Alcatel;23;03;OneTouch Idol 3 (4.7)
@@ -1737,6 +1857,40 @@ Xiaomi;24;130;Poco M3 Pro
 Xiaomi;24;131;Redmi Note 8 2021
 Xiaomi;24;132;Mi Watch Color
 Xiaomi;24;133;Poco X3 GT
+Xiaomi;24;134;Mi Watch Revolve Active
+Xiaomi;24;135;Poco F3 GT
+Xiaomi;24;136;Mix 4
+Xiaomi;24;137;Redmi 10
+Xiaomi;24;138;Redmi 10 Prime
+Xiaomi;24;139;11T
+Xiaomi;24;140;11T Pro
+Xiaomi;24;141;Watch Color 2
+Xiaomi;24;142;Redmi Buds 3
+Xiaomi;24;143;Mibro Lite
+Xiaomi;24;144;Civi
+Xiaomi;24;145;Redmi Note 11
+Xiaomi;24;146;Redmi Note 11 Pro
+Xiaomi;24;147;Redmi Note 11 Pro Plus
+Xiaomi;24;148;Redmi Watch 2
+Xiaomi;24;149;Redmi Watch 2 Lite
+Xiaomi;24;150;Poco M4 Pro 5G
+Xiaomi;24;151;Redmi Note 11T 5G
+Xiaomi;24;152;Redmi Buds 3 Youth Edition
+Xiaomi;24;153;Redmi Smart Band Pro
+Xiaomi;24;154;Hey Plus
+Xiaomi;24;155;12
+Xiaomi;24;156;12 Pro
+Xiaomi;24;157;12 Ultra
+Xiaomi;24;158;12X
+Xiaomi;24;159;Redmi Note 8 2021
+Xiaomi;24;160;Mi 11X
+Xiaomi;24;161;Mi 11X Pro
+Xiaomi;24;162;Poco C3
+Xiaomi;24;163;Redmi 9 Activ
+Xiaomi;24;164;Poco C31
+Xiaomi;24;165;Poco M2 Reloaded
+Xiaomi;24;166;Redmi 9 Prime
+Xiaomi;24;167;Poco M2
 Fitbit;26;01;Surge
 Fitbit;26;02;Flex
 Fitbit;26;03;Blaze
@@ -1760,6 +1914,7 @@ Fitbit;26;21;Sense
 Fitbit;26;22;Inspire 2
 Fitbit;26;23;Ace 3
 Fitbit;26;24;Luxe
+Fitbit;26;25;Charge 5
 Garmin;27;01;Forerunner (gps watches)
 Garmin;27;02;Vivoactive HR
 Garmin;27;03;Fenix 3
@@ -1894,6 +2049,19 @@ Garmin;27;131;eTrex 32x
 Garmin;27;132;Forerunner 158
 Garmin;27;133;Forerunner 55
 Garmin;27;134;Running Dynamics Pod
+Garmin;27;135;Forerunner 30
+Garmin;27;136;ForeAthlete 35J
+Garmin;27;137;eTrex 10
+Garmin;27;138;eTrex 20
+Garmin;27;139;eTrex 20x
+Garmin;27;140;eTrex 22x
+Garmin;27;141;eTrex 30
+Garmin;27;142;eTrex 30x
+Garmin;27;143;eTrex 209x
+Garmin;27;144;Approach G12
+Garmin;27;145;Descent Mk2S 43mm
+Garmin;27;146;Quatix 6X
+Garmin;27;147;Quatix 6
 Oppo;28;01;R7
 Oppo;28;02;R9
 Oppo;28;03;R7s
@@ -1980,6 +2148,13 @@ Oppo;28;83;A54 5G
 Oppo;28;84;Reno6 5G
 Oppo;28;85;Reno6 Pro 5G
 Oppo;28;86;Reno6 Pro Plus 5G
+Oppo;28;87;A16
+Oppo;28;88;Reno6 Z
+Oppo;28;89;Watch 2 (42mm)
+Oppo;28;90;Watch 2 (46mm)
+Oppo;28;91;K9 Pro
+Oppo;28;92;Watch Free
+Oppo;28;93;Enco Air
 Nvidia;29;01;Shield K1
 JBL;30;01;Charge 2
 JBL;30;02;Pulse
@@ -2001,6 +2176,14 @@ JBL;30;17;Charge 5
 JBL;30;18;Tune 500BT
 JBL;30;19;Tune 600BT
 JBL;30;20;T450BT
+JBL;30;21;Wave 100 TWS
+JBL;30;22;Everest V700
+JBL;30;23;Everest V700BT
+JBL;30;24;TUNE 220TWS
+JBL;30;25;T700
+JBL;30;26;T750
+JBL;30;27;E55BT
+JBL;30;28;Wave 200TWS
 GoPro;31;01;HERO
 GoPro;31;02;HERO Session
 GoPro;31;03;Hero5
@@ -2011,7 +2194,11 @@ GoPro;31;07;Hero 5 Session
 GoPro;31;08;Hero 8 Black
 GoPro;31;09;MAX
 GoPro;31;10;Hero 9
-GoPro;31;11;ARLO
+Arlo;31;11;ARLO
+GoPro;31;12;Hero 10
+Arlo;31;13;Ultra
+Arlo;31;14;Pro 3
+Arlo;31;15;Essential Spotlight
 Fidget;32;01;Hand Spinner
 Fidget;32;02;Cube
 Polar;33;01;A360
@@ -2036,6 +2223,7 @@ Polar;33;19;Unite
 Polar;33;20;Vantage V2
 Polar;33;21;Verity Sense
 Polar;33;22;OH1
+Polar;33;23;Vantage M2
 Suunto;34;01;Core Alu Black
 Suunto;34;02;Ambit
 Suunto;34;03;Ambit2
@@ -2064,6 +2252,7 @@ Suunto;34;25;9 Baro
 Suunto;34;26;X-Lander
 Suunto;34;27;7
 Suunto;34;28;3
+Suunto;34;28;9 Peak
 Nikon;35;01;D7100 / D7200
 Nikon;35;02;1 J5
 Nikon;35;03;Coolpix P900S
@@ -2081,6 +2270,7 @@ Nikon;35;14;Z5
 Nikon;35;15;Z6
 Nikon;35;16;Z 6II
 Nikon;35;17;Z 7II
+Nikon;35;18;Z fc
 Meizu;36;01;Pro 7
 Meizu;36;02;Pro 7 Plus
 Meizu;36;03;M5
@@ -2088,6 +2278,7 @@ Meizu;36;04;M5c
 Meizu;36;05;M5 Note
 Meizu;36;06;M5s
 Meizu;36;07;MX6
+Meizu;36;08;Watch
 TomTom;37;01;Runner
 TomTom;37;02;Multi-Sport
 TomTom;37;03;Touch
@@ -2164,6 +2355,7 @@ BOSE;39;14;OE2
 BOSE;39;15;Aviation X
 BOSE;39;16;Noise Cancelling Headphones 700
 BOSE;39;17;Portable Smart Speaker
+BOSE;39;18;AE2
 Fujifilm;40;01;X100 / X100F / X100S
 Fujifilm;40;02;X-T20
 Fujifilm;40;03;XQ1/XQ2
@@ -2193,6 +2385,8 @@ Fujifilm;40;26;X-S10
 Fujifilm;40;27;Instax Square SQ1
 Fujifilm;40;28;X-E4
 Fujifilm;40;29;X100T
+Fujifilm;40;30;Instax Mini 40
+Fujifilm;40;31;GFX 100S
 Olympus;41;01;OM-D E-M10 Mark II / E-M10
 Olympus;41;02;SH-2/SH-1
 Olympus;41;03;EM10/EM10II
@@ -2200,6 +2394,7 @@ Olympus;41;04;E-PL6/E-PL5/E-PM2
 Olympus;41;05;PEN E-PL9
 Olympus;41;06;EM5II / E-M5 Mark II
 Olympus;41;07;O-MD E-M5 Mark III
+Olympus;41;08;PEN E-P7
 Panasonic;42;01;LX100
 Panasonic;42;02;DMC-GF8/GF7
 Panasonic;42;03;Lumix DMC-GM1/GM2
@@ -2211,8 +2406,12 @@ Panasonic;42;08;Lumix DC-GF10
 Panasonic;42;09;Lumix DMC LX10
 Panasonic;42;10;Lumix S5
 Leica;43;01;D-LUX (Typ 109)
+Leica;43;02;T (Typ 701)
 Casio;44;01;ZR1000/1200/1100/1500
-Huami;45;01;Amazfit
+Casio;44;02;G-SHOCK GA-110
+Casio;44;03;G-SHOCK G-8900
+Casio;44;04;G-SHOCK DW-5600
+Huami;45;01;Amazfit 1
 Huami;45;02;Amazfit Stratos 2 / 2s
 Huami;45;03;Amazfit 3
 Huami;45;04;Amazfit Bip
@@ -2245,6 +2444,13 @@ Huami;45;30;Amazfit T-Rex Pro
 Huami;45;31;Amazfit Bip S
 Huami;45;32;Amazfit GTR 2 eSIM
 Huami;45;33;Amazfit Watch 3
+Huami;45;34;Amazfit Nexo
+Huami;45;35;Amazfit Band 5
+Huami;45;36;Amazfit Stratos
+Huami;45;37;Amazfit GTR 3
+Huami;45;38;Amazfit GTR 3 Pro
+Huami;45;39;Amazfit GTS 3
+Huami;45;40;Amazfit Youth Edition 1S
 iRoar;46;01;iRoar Go
 Fossil;47;01;Q Marshal Gen 2
 Fossil;47;02;Gen 4 (40mm)
@@ -2306,6 +2512,7 @@ Razer;51;02;Kraken
 Razer;51;03;Kraken 7.1 V2
 Razer;51;04;Kraken Pro V2
 Razer;51;05;Electra V2
+Razer;51;06;BlackShark V2
 B&O;52;01;Beoplay P2
 B&O;52;02;Beoplay P6
 B&O;52;03;Beoplay A2
@@ -2317,6 +2524,7 @@ B&O;52;08;BeoPlay H4
 B&O;52;09;BeoPlay H7
 B&O;52;10;BeoPlay H8
 B&O;52;11;BeoPlay H9
+B&O;52;12;Beosound Explore
 Logitech;53;01;MX Master
 Logitech;53;02;MX Anywhere
 Logitech;53;03;MX Ergo
@@ -2327,6 +2535,17 @@ Logitech;53;07;M275
 Logitech;53;08;M330
 Logitech;53;09;MX Anywhere 3
 Logitech;53;10;M570
+Logitech;53;11;K380
+Logitech;53;12;K810
+Logitech;53;13;K811
+Logitech;53;14;G35
+Logitech;53;15;G930
+Logitech;53;16;G430
+Logitech;53;17;G450
+Logitech;53;18;G433
+Logitech;53;19;H800
+Logitech;53;20;G933
+Logitech;53;21;G633
 DJI;54;01;Osmo Pocket
 DJI;54;02;Osmo Mobile 3
 DJI;54;03;Osmo Action
@@ -2339,6 +2558,8 @@ DJI;54;09;Osmo Pocket 2
 DJI;54;10;Mini 2
 DJI;54;11;FPV
 DJI;54;12;Mavic Pro
+DJI;54;13;Action 2
+DJI;54;14;Mavic Air 2S
 Withings;55;01;Steel
 Withings;55;02;Steel HR (36mm)
 Withings;55;03;Activité Pop
@@ -2366,6 +2587,7 @@ Pebble;60;01;Classic
 Pebble;60;02;Time
 Pebble;60;03;Time Steel
 Pebble;60;04;Time Round Large
+Pebble;60;05;2 / SE 2
 Vector;61;01;Luna
 Vector;61;02;Meridian
 Vivo;62;01;NEX S
@@ -2422,6 +2644,14 @@ Vivo;62;51;X60 Pro
 Vivo;62;52;V21e
 Vivo;62;53;Y73
 Vivo;62;54;V21e 5G
+Vivo;62;55;X70 Pro
+Vivo;62;56;X70
+Vivo;62;57;Y33s
+Vivo;62;58;Y21
+Vivo;62;59;Y21s
+Vivo;62;60;TWS 2e
+Vivo;62;61;Y55s 5G
+Vivo;62;62;Watch 2
 Honor;63;01;8X
 Honor;63;02;View 20
 Honor;63;03;20
@@ -2471,6 +2701,20 @@ Honor;63;46;Play 5 5G
 Honor;63;47;50 SE
 Honor;63;48;50
 Honor;63;49;50 Pro
+Honor;63;50;Magic3 
+Honor;63;51;9S
+Honor;63;52;Magic3 Pro
+Honor;63;53;Magic3 Pro Plus
+Honor;63;54;Earbuds 2 SE
+Honor;63;55;X30i
+Honor;63;56;X30 Max
+Honor;63;57;50 Lite
+Honor;63;58;Earbuds X2
+Honor;63;59;X20
+Honor;63;60;60
+Honor;63;61;60 Pro
+Honor;63;62;Play 30 Plus
+Honor;63;63;X30
 Harman;64;01;Kardon Traveller
 Beats;65;01;Solo 2 / 3
 Beats;65;02;Monster Beats Solo
@@ -2480,8 +2724,13 @@ Beats;65;05;Studio 2.0
 Beats;65;06;Studio 3.0
 Beats;65;07;Solo Pro
 Beats;65;08;Studio Buds
+Beats;65;09;Fit Pro
 AKG;66;01;K518/K518DJ/K81/K518LE
 Audio-Technica;67;01;M50/M40/M30/M20
+Audio-Technica;67;02;ATH-SR9
+Audio-Technica;67;03;ATH-ANC7
+Audio-Technica;67;04;ATH-ANC9
+Audio-Technica;67;05;ATH-ANC27
 Sennheiser;68;01;PXC450/HD380/HMEC250
 Sennheiser;68;02;PXC150/PXC250/PMX200
 Sennheiser;68;03;RS160/RS170/RS180
@@ -2493,11 +2742,22 @@ Sennheiser;68;08;HD 565
 Sennheiser;68;09;HD 580
 Sennheiser;68;10;HD 600
 Sennheiser;68;11;HD 650
+Sennheiser;68;12;HD515
+Sennheiser;68;13;HD518
+Sennheiser;68;14;HD555
+Sennheiser;68;15;HD595
+Sennheiser;68;16;HD820
+Sennheiser;68;17;HD545
+Sennheiser;68;18;HD565
+Sennheiser;68;19;HD580
+Sennheiser;68;20;HD600
+Sennheiser;68;21;HD650
 Steelseries;69;01;Siberia V1/V2/V3
 Steelseries;69;02;Arctis 3
 Steelseries;69;03;Arctis 5
 Steelseries;69;04;Arctis 7
 Steelseries;69;05;Arctis Pro
+Steelseries;69;06;9H
 Anker;70;01;SoundCore Boost
 GulfBuddy;71;01;Voice GPS
 GulfBuddy;71;02;Voice 2 GPS
@@ -2558,11 +2818,30 @@ Realme;76;43;Q3 Pro 5G
 Realme;76;44;C20A
 Realme;76;45;C11 (2021)
 Realme;76;46;Watch 2 Pro
+Realme;76;47;Watch 2
+Realme;76;48;GT Master
+Realme;76;49;Watch S Pro
+Realme;76;50;C21Y
+Realme;76;51;GT Explorer Master
+Realme;76;52;Band 2
+Realme;76;53;8i
+Realme;76;54;GT Neo2
+Realme;76;55;T1
 Edifier;77;01;TWS2 Bluetooth Earbuds
+Edifier;77;02;W800BT
+Edifier;77;03;W830BT
+Edifier;77;04;G1
+Edifier;77;05;G2
+Edifier;77;06;G20
+Edifier;77;07;Hecate G4
+Edifier;77;08;Hecate G4 Pro
+Edifier;77;09;Hecate G30
+Edifier;77;10;W800BT Plus
 Insta360;78;01;ONE X
 Insta360;78;02;ONE R
 Insta360;78;03;One X2
 Insta360;78;04;Go2
+Insta360;78;05;GO
 Plantronics;79;01;Voyager Legend
 Plantronics;79;02;Voyager 5200
 Plantronics;79;03;BackBeat Pro 2
@@ -2579,6 +2858,9 @@ Jeep;81;01;F02
 Jabra;82;01;Elite Active 75t
 Jabra;82;02;Elite 65t
 Jabra;82;03;Elite Active 65t
+Jabra;82;04;Elite 85T
+Jabra;82;05;Elite 3
+Jabra;82;06;Elite 7 Pro
 Haylou;83;01;SmartWatch
 Haylou;83;02;Solar
 Haylou;83;03;SmartWatch LS01
@@ -2588,6 +2870,8 @@ Haylou;83;06;Solar LS02
 Haylou;83;07;RS3
 Haylou;83;08;LS04 Solar
 Haylou;83;09;RT LS05S
+Haylou;83;10;RT2
+Haylou;83;11;RT2 (LS10)
 Revlon;84;01;One
 Universal;85;01;12mm
 Universal;85;02;14mm
@@ -2597,11 +2881,15 @@ Universal;85;05;20mm
 Universal;85;06;22mm
 Universal;85;07;24mm
 Universal;85;08;26mm
+Universal;85;09;17mm
+Universal;85;10;19mm
 New Balance;86;01;RunIQ
 Cat;87;01;S62 Pro
 IQOS;88;01;3
 Seiko;89;01;SUN059
 Ultimate Ears;90;01;Megaboom 3
+Ultimate Ears;90;02;BLAST
+Ultimate Ears;90;03;MEGA BLAST
 Verizon;91;01;GizmoWatch Disney
 Oral-B;92;01;D16 D20 P2000 P3000 P4000
 Fimi;93;01;Palm 2
@@ -2614,12 +2902,42 @@ Yamay;96;02;SW0202
 Yamay;96;03;ID205
 Fairphone;97;01;3
 Fairphone;97;02;3 Plus
+Fairphone;97;03;4
 Lemfo;98;01;LF26
 Tile;99;01;Mate
 Tile;99;02;Sport
+Tile;99;03;Pro
 Marshall;100;01;Major I
 Marshall;100;02;Major II
 Marshall;100;03;Monitor
 Bryton;101;01;Bryton Rider 430
 Bryton;101;02;Bryton Rider 320
 70Mai;102;01;70Mai Saphir
+Blackview;103;01;A100
+Blackview;103;02;R3
+TCL;104;01;20 SE
+iFlytek;105;01;Intelligent Mouse Lite
+Zepp;106;01;E
+Keep;107;01;B2
+Keep;107;02;B3
+Corsair;108;01;Virtuoso RGB SE
+Corsair;108;02;HS50 Pro
+Corsair;108;03;HS60 Pro
+Corsair;108;04;HS70 Pro
+FIIL;109;01;T1 Lite
+Sonos;110;01;Roam
+Kingston;111;01;Cloud Flight
+Kingston;111;02;Cloud Stinger
+Kingston;111;03;HyperX Cloud II
+Kingston;111;03;Cloud Revolver S
+Skullcandy;112;01;Crusher 3.0
+Skullcandy;112;02;Cassette
+Maimo;113;01;Watch
+QCY;114;01;HT03
+AfterShokz;115;01;Aeropex AS800
+AfterShokz;115;02;Xtrainerz AS700
+Boat;116;01;Flash Watch
+Boat;116;02;Watch Xtend
+Noise;117;01;ColorFit Pro 3
+Noise;117;02;ColorFit Pro 2
+Noise;117;03;ColorFit Ultra

@@ -22,41 +22,22 @@ class Select:
 			i += 1						
 
 		return deviceList
-	
-	# Select colors from database where country
-	def colors(self):
-		sql = 'SELECT color,' + self.country + ' FROM colors'
-		c.execute(sql)						
-		# Create Dict from data
-		rows = c.fetchall()
-		colors = { color[0].lower() : color[1].lower() for color in rows}
-		return colors
-
-	# Select motif
-	def motifs(self):
-		sql = 'SELECT look,' + self.country + ' FROM looks'
-		c.execute(sql)
-		rows = c.fetchall()
-		motifs = { motif[0].lower() : motif[1].lower() for motif in rows }		
-		# Return Dict
-		return motifs
 
 	# Select Look Words
 	def lookWords(self):
-		sql = 'SELECT singular, plural,' + self.country + '_indefinite_article,' + self.country + '_singular,' + self.country + '_plural' + ' FROM lookWords'
+		sql = 'SELECT singular, plural,' + self.country + '_indefinite_article,' + self.country + '_singular,' + self.country + '_plural' + ' FROM looks'
 		c.execute(sql)
 		rows = c.fetchall()		
-		 
 		lookSingularWords = { word[0].lower() : {'indefinite_article' : word[2].lower(), 'local' : word[3].lower() } for word in rows }
 		lookPluralWords = { word[1].lower() : word[4].lower() for word in rows }
-		
+
 		return [lookSingularWords, lookPluralWords]
 
 		# Closed connection in last funtions. 
 
 	# Select Color Words
-	def colorWords(self):
-		sql = 'SELECT color,' + self.country + '_singular,' + self.country + '_plural,' + self.country + '_neutrum' + ' FROM colorWords'		
+	def colors(self):
+		sql = 'SELECT color,' + self.country + '_singular,' + self.country + '_plural,' + self.country + '_neutrum' + ' FROM colors'		
 		c.execute(sql)
 		rows = c.fetchall()
 				
@@ -111,6 +92,8 @@ class Select:
 		c.execute(sql)
 		rows = c.fetchall()
 		productMaterials = { material[0].lower() : material[1] for material in rows }
+		# Append the name to dict
+		productMaterials['name'] = 'material'
 		return productMaterials
 
 	# Product Features
@@ -119,6 +102,9 @@ class Select:
 		c.execute(sql)
 		rows = c.fetchall()
 		productFeatures = { feature[0].lower() : feature[1].lower() for feature in rows }
+		# Append the name to dict
+		productFeatures['name'] = 'feature'
+
 		return productFeatures
 
 	# Product Sizes
@@ -147,4 +133,33 @@ class Select:
 		rows = c.fetchall()
 		templates = { template[0].lower() : template[1] for template in rows}
 		# Return Dict
+		return templates
+	
+	# Watchstraps templates 
+	def watchstrapTemplates(self):
+		sql = 'SELECT id,' + self.country + ' FROM watchstrapTemplates'
+		c.execute(sql)
+		rows = c.fetchall()				
+		templates = { template[0] : template[1] for template in rows}		
+		return templates
+
+	def watchstrapMaterialTemplates(self):
+		sql = 'SELECT id, material,' + self.country + ' FROM watchstrapMaterialTemplates'
+		c.execute(sql)
+		rows = c.fetchall()
+		templates = { template[0] : { 'material' : template[1], 'template' : template[2] }  for template in rows}
+		return templates
+	
+	def watchstrapFeatureTemplates(self):
+		sql = 'SELECT id, feature,' + self.country + ' FROM watchstrapFeatureTemplates'
+		c.execute(sql)
+		rows = c.fetchall()
+		templates = { template[0] : { 'feature' : template[1], 'template' : template[2] }  for template in rows}
+		return templates
+	
+	def watchstrapSizeTemplates(self):
+		sql = 'SELECT id, ' + self.country + ' FROM watchstrapSizeTemplates'
+		c.execute(sql)
+		rows = c.fetchall()		
+		templates = { 'template' : template[1] for template in rows}
 		return templates

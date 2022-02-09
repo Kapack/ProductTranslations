@@ -7,7 +7,7 @@ class Issue:
 		
 		# Loop Through produts
 		for product in products:
-			if len(products[product]['manName']) == 0 or len(products[product]['devName']) == 0:
+			if len(products[product]['device']['manName']) == 0 or len(products[product]['device']['devName']) == 0:
 				# Error Message
 				self.warningErrorMsg(products[product]['sku'] + ' is missing manName or devName. Update the device list or the product fits multiple products.')
 
@@ -15,7 +15,7 @@ class Issue:
 		products = self.products
 		for product in products:
 			if '  ' in products[product]['description']:
-				self.criticalErrorMsg(products[product]['sku'] + ' Has a double dash in description. Fix it manual with device name ')	
+				self.criticalErrorMsg(products[product]['sku'] + ' Has a double spaces in description. Fix it manual with device name')	
 
 	# User Messages
 	def warningErrorMsg(self, msg):

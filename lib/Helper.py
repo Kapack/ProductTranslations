@@ -34,13 +34,11 @@ class Helper:
 		for (index, word) in enumerate(stringList):
 			# Saving currentWord to a variable
 			currentWord = stringList[index]
-
 			# If currentWord (Single word / Watchband) is in typeDict key, but not if current word is part of the devName (LG Style 3)
-			if currentWord in typeDict.keys() and currentWord not in product['devName'].lower():
-
+			if currentWord in typeDict.keys() and currentWord not in product['device']['devName'].lower():
 				# If translated version exists
 				if typeDict[currentWord]:
-					# Replace currentWord									
+					# Replace currentWord
 					currentWord = typeDict[currentWord]
 				# Give error message, if translated version does not exists
 				else:
@@ -50,11 +48,11 @@ class Helper:
 			# If the index number +1 is lower than the length of stringList, we can check if currentWord or currentWord + nextWord has a match
 			if index + 1 < len(stringList):
 				# Saving nextWord to variable
-				nextWord = stringList[index + 1]				
+				nextWord = stringList[index + 1]
 				# If currentWord (Double words / Watch band) is in typeDict key
 				if currentWord + ' ' + nextWord in typeDict.keys():
 					# If translated version exists
-					if typeDict[currentWord + ' ' + nextWord]:						
+					if typeDict[currentWord + ' ' + nextWord]:
 						# Replace
 						currentWord = typeDict[currentWord + ' ' + nextWord]
 						# Remove next word, so we wont append double (Urrem Band)
@@ -62,8 +60,8 @@ class Helper:
 
 					# Give error message, if translated version does not exists
 					else:
-						issue.warningErrorMsg(currentWord + ' ' + nextWord + ' Missing Translated Version')								
-
+						issue.warningErrorMsg(currentWord + ' ' + nextWord + ' Missing Translated Version')
+							
 			# Append Word (translated or english)			
 			newStringList.append(currentWord)			
 

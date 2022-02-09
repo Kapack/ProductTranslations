@@ -36,6 +36,8 @@ class Append:
 			else:
 				products[i]['productType'] = 'other'			
 			i += 1
+		
+		return products
 
 	def deviceAndModel(self):
 		products = self.products
@@ -68,13 +70,13 @@ class Append:
 				# If watchstrap
 				elif products[i]['productType'] == 'watchstrap':
 					manSku = products[i]['sku'].split('-')[0][3:5]
-					devSku = products[i]['sku'].split('-')[1]
+					devSku = products[i]['sku'].split('-')[1]					
 				
 				# Assigning Correct Man and Dev Names
 				# If manSku has a match in deviceList
 				if manSku == deviceList[ii]['manSku'] and devSku == deviceList[ii]['devSku']:
-					products[i]['manName'] = deviceList[ii]['manName']
-					products[i]['devName'] = deviceList[ii]['devName']
+					products[i]['device']['manName'] = deviceList[ii]['manName']
+					products[i]['device']['devName'] = deviceList[ii]['devName']
 
 				# Device list iterator
 				ii += 1
@@ -83,6 +85,121 @@ class Append:
 
 		return products
 
+	# Appending products{... 'attributes' : {...} }
+	# Colors
+	def attributeColor(self):
+		products = self.products
+		helper = Helper()
+		select = Select(self.country)
+		colors = select.colors()
+		singularColors = colors[0]
+
+		for product in products:			
+			# Break up name
+			beforeAndAfterLastDash = helper.beforeAndAfterLastDash(products[product]['name'])
+			afterLastDash = beforeAndAfterLastDash[1]
+								
+			# If single Color
+			if len(afterLastDash) == 1:				
+				if afterLastDash[0] in singularColors.keys():
+					products[product]['attributes']['color'].append(afterLastDash[0])
+			
+			# If colors is seperated by dash
+			if '/' in afterLastDash:
+				for word in afterLastDash:
+					if word in singularColors:
+						products[product]['attributes']['color'].append(word)
+		
+		# Return
+		return products					
+
+
+	# Material
+	def attributeMaterial(self):
+		products = self.products
+		helper = Helper()
+		select = Select(self.country)
+		materials = select.productMaterials()
+		# Sort materials.keys() by length so we will overwrite product{..attribute{'material' : ''}} leather with genuine leather
+		materialsList = sorted(materials.keys(), key=len)
+
+		for product in products:
+    		# Break up name
+			beforeAndAfterLastDash = helper.beforeAndAfterLastDash(products[product]['name'])
+			beforeLastDash = beforeAndAfterLastDash[0]
+			# Convert beforeLastDash into a list
+			beforeLastDashList = beforeLastDash.lower().split()
+			# Loop trough materials
+			for material in materialsList:
+				# If material is beforeLastDash string
+				if beforeLastDash.find(material) != -1:
+					products[product]['attributes']['material'] = material
+		# Return
+		return products					
+
+	# Features
+	def attributeFeature(self):
+		products = self.products
+		helper = Helper()
+		select = Select(self.country)
+		features = select.productFeatures()
+		featuresList = sorted(features.keys(), key=len)
+
+		for product in products:			
+    		# Break up name
+			beforeAndAfterLastDash = helper.beforeAndAfterLastDash(products[product]['name'])
+			beforeLastDash = beforeAndAfterLastDash[0]
+			# Convert beforeLastDash into a list
+			beforeLastDashList = beforeLastDash.lower().split()
+			# Loop trough features
+			for feature in featuresList:
+				# If feature is beforeLastDash string
+				if beforeLastDash.find(feature) != -1:
+					products[product]['attributes']['feature'] = feature
+		# Return
+		return products					
+	
+	# Product Size
+	def attributeSize(self):		
+		products = self.products
+
+		for product in products:			
+			# Product sizes for Watchstraps 
+			if products[product]['productType'] == 'watchstrap':
+				# Split the description up
+				descList = products[product]['description'].lower().split()					
+				
+				# Iterate
+				i = 0
+				for word in descList:
+					# Only create nextWord, if possible (Out of range)
+					if int(i + 1) < len(descList):
+						nextWord = descList[i+1]
+
+					# If desc. contains
+					if word == 'length:' or word == 'length':						
+						# If next word contains mm or cm (To elimate possible errors)
+						if nextWord.find('cm') != -1 or nextWord.find('mm') != -1:
+							products[product]['sizes']['length'] = nextWord
+
+					if word == 'width:' or word == 'width':
+						if nextWord.find('cm') != -1 or nextWord.find('mm') != -1:
+							products[product]['sizes']['width'] = nextWord
+
+					if word == 'size:' or word == 'size':
+						if nextWord.find('cm') != -1 or nextWord.find('mm') != -1:
+							products[product]['sizes']['size'] = nextWord
+
+					if word == 'circumference:' or word == 'circumference':
+						if nextWord.find('cm') != -1 or nextWord.find('mm') != -1:
+							products[product]['sizes']['circumference'] = nextWord
+
+					i += 1
+		
+		# Return products back
+		return products
+				
+	# Product Templates
 	def product2021Template(self):
 		# Templates for productTypes?
 		products = self.products
@@ -102,7 +219,6 @@ class Append:
 				if key in beforeLastDash.lower():
 					# Assign key to productDict
 					products[i]['template'] = key
-
 			i += 1
 		
 		# Return products
@@ -136,12 +252,9 @@ class Append:
 					for permutation in permutations(beforeLastDash.split( ), tempKeyLen):						
 						# If permutation exists as a productTemplates_keys					
 						if ' '.join(permutation) in product2020Templates.keys():						
-							# Give product the template key							
-							products[i]['template'] = ' '.join(permutation)							
-										
-			i += 1					
-
-	# Return final dict
-	def done(self):
-		products = self.products
+							# Give product the template key
+							products[i]['template'] = ' '.join(permutation)
+			i += 1
+		
+		# Return
 		return products

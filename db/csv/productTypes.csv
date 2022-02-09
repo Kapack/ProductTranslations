@@ -1,54 +1,66 @@
 type;se;dk;no;fi;de;nl
-kit;kit;kit;sett;;bausatz;set
-bag;väska;taske;bag;;tasche;tas
-case;fodral;etui;etui;;hülle;hoesje
-tool;verktyg;værktøj;verktøy;;werkzeug;gereedschap
-cable;kabel;kabel;kabel;;kabel;kabel
-cover;skal;cover;deksel;;hülle;hoesje
-other;övrig;andet;annet;;sonstiges;overige
-pouch;påse;pose;pose;;etui;etui
-strap;rem;strop;stropp;;gurt;riem
-stand;stativ;stander;står;;ständer;standaard
-frame;ram;ramme;ramme;;rahmen;frame
-bumper;bumper;bumper;støtfanger;;stoßstange;bumper
-gadget;grej;gadget;duppeditt;;gadget;gadget
-wallet;plånbok;pung;lommebok;;brieftasche;portemonnee
+2in1 wallet;2 i 1 plånbok;2i1 pung;2i1 lommebok;;;
 adapter;adapter;adapter;adapter;;adapter;adapter
 armband;armband;armbind;armbånd;;armband;armband
-charger;laddare;oplader;lader;;ladegerät;oplader
-speaker;högtalare;højttaler;høytaler;;lautsprecher;speaker
-sticker;klistermärke;klistermærke;klistremerke;;aufkleber;sticker
-handbag;handväska;håndtaske;håndveske;;handtasche;handtas
+bag;väska;taske;bag;;tasche;tas
 bike bag;cykelväska;cykel taske;sykkelveske;;fahrradtasche;fietstas
-earphone;hörlur;øretelefon;øretelefon;;kopfhörer;koptelefoon
-headphone;hörlurar;hovedtelefon;hodetelefon;;kopfhörer;hoofdtelefoon
-waist bag;midjeväska;bæltetaske;belteveske;;gürteltasche;heuptas
-watchband;klockarmband;urrem;klokkereim;;uhrenarmband;horlogeband
-watch band;klockarmband;urrem;klokkereim;;uhrenarmband;horlogeband
-watchstrap;klockarmband;urrem;klokkereim;;uhrenarmband;horlogeband
-watchstraps;klockarmband;urrem;klokkereimer;;uhrenarmband;horlogebanden
-flip case;flip fodral;flip etui;flippetui;;flip hülle;flip hoesje
-car holder;bilhållare;bilholder;bilholder;;autohalterung;autohouder
-power bank;power bank;power bank;powerbank;;powerbank;powerbank
-spare part;reservdel;reservedel;reservedel;;ersatzteil;reserveonderdeel
-stylus pen;penna;stylus pen;skjermpenn;;stylus-stift;styluspen
-strap for ;rem för;strop til;stropp til;;armband für ;band voor 
-wrist band;armband;armbånd;armbånd;;handgelenkband;polsband
 bike holder;cykelhållare;cykel holder;sykkelholder;;fahrradhalterung;fietshouder
+bumper;bumper;bumper;støtfanger;;stoßstange;bumper
+cable;kabel;kabel;kabel;;kabel;kabel
 car charger;billaddare;biloplader;billader;;auto-ladegerät;autolader
-memory card;minneskort;hukommelseskort;minnekort;;speicherkarte;geheugenkaart
-replacement;ersättning;erstatning;erstatning;;ersatz;vervanging
-selfie stick;selfiepinne;selfie stick;selfiestang;;selfie-stick;selfie stick
-touch gloves;touch handskar;touch-handsker;touchscreen-hankser;;touch-handschuhe;touch handschoenen
-wall charger;väggladdare;væg oplader;vegglader;;wandladegerät;muurlader
-leather case;läderfodral;læder etui;læretui;;ledertasche;lederen hoes
+car holder;bilhållare;bilholder;bilholder;;autohalterung;autohouder
+card cover;kort skal;kort cover;kredittkort deksel;;;kredietkaart hoesje
+card holder cover;skal med korthållare;cover med kortholder;deksel med kortholder;;;kaarthouder hoesje
+case;fodral;etui;etui;;hülle;hoesje
+case modern-styled;stilrent fodral;stilfuldt etui;stilig etui;;;
+charger;laddare;oplader;lader;;ladegerät;oplader
+charging cable;laddningskabel;ladekabel;ladekabel;;ladekabel;oplaadkabel
 charging case;laddningsväska;opladningsetui;ladeetui;;lade-etui;oplaadcase
 charging dock;laddningsdocka;opladerstation;ladestasjon;;ladestation;laadstation
 contact lenses;kontaktlinser;kontaktlinser;kontaktlinser;;kontaktlinsen;contactlenzen
+cover;skal;cover;deksel;;hülle;hoesje
+crocodile textured leather case;läderskal med krokodiltextur;læderetui med krokodille tekstur;læretui med krokodille tekstur;;;
+earphone;hörlur;øretelefon;øretelefon;;kopfhörer;koptelefoon
 fidget spinner;fidget spinner;fidget spinner;fidget-spinner;;zappelphilipp;fidget spinner
-charging cable;laddningskabel;ladekabel;ladekabel;;ladekabel;oplaadkabel
-screen protector;skärmskydd;skærmbeskytter;skjermbeskytter;;displayschutzfolie;schermbeschermer
+flip case;flip fodral;flip etui;flippetui;;flip hülle;flip hoesje
+flipcase;flip fodral;flip etui;flippetui;;flip hülle;flip hoesje
+frame;ram;ramme;ramme;;rahmen;frame
+gadget;grej;gadget;duppeditt;;gadget;gadget
+handbag;handväska;håndtaske;håndveske;;handtasche;handtas
+headphone;hörlurar;hovedtelefon;hodetelefon;;kopfhörer;hoofdtelefoon
+kit;kit;kit;sett;;bausatz;set
+leather case;läderfodral;læder etui;læretui;;ledertasche;lederen hoes
+memory card;minneskort;hukommelseskort;minnekort;;speicherkarte;geheugenkaart
+modern-styled leather wallet case;stilrent plånboksfodral i läder;stilfuldt læder etui med pung;stilig læretui med lommebok;;;
+other;övrig;andet;annet;;sonstiges;overige
 portable travel bag;bärbar resväska;bærbare rejsetaske;bærbar reisebag;;tragbare reisetasche;draagbare reistas
+pouch;påse;pose;pose;;etui;etui
+power bank;power bank;power bank;powerbank;;powerbank;powerbank
+protective cover;skyddande skal;beskyttelsescover;beskyttelsesdeksel;;;
+replacement;ersättning;erstatning;erstatning;;ersatz;vervanging
+screen protector;skärmskydd;skærmbeskytter;skjermbeskytter;;displayschutzfolie;schermbeschermer
+selfie stick;selfiepinne;selfie stick;selfiestang;;selfie-stick;selfie stick
+shockproof protection cover;stötsäkert skyddande skal;stødsikkert beskyttelsescover;støtsikkert beskyttelsesdeksel;;;
+spare part;reservdel;reservedel;reservedel;;ersatzteil;reserveonderdeel
+speaker;högtalare;højttaler;høytaler;;lautsprecher;speaker
+stand;stativ;stander;står;;ständer;standaard
+sticker;klistermärke;klistermærke;klistremerke;;aufkleber;sticker
+strap;rem;strop;stropp;;gurt;riem
+strap for ;rem för;strop til;stropp til;;armband für ;band voor 
+stylus pen;penna;stylus pen;skjermpenn;;stylus-stift;styluspen
 tempered glass;härdat glas;hærdet glas;herdet glass;;gehärtetes glas;gehard glas
-zipper wallet;;pung med lynlås;lommebok med glidelås;;reißverschluss-portemonnaie;portemonnee met rits
-card cover;;kort cover;;;;
+tool;verktyg;værktøj;verktøy;;werkzeug;gereedschap
+touch gloves;touch handskar;touch-handsker;touchscreen-hankser;;touch-handschuhe;touch handschoenen
+waist bag;midjeväska;bæltetaske;belteveske;;gürteltasche;heuptas
+wall charger;väggladdare;væg oplader;vegglader;;wandladegerät;muurlader
+wallet;plånbok;pung;lommebok;;brieftasche;portemonnee
+wallet modern-styled;plånboksfodral i modern stil;etui med pung i moderne stil;etui med lommebok i moderne stil;;;
+wallet-style genuine leather flipcase;plånboksfodral i äkta läder;flip etui med pung i ægte læder;flip etui med pung i ekte lær;;;
+wallet-style leather case;plånboksfodral i läder;læderetui med pung;læretui med lommebok;;;
+watch band;klockarmband;urrem;klokkereim;;uhrenarmband;horlogeband
+watch strap;klockarmband;urrem;klokkereimer;;uhrenarmband;horlogebanden
+watchband;klockarmband;urrem;klokkereim;;uhrenarmband;horlogeband
+watchstrap;klockarmband;urrem;klokkereim;;uhrenarmband;horlogeband
+watchstraps;klockarmband;urrem;klokkereimer;;uhrenarmband;horlogebanden
+wrist band;armband;armbånd;armbånd;;handgelenkband;polsband
+zipper wallet;plånbok med dragkedja;pung med lynlås;lommebok med glidelås;;reißverschluss-portemonnaie;portemonnee met rits

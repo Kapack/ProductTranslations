@@ -26,17 +26,16 @@ class Watchstrap:
 		beforeLastDash = self.material(beforeLastDash, country, product)
 		beforeLastDash = self.productNameType(beforeLastDash, country, product)
 		afterLastDash = self.productNameColor(afterLastDash, country)
-
-		afterLastDash = self.size(afterLastDash, country, product)
+		afterLastDash = self.colorWithSize(afterLastDash, country)
+		afterLastDash = self.size(afterLastDash, country, product)		
 		
-		# Create new name
+		# Create new name		
 		# Converting [afterLastDash] to a String				
 		afterLastDashString = ''.join([str(elem) for elem in afterLastDash])		
 		productName = helper.createName(beforeLastDash, afterLastDashString)
 				
 		# Return productname
 		return productName
-
 
 	# Product Feature
 	def feature(self, beforeLastDash, country, product):
@@ -46,7 +45,6 @@ class Watchstrap:
 
 		# if feature exist in beforeLastDash
 		beforeLastDash = helper.dictKeyInString(productFeatures, beforeLastDash, product)
-
 		return beforeLastDash
 
 	def prepositions(self, beforeLastDash, country, product):
@@ -56,22 +54,17 @@ class Watchstrap:
 
 		# if prepositions exist in beforeLastDash
 		beforeLastDash = helper.dictKeyInString(prepositions, beforeLastDash, product)
-
 		return beforeLastDash
-
 
 	# Product Material
 	def material(self, beforeLastDash, country, product):
 		helper = Helper()
 		select = Select(country)		
-		productMaterials = select.productMaterials()				
-
+		productMaterials = select.productMaterials()
 		# if material exist in beforeLastDash
 		beforeLastDash = helper.dictKeyInString(productMaterials, beforeLastDash, product)
-
 		return beforeLastDash
 	
-
 	# Replace productType / watchstrap etc.
 	def productNameType(self, beforeLastDash, country, product):		
 		helper = Helper()
@@ -85,9 +78,29 @@ class Watchstrap:
 	# Replace Colors (Where afterLastDash only exists of colors, and not motif)
 	# Translated Single Colors (Incl. slashes ) in afterLastDash
 	def productNameColor(self, afterLastDash, country):
-		shared = Shared()		
+		shared = Shared()
 		afterLastDashString = shared.productNameSingleColor(afterLastDash, country)
 		return afterLastDashString
+
+	# Where afterLastDash contains eg. black size: s
+	def colorWithSize(self, afterLastDash, country):
+		select = Select(country)
+		colors = select.colors()
+		colorSingle = colors[0]
+
+		# if size exist in afterLastString
+		if 'size' in afterLastDash.lower():
+			# Split afterLastDash into list, so we can loop through each word and check if it exists as a key
+			afterLastDashList = afterLastDash.lower().split()
+			# Loop trough each word 
+			for word in afterLastDashList:
+				# if word exists as key in colorSingle
+				if word.lower() in colorSingle.keys():
+					# replace in afterLastDash
+					afterLastDash = afterLastDash.replace(word, colorSingle[word]['local'])
+					
+		# Return afterLastDash
+		return afterLastDash
 
 	# Translate size in after last dash
 	def size(self, afterLastDash, country, product):
@@ -98,24 +111,11 @@ class Watchstrap:
 		stringList = afterLastDash.lower().split()
 		newStringList = []
 
-		for word in stringList:			
-			if word in productSizes.keys():				
+		for word in stringList:
+			if word in productSizes.keys():
 				word = productSizes[word]
 
 			newStringList.append(word)
 
 		newStringList = ' '.join([str(elem) for elem in newStringList])
 		return newStringList
-
-
-
-
-
-
-
-
-
-
-
-
-		

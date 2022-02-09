@@ -19,14 +19,12 @@ class Database:
 	def createAndInsertTables(self):
 		self.createDeviceList()
 		self.insertDeviceList()
-		# self.createColorsTable()
-		# self.insertColors()
 		self.createProductTypesTable()
 		self.insertProductTypes()	
-		self.createLookWordsTable()
-		self.insertLookWords()
-		self.createColorWordsTable()
-		self.insertColorWords()
+		self.createLooksTable()
+		self.insertLooks()
+		self.createColorsTable()
+		self.insertColors()
 		self.createPrepositionsTable()
 		self.insertPrepositions()
 		self.createAdjectivesTable()
@@ -43,6 +41,14 @@ class Database:
 		self.insertProduct2020Templates()
 		self.createProduct2021TemplatesTable()
 		self.insertProduct2021Templates()
+		self.createWatchstrapTemplates()
+		self.insertWatchstrapTemplates()
+		self.createWatchstrapMaterialsTemplates()
+		self.insertWatchstrapMaterialsTemplates()
+		self.createWatchstrapFeatureTemplates()
+		self.insertWatchstrapFeatureTemplates()
+		self.createWatchstrapSizeTemplates()
+		self.insertWatchstrapSizeTemplates()
 
 	# Devices and model / https://docs.google.com/spreadsheets/d/1T1ESFt-b1Bs6Y3929xhpUPJsYo0LriLfydwoOm6fXpM/edit#gid=0
 	def createDeviceList(self):
@@ -60,23 +66,6 @@ class Database:
 				i += 1
 				conn.commit()
 
-	# # Create Colors Table
-	# def createColorsTable(self):	
-	# 	sql = 'CREATE TABLE if not exists colors (id integer primary key not null, color text, se text, dk text, no text, fi text, de text, nl text)'
-	# 	c.execute(sql)
-
-	# # Insert Colors into table
-	# def insertColors(self):
-	# 	# Open csv
-	# 	with open(os.getcwd() + '/db/csv/colors.csv', 'r') as file:
-	# 		reader = csv.DictReader(file, delimiter=';')		
-	# 		# Loop trough CSV and insert
-	# 		i = 1
-	# 		for row in reader:			
-	# 			c.execute('INSERT INTO colors VALUES (?, ?, ?, ?, ?, ?, ?, ?)', (i, str(row['color']).lower(), str(row['se']), str(row['dk']), str(row['no']), str(row['fi']), str(row['de']), str(row['nl'])) )
-	# 			i += 1
-	# 			conn.commit()
-
 	def createProductTypesTable(self):
 		sql = 'CREATE TABLE if not exists productTypes (id integer primary key not null, type text, se text, dk text, no text, fi text, de text, nl text)'
 		c.execute(sql)
@@ -91,30 +80,30 @@ class Database:
 				conn.commit()
 
 	# Look Words
-	def createLookWordsTable(self):
-		sql = 'CREATE TABLE if not exists lookWords (id integer primary key not null, singular text, plural text, se_indefinite_article text, se_singular text, se_plural text, dk_indefinite_article text, dk_singular text, dk_plural text, no_indefinite_article text, no_singular text, no_plural text, fi_indefinite_article text, fi_singular text, fi_plural text, de_indefinite_article text, de_singular text, de_plural text, nl_indefinite_article text, nl_singular text, nl_plural text)'
+	def createLooksTable(self):
+		sql = 'CREATE TABLE if not exists looks (id integer primary key not null, singular text, plural text, se_indefinite_article text, se_singular text, se_plural text, dk_indefinite_article text, dk_singular text, dk_plural text, no_indefinite_article text, no_singular text, no_plural text, fi_indefinite_article text, fi_singular text, fi_plural text, de_indefinite_article text, de_singular text, de_plural text, nl_indefinite_article text, nl_singular text, nl_plural text)'
 		c.execute(sql)
 
-	def insertLookWords(self):
-		with open(os.getcwd() + '/db/csv/lookWords.csv', 'r') as file: 
+	def insertLooks(self):
+		with open(os.getcwd() + '/db/csv/looks.csv', 'r') as file: 
 			reader = csv.DictReader(file, delimiter=';')
 			i = 1		
 			for row in reader:						
-				c.execute('INSERT INTO lookWords VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', (i, str(row['singular']).lower(), str(row['plural']).lower(), str(row['se_indefinite_article']), str(row['se_singular']), str(row['se_plural']), str(row['dk_indefinite_article']), str(row['dk_singular']), str(row['dk_plural']), str(row['no_indefinite_article']), str(row['no_singular']), str(row['no_plural']), str(row['fi_indefinite_article']), str(row['fi_singular']), str(row['fi_plural']), str(row['de_indefinite_article']), str(row['de_singular']), str(row['de_plural']), str(row['nl_indefinite_article']), str(row['nl_singular']), str(row['nl_plural']) ) )
+				c.execute('INSERT INTO looks VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', (i, str(row['singular']).lower(), str(row['plural']).lower(), str(row['se_indefinite_article']), str(row['se_singular']), str(row['se_plural']), str(row['dk_indefinite_article']), str(row['dk_singular']), str(row['dk_plural']), str(row['no_indefinite_article']), str(row['no_singular']), str(row['no_plural']), str(row['fi_indefinite_article']), str(row['fi_singular']), str(row['fi_plural']), str(row['de_indefinite_article']), str(row['de_singular']), str(row['de_plural']), str(row['nl_indefinite_article']), str(row['nl_singular']), str(row['nl_plural']) ) )
 				i += 1
 				conn.commit()
 
 	# Color Words
-	def createColorWordsTable(self):	
-		sql = 'CREATE TABLE if not exists colorWords (id integer primary key not null, color text, se_singular text, se_plural text, se_neutrum text, dk_singular text, dk_plural text, dk_neutrum text, no_singular text, no_plural text, no_neutrum text, fi_singular text, fi_plural text, fi_neutrum text, de_singular text, de_plural text, de_neutrum text, nl_singular text, nl_plural text, nl_neutrum text)'
+	def createColorsTable(self):	
+		sql = 'CREATE TABLE if not exists colors (id integer primary key not null, color text, se_singular text, se_plural text, se_neutrum text, dk_singular text, dk_plural text, dk_neutrum text, no_singular text, no_plural text, no_neutrum text, fi_singular text, fi_plural text, fi_neutrum text, de_singular text, de_plural text, de_neutrum text, nl_singular text, nl_plural text, nl_neutrum text)'
 		c.execute(sql)
 
-	def insertColorWords(self):
-		with open(os.getcwd() + '/db/csv/colorWords.csv', 'r') as file: 
+	def insertColors(self):
+		with open(os.getcwd() + '/db/csv/colors.csv', 'r') as file: 
 			reader = csv.DictReader(file, delimiter=';')
 			i = 1		
 			for row in reader:									
-				c.execute('INSERT INTO colorWords VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', ( i, str(row['color']).lower(), str(row['se_singular']).lower(), str(row['se_plural']).lower(), str(row['se_neutrum']).lower(), str(row['dk_singular']).lower(), str(row['dk_plural']).lower(), str(row['dk_neutrum']).lower(), str(row['no_singular']).lower(), str(row['no_plural']).lower(), str(row['no_neutrum']).lower(), str(row['fi_singular']).lower(), str(row['fi_plural']).lower(), str(row['fi_neutrum']).lower(), str(row['de_singular']).lower(), str(row['de_plural']).lower(), str(row['de_neutrum']).lower(), str(row['nl_singular']).lower(), str(row['nl_plural']).lower(), str(row['nl_neutrum']).lower() ))
+				c.execute('INSERT INTO colors VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', ( i, str(row['color']).lower(), str(row['se_singular']).lower(), str(row['se_plural']).lower(), str(row['se_neutrum']).lower(), str(row['dk_singular']).lower(), str(row['dk_plural']).lower(), str(row['dk_neutrum']).lower(), str(row['no_singular']).lower(), str(row['no_plural']).lower(), str(row['no_neutrum']).lower(), str(row['fi_singular']).lower(), str(row['fi_plural']).lower(), str(row['fi_neutrum']).lower(), str(row['de_singular']).lower(), str(row['de_plural']).lower(), str(row['de_neutrum']).lower(), str(row['nl_singular']).lower(), str(row['nl_plural']).lower(), str(row['nl_neutrum']).lower() ))
 				i += 1
 				conn.commit()
 
@@ -206,7 +195,7 @@ class Database:
 		c.execute(sql)
 
 	def insertProduct2020Templates(self):
-		with open(os.getcwd() + '/db/csv/productTemplates/product2020Templates.csv', 'r') as file: 
+		with open(os.getcwd() + '/db/csv/productTemplates/smartphone/product2020Templates.csv', 'r') as file: 
 			reader = csv.DictReader(file, delimiter=';')		
 			i = 1
 			for row in reader:								
@@ -220,14 +209,67 @@ class Database:
 		c.execute(sql)
 
 	def insertProduct2021Templates(self):
-		with open(os.getcwd() + '/db/csv/productTemplates/product2021Templates.csv', 'r') as file: 
+		with open(os.getcwd() + '/db/csv/productTemplates/smartphone/product2021Templates.csv', 'r') as file: 
 			reader = csv.DictReader(file, delimiter=';')		
 			i = 1
 			for row in reader:								
 				c.execute('INSERT INTO product2021Templates VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', (i, str(row['template']).lower(), str(row['eng']), str(row['dk']), str(row['se']), str(row['no']), str(row['fi']), str(row['nl']), str(row['de']), str(row['fr'])) )
 				i += 1
 				conn.commit()
+	
+	# Watchstraps Templates
+	def createWatchstrapTemplates(self):
+		sql = 'CREATE TABLE if not exists watchstrapTemplates (id integer primary key not null, eng text, dk text, se text, no text, fi text, nl text, de text, fr text)'
+		c.execute(sql)
 
+	def insertWatchstrapTemplates(self):
+		with open(os.getcwd() + '/db/csv/productTemplates/watchstrap/watchstrapTexts.csv', 'r' ) as file:
+			reader = csv.DictReader(file, delimiter=';')		
+			i = 1
+			for row in reader:
+				c.execute('INSERT INTO watchstrapTemplates VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)', (i, str(row['eng']), str(row['dk']), str(row['se']), str(row['no']), str(row['fi']), str(row['nl']), str(row['de']), str(row['fr'])) )
+				i += 1
+				conn.commit()
+
+	def createWatchstrapMaterialsTemplates(self):
+		sql = 'CREATE TABLE if not exists watchstrapMaterialTemplates (id integer primary key not null, material text, eng text, dk text, se text, no text, fi text, nl text, de text, fr text)'
+		c.execute(sql)
+	
+	def insertWatchstrapMaterialsTemplates(self):
+		with open(os.getcwd() + '/db/csv/productTemplates/watchstrap/materialTexts.csv', 'r' ) as file:
+			reader = csv.DictReader(file, delimiter=';')		
+			i = 1
+			for row in reader:
+				c.execute('INSERT INTO watchstrapMaterialTemplates VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', (i, str(row['material']).lower(), str(row['eng']), str(row['dk']), str(row['se']), str(row['no']), str(row['fi']), str(row['nl']), str(row['de']), str(row['fr'])) )
+				i += 1
+				conn.commit()
+	
+	def createWatchstrapFeatureTemplates(self):
+		sql = 'CREATE TABLE if not exists watchstrapFeatureTemplates (id integer primary key not null, feature text, eng text, dk text, se text, no text, fi text, nl text, de text, fr text)'
+		c.execute(sql)
+	
+	def insertWatchstrapFeatureTemplates(self):
+		with open(os.getcwd() + '/db/csv/productTemplates/watchstrap/featureTexts.csv', 'r' ) as file:
+			reader = csv.DictReader(file, delimiter=';')		
+			i = 1
+			for row in reader:
+				c.execute('INSERT INTO watchstrapFeatureTemplates VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', (i, str(row['feature']).lower(), str(row['eng']), str(row['dk']), str(row['se']), str(row['no']), str(row['fi']), str(row['nl']), str(row['de']), str(row['fr'])) )
+				i += 1
+				conn.commit()
+
+	def createWatchstrapSizeTemplates(self):
+		sql = 'CREATE TABLE if not exists watchstrapSizeTemplates (id integer primary key not null, eng text, dk text, se text, no text, fi text, nl text, de text, fr text)'
+		c.execute(sql)
+
+	def insertWatchstrapSizeTemplates(self):
+		with open(os.getcwd() + '/db/csv/productTemplates/watchstrap/sizeTexts.csv', 'r' ) as file:
+			reader = csv.DictReader(file, delimiter=';')		
+			i = 1
+			for row in reader:
+				c.execute('INSERT INTO watchstrapSizeTemplates VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)', (i, str(row['eng']), str(row['dk']), str(row['se']), str(row['no']), str(row['fi']), str(row['nl']), str(row['de']), str(row['fr'])) )
+				i += 1
+				conn.commit()
+							
 	# Close Connection to DB / Kept for notes
 	# def closeConnection(self):
 		# c.close()

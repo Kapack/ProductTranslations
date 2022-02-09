@@ -1,6 +1,7 @@
 from db.Select import Select
 from lib.Helper import Helper
 from lib.Issue import Issue
+import re
 
 """
 Translates all words BEFORE last dash (Material, feature etc.)
@@ -15,10 +16,10 @@ class CoverCaseBeforeLastDash:
 		beforeLastDash = beforeAndAfterLastDash[0]
 		afterLastDash = beforeAndAfterLastDash[1]
 
-		# Go Trough Translations methods		
-		beforeLastDash = self.productFeature(beforeLastDash, country, product)
-		beforeLastDash = self.productMaterial(beforeLastDash, country, product)
+		# Go Trough Translations methods				
 		beforeLastDash = self.productNameType(beforeLastDash, country, product)
+		beforeLastDash = self.productFeature(beforeLastDash, country, product)
+		beforeLastDash = self.productMaterial(beforeLastDash, country, product)			
 		beforeLastDash = self.productPrepositions(beforeLastDash, country)
 			
 		# Converting [afterLastDash] to a String				
@@ -27,6 +28,26 @@ class CoverCaseBeforeLastDash:
 		productName = helper.createName(beforeLastDash, afterLastDashString)
 		# Return new name		
 		return productName
+		
+	# Replace productType / Flip case, Cover, Leather flip case etc.
+	def productNameType(self, beforeLastDash, country, product):				
+		select = Select(country)
+		productTypes = select.productTypes()
+		issue = Issue()
+
+		# Loop through productTypes, start with the longest (word count) productType key
+		for productType in sorted(productTypes, key=len, reverse=True):			
+
+			# Check if translated version exists
+			if productTypes[productType] != '':				
+				# if productType is in beforeLastDash, and type is not part of the device dev name (LG Style 3) (regular expression, r"\b" word boundaries)
+				if re.search(r"\b" + re.escape(productType.lower()) + r"\b", beforeLastDash.lower()) and productType not in product['device']['devName'].lower():				
+					# Replace translated productType in beforeLastDash
+					beforeLastDash = beforeLastDash.lower().replace(productType, productTypes[productType])			
+			else:
+				issue.warningErrorMsg('Missing Translated productType: ' + productType)				
+		
+		return beforeLastDash
 
 	# Product Feature
 	def productFeature(self, beforeLastDash, country, product):
@@ -50,28 +71,43 @@ class CoverCaseBeforeLastDash:
 
 		return beforeLastDash
 
+
 	# Replace productType / Flip case, Cover, Leather flip case etc.
-	def productNameType(self, beforeLastDash, country, product):		
-		helper = Helper()
+	def productNameType(self, beforeLastDash, country, product):				
 		select = Select(country)
 		productTypes = select.productTypes()
 		issue = Issue()
 
-		beforeLastDash = helper.dictKeyInString(productTypes, beforeLastDash, product)
+		# Loop through productTypes, start with the longest (word count) productType key
+		for productType in sorted(productTypes, key=len, reverse=True):
+
+			# Check if translated version exists
+			if productTypes[productType] != '':				
+				# if productType is in beforeLastDash, and type is not part of the device dev name (LG Style 3) (regular expression, r"\b" word boundaries)
+				if re.search(r"\b" + re.escape(productType.lower()) + r"\b", beforeLastDash.lower()) and productType not in product['device']['devName'].lower():				
+					# Replace translated productType in beforeLastDash
+					beforeLastDash = beforeLastDash.lower().replace(productType, productTypes[productType])			
+			else:
+				issue.warningErrorMsg('Missing Translated productType: ' + productType)				
 		
+		return beforeLastDash
+	# Replace productType / Flip case, Cover, Leather flip case etc.
+	def productNameType(self, beforeLastDash, country, product):				
+		select = Select(country)
+		productTypes = select.productTypes()
+		issue = Issue()
 
-		# # Loop trough product types keys. Sorted by length of key, so flip case will get translated first
-		# for productType in sorted(productTypes.keys(), key=len, reverse=True):
-		# 	# If productTypes.keys() exists as a substring in name (Last three words, beforelastdash)										
-		# 	if productType in ' '.join(beforeLastDash.split()[3:]).lower():
-		# 		# If there is a translated version as productTypes.value():
-		# 		if productTypes[productType] != '':					
-		# 			# Replace substring, with spaces " MAN DEV Xcover Case - Red"
-		# 			beforeLastDash = beforeLastDash.replace(productType, productTypes[productType])
-		# 			print beforeLastDash
+		# Loop through productTypes, start with the longest (word count) productType key
+		for productType in sorted(productTypes, key=len, reverse=True):			
 
-		# 		else:
-		# 			issue.warningErrorMsg(productTypes[productType] + ' missing translated version')					
+			# Check if translated version exists
+			if productTypes[productType] != '':				
+				# if productType is in beforeLastDash, and type is not part of the device dev name (LG Style 3) (regular expression, r"\b" word boundaries)
+				if re.search(r"\b" + re.escape(productType.lower()) + r"\b", beforeLastDash.lower()) and productType not in product['device']['devName'].lower():				
+					# Replace translated productType in beforeLastDash
+					beforeLastDash = beforeLastDash.lower().replace(productType, productTypes[productType])			
+			else:
+				issue.warningErrorMsg('Missing Translated productType: ' + productType)				
 		
 		return beforeLastDash
 
