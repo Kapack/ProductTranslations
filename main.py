@@ -53,7 +53,7 @@ class Main:
 		country = raw_input("Write country abbreviation (eg. dk, se, fi, de, nl etc.): ").lower()
 		createDatabaseMsg = raw_input("Do you want to update the database? / Has any .csv files been updated? [y/n] ").lower()
 
-		# week = 'new-test'
+		# week = 'new-lcw-test'
 		# country = 'dk'
 		# createDatabaseMsg = 'n'
 		
@@ -99,8 +99,8 @@ class Main:
 	def translateItems(self, country, products):	
 		print('Translating...')
 		translate = Translate(country, products)
-		products = translate.makeBeforeLastDash(products)
-		products = translate.makeAfterLastDash(products)
+		products = translate.makeCoverCaseBeforeLastDash(products)
+		products = translate.makeCoverCaseAfterLastDash(products)
 		products = translate.makeScreenProtector(products)
 		products = translate.makeWatchstrap(products)
 		return products

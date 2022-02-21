@@ -13,21 +13,25 @@ class Description:
 		products = self.products
 		for product in products:
 			
-			# ## WIP
+			# SMARTWATCHES WIP
 			# if products[product]['productType'] == 'watchstrap':
 			# 	products[product] = self.watchStrapTemplate(products[product])
+				# WIP REPLACE VARIABLES
+				# products[product] = self.replaceDescriptionVariables(products[product])
 
+			# Smartphones
 			# If product has a template attribute
 			if products[product]['template'] != '':
-				products[product] = self.productTemplate(products[product])
+				products[product] = self.smartphoneTemplate(products[product])				
 
-			# # WIP REPLACE VARIABLES	
+			# WIP REPLACE VARIABLES	
 			products[product] = self.replaceDescriptionVariables(products[product])
 
 		# Return products back
 		return products
-				
-	def productTemplate(self, product):		
+
+	# Smartphone				
+	def smartphoneTemplate(self, product):		
 		select = Select(self.country)
 		product2021Templates = select.product2021Templates()
 		product2020Templates = select.product2020Templates()		
@@ -49,6 +53,7 @@ class Description:
 		featureTemplates = select.watchstrapFeatureTemplates()
 		fetTemplate = []
 		sizeTemplates = select.watchstrapSizeTemplates()
+		endTemplates = select.watchstrapEndings()
 
 		# First watchstrapTemplates
 		i = 1
@@ -113,13 +118,11 @@ class Description:
 				# Make sizeTemplateList	back to a string and append to description.
 				sizeTemplate = ' '.join([str(elem) for elem in sizeTemplateList])
 				product['description'] += sizeTemplate
+				
+		for ending in endTemplates:			
+			# Append ending to description
+			product['description'] += endTemplates[ending]		
 
-		# Compatibility
-		# Package Included:		
-		# Package included:
-		# 1 x Watch Band
-		# 1 x Screwdriver
-		# Other items not included
 		return product
 	
 	# Replace variables descriptions
@@ -127,14 +130,15 @@ class Description:
 		select = Select(self.country)
 		colors = select.colors()
 		colorSingle = colors[0]
-
+		
 		# Replacing variables [COLOR] in text
 		if product['description'].find('[COLOR]') != -1:
 			# Get translated color
 			descColor = ''
 			for color in product['attributes']['color']:				
 				descColor = ''.join(colorSingle[color]['local'])				
-				print descColor
+				# print(descColor)
+
 			# Replace variable in description			
 			product['description'] = product['description'].replace('[COLOR]', descColor)
 
@@ -142,9 +146,14 @@ class Description:
 		if product['description'].find('[MATERIAL]') != -1:
 			product['description'] = product['description'].replace('[MATERIAL]', product['attributes']['material'])
 
-		# Replace [DEVIE NAME]
-		if product['description'].find('[DEVICE NAME]') != -1:
+		# Replace [DEVICE NAME]
+		if product['description'].find('[DEVICE NAME]') != -1:			
 			product['description'] = product['description'].replace('[DEVICE NAME]', product['device']['manName'] + ' ' + product['device']['devName'])
 		
+		# If description starts with a space (Due to missing variable).
+		if product['description'].startswith(' '):
+			# Remove space
+			product['description'] = product['description'].lstrip(' ')
+					
 		# return product base
 		return product

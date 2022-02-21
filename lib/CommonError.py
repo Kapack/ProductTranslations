@@ -11,7 +11,7 @@ class CommonError:
 		for product in self.products:
 			split = self.products[product]['name'].split()
 			if split.count('-') >= 2:
-				print self.products[product]['name']
+				print(self.products[product]['name'])
 				i += 1
 		if i > 0:
 			issue.warningErrorMsg('Warning: ' + str(i) + ' products contains more than two dashes. Correct them manually in import.csv')		

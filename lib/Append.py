@@ -130,10 +130,11 @@ class Append:
 			# Convert beforeLastDash into a list
 			beforeLastDashList = beforeLastDash.lower().split()
 			# Loop trough materials
-			for material in materialsList:
+			for material in materialsList:				
 				# If material is beforeLastDash string
 				if beforeLastDash.find(material) != -1:
-					products[product]['attributes']['material'] = material
+					products[product]['attributes']['material'] = material		
+		
 		# Return
 		return products					
 

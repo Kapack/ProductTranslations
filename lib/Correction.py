@@ -38,6 +38,9 @@ class Correction:
 
 				if word.lower() == 'mofi':
 					word = 'MOFi'
+				
+				if word.lower() == 'imak':
+					word = 'IMAK'
 
 				if word.lower() == 'tpu':
 					word = 'TPU'
@@ -50,7 +53,10 @@ class Correction:
 
 				if word.lower() == 'fhd':
 					word = 'FHD'
-
+			
+				if word.lower() == 'hd':
+					word = 'HD'
+					
 				if word.lower() == 'iphone':
 					word = 'iPhone'
 
@@ -76,8 +82,8 @@ class Correction:
 		return products
 
 	def formatDeviceName(self, products):
-		select = Select(self.country)
-		deviceList = select.deviceList()
+		# select = Select(self.country)
+		# deviceList = select.deviceList()
 
 		for product in products:
 			# if devName in lowercase exists in productName string in lowercase

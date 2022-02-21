@@ -71,7 +71,6 @@ class CoverCaseBeforeLastDash:
 
 		return beforeLastDash
 
-
 	# Replace productType / Flip case, Cover, Leather flip case etc.
 	def productNameType(self, beforeLastDash, country, product):				
 		select = Select(country)
@@ -91,6 +90,7 @@ class CoverCaseBeforeLastDash:
 				issue.warningErrorMsg('Missing Translated productType: ' + productType)				
 		
 		return beforeLastDash
+
 	# Replace productType / Flip case, Cover, Leather flip case etc.
 	def productNameType(self, beforeLastDash, country, product):				
 		select = Select(country)
@@ -98,16 +98,15 @@ class CoverCaseBeforeLastDash:
 		issue = Issue()
 
 		# Loop through productTypes, start with the longest (word count) productType key
-		for productType in sorted(productTypes, key=len, reverse=True):			
-
-			# Check if translated version exists
-			if productTypes[productType] != '':				
-				# if productType is in beforeLastDash, and type is not part of the device dev name (LG Style 3) (regular expression, r"\b" word boundaries)
-				if re.search(r"\b" + re.escape(productType.lower()) + r"\b", beforeLastDash.lower()) and productType not in product['device']['devName'].lower():				
+		for productType in sorted(productTypes, key=len, reverse=True):						
+			# if productType is in beforeLastDash, and type is not part of the device dev name (LG Style 3) (regular expression, r"\b" word boundaries)
+			if re.search(r"\b" + re.escape(productType.lower()) + r"\b", beforeLastDash.lower()) and productType not in product['device']['devName'].lower():				
+				# Check if translated version exists
+				if productTypes[productType] != '':		
 					# Replace translated productType in beforeLastDash
-					beforeLastDash = beforeLastDash.lower().replace(productType, productTypes[productType])			
-			else:
-				issue.warningErrorMsg('Missing Translated productType: ' + productType)				
+					beforeLastDash = beforeLastDash.lower().replace(productType, productTypes[productType])		
+				else:
+					issue.warningErrorMsg('Missing Translated productNameType: ' + productType)				
 		
 		return beforeLastDash
 

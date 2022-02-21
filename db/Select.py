@@ -163,3 +163,11 @@ class Select:
 		rows = c.fetchall()		
 		templates = { 'template' : template[1] for template in rows}
 		return templates
+	
+	def watchstrapEndings(self):
+		sql = 'SELECT id, ' + self.country + ' FROM watchstrapEndings'
+		c.execute(sql)
+		rows = c.fetchall()		
+		templates = { 'end' : template[1] for template in rows}
+		
+		return templates		

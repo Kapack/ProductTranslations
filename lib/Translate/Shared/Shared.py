@@ -114,7 +114,7 @@ class Shared:
 			if afterLastDashString.find(key) == 0:				
 				afterLastDashString = afterLastDashString.replace(key, colorLong[key])
 
-				print afterLastDashString
+				print(afterLastDashString)
 
 		# return
 		return afterLastDashString

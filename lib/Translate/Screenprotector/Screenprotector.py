@@ -40,11 +40,11 @@ class Screenprotector:
 			# If Permutation exist as a productType key, and translated version exists
 			if permutation in productTypes.keys() and productTypes[permutation] != '':
 				# Replace permuation in name with productTypes[value] 																								
-				productName = productName.lower().replace(permutation, productTypes[permutation])
+				productName = productName.lower().replace(permutation, productTypes[permutation])				
 
 			## ERROR MSG
 			# If permutation exists but translated version is empty
 			if permutation in productTypes.keys() and productTypes[permutation] == '':
 				issue.warningErrorMsg(permutation + ' missing translated version')
-
+		
 		return productName

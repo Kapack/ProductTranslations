@@ -12,7 +12,7 @@ camouflage blue;;;;camouflage blå;camouflage blå;camouflage blåt;kamuflasjebl
 camouflage green;;;;camouflage grøn;camouflage grønne;camouflage grønt;kamuflasjegrønn;kamuflasjegrønne;kamuflasjegrønt;;;;camouflage grün;camouflage grüne;camouflage grün;camouflage groen;camouflage groene;camouflage groen;;;
 camouflage grey;;;;camouflage grå;camouflage grå;camouflage gråt;kamuflasjegrå;kamuflasjegråe;kamuflasjegrått;;;;Tarnfarbe grau;Tarnfarbe grau;Tarnfarbe grau;camouflage grijs;camouflage grijze;camouflage grijs;;;
 champagne;;;;champagne;champagne;champagne;champagne;champagne;champagne;;;;champagner;champagner;champagner;champagne;champagne;champagne;;;
-clear;klar;klara;klart;klar;klare;klart;klar;klare;klart;;;;klar;klar;klar;transparant;transparante;transparant;;;
+clear;klar;klara;klart;klar;klare;klart;klar;klare;klart;kirkas;;;klar;klar;klar;transparant;transparante;transparant;;;
 coffee;kaffe;kaffe;kaffe;kaffe;kaffe;;kaffe;kaffe;;kahvi;;;Kaffee;Kaffeen;Kaffee;koffie;koffie;koffie;;;
 color contrast;färgkontrast;färgkontraster;färgkonstrast ;farve kontrast;farve kontraster;farve kontrast;fargekontrast;fargekontraster;fargekontrast;;;;Farbkontrast;Farbkontrast;Farbkontrast;kleurcontrast;kleurcontrasten;kleurcontrast;;;
 contrast colors;kontrastfärg;konstrastfärger;konstrastfärgat;kontrast farve;kontrast farver;kontrast farvet;kontrastfarge;kontrastfarger;kontrastfarget;;;;Kontrastfarben;Kontrastfarben;Kontrastfarben;contrastkleuren;contrastkleuren;contrastkleuren;;;
@@ -65,6 +65,6 @@ watermelon red;vattenmelonsröd;;;vandmelons rød;vandmelons røde;vandmelons r�
 white;vit;vita;vitt;hvid;hvide;hvidt;hvit;hvite;hvitt;valkoinen;;;weiß;weiße;weiß;wit;witte;wit;blanche;;
 wine red;vinröd;vinröda;vinrött;rødvin;rødvin;rødvin;vinrød;vinrøde;vinrødt;viininpunainen;;;weinrot;weinrot;weinrot;wijnrood;wijnrode;wijnrood;;;
 yellow;gul;gula;gult;gul;gule;gult;gul;gule;gult;keltainen;;;gelb;gelbe;gelb;geel;gele;geel;;;
-colorful;;;;farverig;farverige;farverigt;;;;;;;;;;;;;;;
+colorful;;;;farverig;farverige;farverigt;;;;värikäs;;;;;;;;;;;
 multi-color;;;;flerfarvet;flere farver;flerfarvet;;;;;;;;;;;;;;;
 flourescent;;;;fluorescerende;fluorescerende;fluorescerende;;;;;;;;;;;;;;;

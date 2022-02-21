@@ -16,7 +16,7 @@ class Translate:
 		self.products = products
 
 	# ProductType: Covers And Cases - Translate Words BEFORE Last Dash
-	def makeBeforeLastDash(self, products):
+	def makeCoverCaseBeforeLastDash(self, products):
 		translateBeforeLastDash = CoverCaseBeforeLastDash()		
 		for product in products:			
 			if products[product]['productType'] == 'cover' or products[product]['productType'] == 'case':			
@@ -26,7 +26,7 @@ class Translate:
 		return products
 	
 	# ProductType: Covers And Cases - Translate Words AFTER Last Dash
-	def makeAfterLastDash(self, products):
+	def makeCoverCaseAfterLastDash(self, products):
 		translateAfterLastDash = CoverCaseAfterLastDash()		
 
 		for product in products:

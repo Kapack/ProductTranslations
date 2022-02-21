@@ -6,7 +6,7 @@ import csv
 
 class Database:
 	def __init__(self, createDatabaseMsg = None):
-		print createDatabaseMsg		
+		print(createDatabaseMsg)
 		global conn
 		global c
 		# Delete Database, so we are fully updated
@@ -49,6 +49,10 @@ class Database:
 		self.insertWatchstrapFeatureTemplates()
 		self.createWatchstrapSizeTemplates()
 		self.insertWatchstrapSizeTemplates()
+		self.createWatchstrapEnding()
+		self.insertWatchstrapEnding()
+
+
 
 	# Devices and model / https://docs.google.com/spreadsheets/d/1T1ESFt-b1Bs6Y3929xhpUPJsYo0LriLfydwoOm6fXpM/edit#gid=0
 	def createDeviceList(self):
@@ -270,6 +274,19 @@ class Database:
 				i += 1
 				conn.commit()
 							
+	def createWatchstrapEnding(self):
+		sql = 'CREATE TABLE if not exists watchstrapEndings (id integer primary key not null, end text, eng text, dk text, se text, no text, fi text, nl text, de text, fr text)'
+		c.execute(sql)							
+	
+	def insertWatchstrapEnding(self):
+		with open(os.getcwd() + '/db/csv/productTemplates/watchstrap/ending.csv', 'r' ) as file:
+			reader = csv.DictReader(file, delimiter=';')		
+			i = 1
+			for row in reader:
+				c.execute('INSERT INTO watchstrapEndings VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)', (i, str(row['end']).lower(), str(row['eng']), str(row['dk']), str(row['se']), str(row['no']), str(row['fi']), str(row['nl']), str(row['de']), str(row['fr'])) )
+				i += 1
+				conn.commit()
+
 	# Close Connection to DB / Kept for notes
 	# def closeConnection(self):
 		# c.close()
