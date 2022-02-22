@@ -27,22 +27,24 @@ class Main:
 	def __init__(self):
 		userAnswer = self.userInput()
 		week = userAnswer[0]
-		country = userAnswer[1]
-		createDatabaseMsg = userAnswer[2]
+		createDatabaseMsg = userAnswer[1]		
 		# If any .csv has been updated, so database will be updated
 		if (createDatabaseMsg == 'y'):
 			self.createDatabase(createDatabaseMsg)
 		
-		self.createFolders(week, country)
-		products = self.getCsv(week, country)
-		self.commonErrors(products)
-		products = self.getAttributes(country, products)
-		products = self.translateItems(country, products)
-		products = self.makeDescriptions(country, products)
-		products = self.corrections(country, products)
-		
-		self.issues(products)
-		self.saveCsv(country, week, products)
+		countries = userAnswer[2]
+		for country in countries:		
+			
+			self.createFolders(week, country)
+			products = self.getCsv(week, country)
+			self.commonErrors(products)
+			products = self.getAttributes(country, products)
+			products = self.translateItems(country, products)
+			products = self.makeDescriptions(country, products)
+			products = self.corrections(country, products)
+			
+			self.issues(products)
+			self.saveCsv(country, week, products)
 
 		# User Success Message
 		print('\x1b[0;30;42m' + 'Translations Complete' + '\x1b[0m')	
@@ -50,14 +52,20 @@ class Main:
 	# User Input
 	def userInput(self):	
 		week = raw_input("Week number?: ")
-		country = raw_input("Write country abbreviation (eg. dk, se, fi, de, nl etc.): ").lower()
 		createDatabaseMsg = raw_input("Do you want to update the database? / Has any .csv files been updated? [y/n] ").lower()
+		country = raw_input("Write country abbreviation (eg. dk, se, fi, de, nl etc.): ").lower()
 
-		# week = 'new-lcw-test'
-		# country = 'dk'
+		if country == 'all':
+			country = ['se', 'dk', 'no', 'fi', 'de', 'nl', 'fr']
+		else:
+			country = [country]
+
+		# week = 'new-test'
 		# createDatabaseMsg = 'n'
+		# country = ['dk']
 		
-		return [week, country, createDatabaseMsg]
+		
+		return [week, createDatabaseMsg, country]
 
 	# Create Database
 	def createDatabase(self, createDatabaseMsg):
@@ -97,7 +105,7 @@ class Main:
 
 	# Translate
 	def translateItems(self, country, products):	
-		print('Translating...')
+		print('Translating ' + country + '...')
 		translate = Translate(country, products)
 		products = translate.makeCoverCaseBeforeLastDash(products)
 		products = translate.makeCoverCaseAfterLastDash(products)
@@ -128,7 +136,7 @@ class Main:
 
 	# Create CSV and Folder
 	def saveCsv(self, week, country, products):
-		print('Saving files...')
+		print('Saving ' + country + ' files...')
 		createCsv = CreateCsv(country, week, products)
 		createCsv.saveFile()
 
