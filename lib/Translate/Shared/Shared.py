@@ -19,7 +19,7 @@ class Shared:
 		select = Select(country)
 		colors = select.colors()
 		colorSingle = colors[0]
-		helper = Helper()
+		# helper = Helper()
 		issue = Issue()						
 
 		# Convert AfterLastDash from List to String, with space between elements
@@ -36,7 +36,7 @@ class Shared:
 
 			# Else give a error message (If transled color missing)
 			else:
-				issue.criticalErrorMsg(''.join(afterLastDash) + ' Missing Translated Version')							
+				issue.criticalErrorMsg(''.join(afterLastDash) + ' ' + country + ' Missing Translated Version')							
 			# Converting [afterLastDash] to a proper String				
 			afterLastDashString = ''.join([str(elem) for elem in afterLastDash])
 
@@ -56,7 +56,7 @@ class Shared:
 
 					# Else give a error message (If transled color missing)
 					else:
-						issue.criticalErrorMsg(''.join(afterLastDash) + ' Missing Translated Version')	
+						issue.criticalErrorMsg(''.join(afterLastDash) + ' ' + country + ' Missing Translated Version')	
 
 		# If and in afterLastDash
 		if ' and ' in afterLastDashString:
@@ -74,7 +74,7 @@ class Shared:
 
 					# Else give a error message (If transled color missing)
 					else:
-						issue.criticalErrorMsg(''.join(afterLastDash) + ' Missing Translated Version')	
+						issue.criticalErrorMsg(''.join(afterLastDash) + ' ' + country + ' Missing Translated Version')	
 
 		# # Translate Single Words				
 		# # If afterLastDash contains a single word And exists as a color keys
@@ -86,7 +86,7 @@ class Shared:
 			
 			# Else give a error message (If translated color missing)
 			else:
-				issue.criticalErrorMsg(''.join(afterLastDash) + ' Missing Translated Version')
+				issue.criticalErrorMsg(''.join(afterLastDash) + ' ' + country + ' Missing Translated Version')
 
 			# Converting [afterLastDash] to a proper String				
 			afterLastDashString = ''.join([str(elem) for elem in afterLastDash])				

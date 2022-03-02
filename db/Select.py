@@ -139,8 +139,8 @@ class Select:
 	def watchstrapTemplates(self):
 		sql = 'SELECT id,' + self.country + ' FROM watchstrapTemplates'
 		c.execute(sql)
-		rows = c.fetchall()				
-		templates = { template[0] : template[1] for template in rows}		
+		rows = c.fetchall()								
+		templates = { template[0] : str(template[1]) for template in rows}	
 		return templates
 
 	def watchstrapMaterialTemplates(self):

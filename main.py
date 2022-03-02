@@ -19,7 +19,7 @@ from lib.CommonError import CommonError
 from lib.Create.CreateCsv import CreateCsv
 from lib.Append import Append
 from lib.Translate.Translate import Translate
-from lib.Description import Description
+from lib.Translate.Description.Description import Description
 from lib.Issue import Issue
 from lib.Correction import Correction
 
@@ -33,8 +33,8 @@ class Main:
 			self.createDatabase(createDatabaseMsg)
 		
 		countries = userAnswer[2]
-		for country in countries:		
-			
+		
+		for country in countries:					
 			self.createFolders(week, country)
 			products = self.getCsv(week, country)
 			self.commonErrors(products)
@@ -53,17 +53,13 @@ class Main:
 	def userInput(self):	
 		week = raw_input("Week number?: ")
 		createDatabaseMsg = raw_input("Do you want to update the database? / Has any .csv files been updated? [y/n] ").lower()
-		country = raw_input("Write country abbreviation (eg. dk, se, fi, de, nl etc.): ").lower()
-
-		if country == 'all':
-			country = ['se', 'dk', 'no', 'fi', 'de', 'nl', 'fr']
-		else:
-			country = [country]
-
-		# week = 'new-test'
+		country = raw_input("Write country abbreviation (eg. dk, se, fi, de, nl etc.) Write all for every country: ").lower()
+		# week = '00'
 		# createDatabaseMsg = 'n'
-		# country = ['dk']
-		
+		# country = 'se'
+		country = [country]		
+		if country == ['all']:
+			country = ['se', 'dk', 'no', 'fi', 'de', 'nl', 'fr']
 		
 		return [week, createDatabaseMsg, country]
 
@@ -135,7 +131,7 @@ class Main:
 		issue.doubleSpace()
 
 	# Create CSV and Folder
-	def saveCsv(self, week, country, products):
+	def saveCsv(self, country, week, products):
 		print('Saving ' + country + ' files...')
 		createCsv = CreateCsv(country, week, products)
 		createCsv.saveFile()

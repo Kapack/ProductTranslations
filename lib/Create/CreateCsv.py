@@ -9,7 +9,7 @@ import os
 from slugify import slugify	
 
 class CreateCsv:
-	def __init__(self, week, country, products):
+	def __init__(self, country, week, products):
 		self.country = country
 		self.week = week
 		self.products = products
