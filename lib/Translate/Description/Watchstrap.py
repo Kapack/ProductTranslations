@@ -10,7 +10,13 @@ class Watchstrap:
         materialTemplates = select.watchstrapMaterialTemplates()
 
         # Give where only DeviceName, so we alwaus have at least one translated
-
+        for template in watchstrapTemplates:
+            # if ('[DEVICE NAME]' in watchstrapTemplates[template]) and ('[MATERIAL]' not in watchstrapTemplates[template]) and ('[COLOR]' not in watchstrapTemplates[template]):
+            if ('[DEVICE NAME]' in watchstrapTemplates[template]):
+                # Append Matching Templates to a list
+                watchTemplate.append(watchstrapTemplates[template])
+                # Pick a random, and make it first element of our description
+                product['description'] = random.choice(watchTemplate) + ' '	
 
 		# If product has Both color And material
         if (product['attributes']['color'] and product['attributes']['material']):

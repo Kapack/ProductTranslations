@@ -19,9 +19,8 @@ class Description:
 			if products[product]['productType'] == 'watchstrap':
 				products[product] = self.watchStrapDesc(products[product], self.country)
 
-			# Smartphones
-			# If product has a template attribute
-			if products[product]['template'] != '':
+			# Smartphones and if product has a template attribute		
+			if products[product]['productType'] == 'cover' or products[product]['productType'] == 'case' and products[product]['template'] != '':
 				products[product] = self.smartphoneDesc(products[product], self.country)				
 
 			# WIP REPLACE VARIABLES	
@@ -38,12 +37,11 @@ class Description:
 
 	# Watchstraps templates / WIP
 	def watchStrapDesc(self, product, country):
-		watchstrap = Watchstrap()
+		watchstrap = Watchstrap()		
 		product = watchstrap.initTemplate(product, country)
-		product = watchstrap.attrText(product, country)
-		product = watchstrap.sizeText(product, country)
-		product = watchstrap.endingText(product, country)			
-
+		# product = watchstrap.attrText(product, country)
+		# product = watchstrap.sizeText(product, country)
+		product = watchstrap.endingText(product, country)					
 		return product
 	
 	# Replace variables descriptions

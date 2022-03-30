@@ -59,7 +59,7 @@ class Main:
 		# country = 'se'
 		country = [country]		
 		if country == ['all']:
-			country = ['se', 'dk', 'no', 'fi', 'de', 'nl', 'fr']
+			country = ['se', 'dk', 'no', 'fi', 'de', 'nl']
 		
 		return [week, createDatabaseMsg, country]
 

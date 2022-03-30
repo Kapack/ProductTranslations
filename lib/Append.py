@@ -15,14 +15,22 @@ class Append:
 		# Loop trough products dict
 		i = 0
 		for key in products:
+			products[i]['productType'] = 'unknown'
 			# Cover and Cases / If a sku starts with LC and has a digit in the third place, It's a cover or case
-			if products[i]['sku'][0:2].upper() == 'LC' and products[i]['sku'][2:3].isdigit():
-				# If skus is == LCXX-XXX-1XXX-X it's a cover
+			if products[i]['sku'][0:2].upper() == 'LC' and products[i]['sku'][2:3].isdigit():                
 				if products[i]['sku'].split('-')[2][0] == '1':
 					products[i]['productType'] = 'cover'					
 				# If skus is == LCXX-XX-5XXX-X it's a case
-				elif products[i]['sku'].split('-')[2][0] == '5':	
+				elif products[i]['sku'].split('-')[2][0] == '5' and products[i]['sku'].split('-')[0] != 'LC40' and products[i]['sku'].split('-')[0] != 'LC41':	
 					products[i]['productType'] = 'case'
+
+				# LC40-XX-XX
+				elif products[i]['sku'].split('-')[0] == 'LC40':
+					products[i]['productType'] = 'pouch'
+                
+				# LC41-XX-XXXX-X
+				elif products[i]['sku'].split('-')[0] == 'LC41':
+					products[i]['productType'] = 'armband'
 
 			# Screen protector
 			elif products[i]['sku'][0:3].upper() == 'LCS' and products[i]['sku'][4:5].isdigit():
@@ -31,10 +39,59 @@ class Append:
 			# Watchstrap
 			elif products[i]['sku'][0:3].upper() == 'LCW' and products[i]['sku'][4:5].isdigit():
 				products[i]['productType'] = 'watchstrap'
-			
-			# If productType is unknown
-			else:
-				products[i]['productType'] = 'other'			
+            
+			# Camera
+			elif products[i]['sku'][0:3].upper() == 'LCC' and products[i]['sku'][4:5].isdigit():
+				products[i]['productType'] = 'camera'                     
+
+			# Speaker
+			elif products[i]['sku'][0:3].upper() == 'LCM' and products[i]['sku'][4:5].isdigit():
+				products[i]['productType'] = 'speaker'
+            
+			# Fidget Spinner
+			elif products[i]['sku'][0:3].upper() == 'LCF' and products[i]['sku'][4:5].isdigit():
+				products[i]['productType'] = 'fidgetspinner'
+
+			# Headphone
+			elif products[i]['sku'][0:5].upper() == 'LCA10' and products[i]['sku'][7:8].isdigit():
+				products[i]['productType'] = 'headphone'
+
+			# Charger
+			elif products[i]['sku'][0:5].upper() == 'LCA15' and products[i]['sku'][7:8].isdigit():
+				products[i]['productType'] = 'charger'                
+
+			# Stands & Holders
+			elif products[i]['sku'][0:5].upper() == 'LCA25' and products[i]['sku'][7:8].isdigit():
+				products[i]['productType'] = 'standHolder'                                
+
+			# Car Holder
+			elif products[i]['sku'][0:5].upper() == 'LCA35' and products[i]['sku'][7:8].isdigit():
+				products[i]['productType'] = 'carholder'
+
+			# Bike Holder
+			elif products[i]['sku'][0:5].upper() == 'LCA36' and products[i]['sku'][7:8].isdigit():
+				products[i]['productType'] = 'bikeholder'       
+
+			# Mini speaker
+			elif products[i]['sku'][0:5].upper() == 'LCA45' and products[i]['sku'][7:8].isdigit():
+				products[i]['productType'] = 'miniSpeaker'
+
+			# Cables and Adapters
+			elif products[i]['sku'][0:6].upper() == 'LCA555' and products[i]['sku'][8:9].isdigit():
+				products[i]['productType'] = 'cablesAdapter'                                                          
+
+			# Accessories
+			elif products[i]['sku'][0:5].upper() == 'LCA65' and products[i]['sku'][7:8].isdigit():
+				products[i]['productType'] = 'accessories'
+
+			# Sparepart
+			elif products[i]['sku'][0:3].upper() == 'LCP' and products[i]['sku'][5:6].isdigit():
+				products[i]['productType'] = 'sparepart'
+
+			# Sparepart
+			elif products[i]['sku'][0:3].upper() == 'LCT' and products[i]['sku'][5:6].isdigit():
+				products[i]['productType'] = 'tool' 
+							
 			i += 1
 		
 		return products
