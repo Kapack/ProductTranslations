@@ -63,7 +63,10 @@ class Description:
 
 		# Replacing variables [MATERIAL] in text		
 		if product['description'].find('[MATERIAL]') != -1:
-			product['description'] = product['description'].replace('[MATERIAL]', materials[product['attributes']['material']])
+			try:
+				product['description'] = product['description'].replace('[MATERIAL]', materials[product['attributes']['material']])
+			except Exception as e:
+				print(e)
 
 		# Replace [DEVICE NAME]
 		if product['description'].find('[DEVICE NAME]') != -1:			
