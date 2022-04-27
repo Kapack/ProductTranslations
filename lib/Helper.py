@@ -22,13 +22,13 @@ class Helper:
 			productName = beforeLastDash + ' - ' + afterLastDashString
 		return productName
 
-	def dictKeyInString(self, typeDict, string, product):		
-		issue = Issue()
-
+	def dictKeyInString(self, typeDict, string, product):
+		issue = Issue()		
 		# String into a list / We a splitting the list into. a string, so we replace standalone words.
 		stringList = string.lower().split()		
 		# New stringList / We will convert this to a string lastly
 		newStringList = []		
+		
 
 		# Loop trough the list of strings, save index and word to variable
 		for (index, word) in enumerate(stringList):

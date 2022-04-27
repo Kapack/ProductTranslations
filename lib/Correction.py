@@ -1,16 +1,11 @@
-# coding=utf-8
-import sys
 import re
-# Fixing can't encode unichar issue
-reload(sys)
-sys.setdefaultencoding('utf8')
 from db.Select import Select
 
 class Correction:
-	def __init__(self, country):
+	def __init__(self, country:str):
 		self.country = country
 
-	def formatName(self, products):
+	def formatName(self, products:dict) -> dict:
 		select = Select(self.country)		
 		prepositions = select.prepositions()
 
@@ -81,7 +76,7 @@ class Correction:
 
 		return products
 
-	def formatDeviceName(self, products):
+	def formatDeviceName(self, products:dict) -> dict:
 		# select = Select(self.country)
 		# deviceList = select.deviceList()
 

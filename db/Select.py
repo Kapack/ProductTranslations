@@ -42,7 +42,7 @@ class Select:
 		rows = c.fetchall()
 				
 		colorSingularWords = { word[0].lower() : { 'local' : word[1].lower(), 'neutrum' : word[3].lower() } for word in rows }
-		colorPluralWords = { word[0].lower() : word[2].lower() for word in rows }
+		colorPluralWords = { word[0].lower() : word[2].lower() for word in rows }		
 		
 		return [colorSingularWords, colorPluralWords]
 
@@ -100,7 +100,7 @@ class Select:
 	def productFeatures(self):
 		sql = 'SELECT feature,' + self.country + ' FROM features'
 		c.execute(sql)
-		rows = c.fetchall()
+		rows = c.fetchall()		
 		productFeatures = { feature[0].lower() : feature[1].lower() for feature in rows }
 		# Append the name to dict
 		productFeatures['name'] = 'feature'

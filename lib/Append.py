@@ -4,17 +4,17 @@ from lib.Helper import Helper
 
 # Analyse Skus
 class Append:	
-	def __init__(self, country, products):
+	def __init__(self, country:str, products:dict):
 		self.country = country
 		self.products = products
 
 	# Getting Product type from SKU.
 	# Returning attributes in a new dict
-	def productType(self):
+	def productType(self) -> dict:
 		products = self.products
 		# Loop trough products dict
 		i = 0
-		for key in products:
+		for key in products:			
 			products[i]['productType'] = 'unknown'
 			# Cover and Cases / If a sku starts with LC and has a digit in the third place, It's a cover or case
 			if products[i]['sku'][0:2].upper() == 'LC' and products[i]['sku'][2:3].isdigit():                
@@ -96,10 +96,11 @@ class Append:
 		
 		return products
 
-	def deviceAndModel(self):
+	def deviceAndModel(self) -> dict:
 		products = self.products
 		select = Select(self.country)
 		deviceList = select.deviceList()
+					
 
 		i = 0
 		# Loop trough Products		
@@ -107,6 +108,7 @@ class Append:
 			ii = 0
 			# Loop trough DeviceList
 			for device in deviceList:
+				
 				# Default manSku and DevSku.
 				# Will Get overwrited if exists, othervise will stay empty
 				manSku = ''
@@ -126,13 +128,16 @@ class Append:
 
 				# If watchstrap
 				elif products[i]['productType'] == 'watchstrap':
-					manSku = products[i]['sku'].split('-')[0][3:5]
-					devSku = products[i]['sku'].split('-')[1]					
-				
+					manSku = products[i]['sku'].split('-')[0][3:5]					
+					devSku = products[i]['sku'].split('-')[1]			
+								
 				# Assigning Correct Man and Dev Names
 				# If manSku has a match in deviceList
-				if manSku == deviceList[ii]['manSku'] and devSku == deviceList[ii]['devSku']:
+				if manSku == deviceList[ii]['manSku']:
 					products[i]['device']['manName'] = deviceList[ii]['manName']
+				
+				# Assign devName, "out" from mansku
+				if manSku == deviceList[ii]['manSku'] and devSku == deviceList[ii]['devSku']:
 					products[i]['device']['devName'] = deviceList[ii]['devName']
 
 				# Device list iterator
@@ -144,7 +149,7 @@ class Append:
 
 	# Appending products{... 'attributes' : {...} }
 	# Colors
-	def attributeColor(self):
+	def attributeColor(self) -> dict:
 		products = self.products
 		helper = Helper()
 		select = Select(self.country)
@@ -165,14 +170,13 @@ class Append:
 			if '/' in afterLastDash:
 				for word in afterLastDash:
 					if word in singularColors:
-						products[product]['attributes']['color'].append(word)
-		
+						products[product]['attributes']['color'].append(word)		
 		# Return
 		return products					
 
 
 	# Material
-	def attributeMaterial(self):
+	def attributeMaterial(self) -> dict:
 		products = self.products
 		helper = Helper()
 		select = Select(self.country)
@@ -191,12 +195,11 @@ class Append:
 				# If material is beforeLastDash string
 				if beforeLastDash.find(material) != -1:
 					products[product]['attributes']['material'] = material		
-		
 		# Return
 		return products					
 
 	# Features
-	def attributeFeature(self):
+	def attributeFeature(self) -> dict:
 		products = self.products
 		helper = Helper()
 		select = Select(self.country)
@@ -218,7 +221,7 @@ class Append:
 		return products					
 	
 	# Product Size
-	def attributeSize(self):		
+	def attributeSize(self) -> dict:		
 		products = self.products
 
 		for product in products:			
@@ -258,7 +261,7 @@ class Append:
 		return products
 				
 	# Product Templates
-	def product2021Template(self):
+	def product2021Template(self) -> dict:
 		# Templates for productTypes?
 		products = self.products
 		select = Select(self.country)
@@ -271,7 +274,7 @@ class Append:
 			beforeAndAfterLastDash = helper.beforeAndAfterLastDash(products[product]['name'])
 			beforeLastDash = beforeAndAfterLastDash[0]			
 			
-			# Looping trough each key			
+			# Looping trough each key
 			for key in product2021Templates:
 				# if key exists in part of beforeLastDash
 				if key in beforeLastDash.lower():
@@ -283,7 +286,7 @@ class Append:
 		return products
 
 	# Decides which product template to use
-	def product2020Template(self):
+	def product2020Template(self) -> dict:
 		products = self.products
 		select = Select(self.country)
 		product2020Templates = select.product2020Templates()		

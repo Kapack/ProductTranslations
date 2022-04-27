@@ -8,8 +8,11 @@ class Smartphone:
         product2020Templates = select.product2020Templates()		
         # Find correct template value, from productTemplates[key]. Searching for 
         template = product2020Templates.get(product['template']) or product2021Templates.get(product['template'])
-        # Replace [DEVICE NAME] with Product Device name in template
-        # template = template.replace('[DEVICE NAME]', product['device']['manName'] + ' ' + product['device']['devName'])
+
         # Assign correct template description
-        product['description'] = template
+        if template is not None:
+            # Replace [DEVICE NAME] with Product Device name in template
+            template = template.replace('[DEVICE NAME]', product['device']['manName'] + ' ' + product['device']['devName'])
+            product['description'] = template
+
         return product

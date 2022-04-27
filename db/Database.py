@@ -16,7 +16,7 @@ class Database:
 		conn.text_factory = str
 		c = conn.cursor()
 
-	def createAndInsertTables(self):
+	def createAndInsertTables(self) -> None:
 		self.createDeviceList()
 		self.insertDeviceList()
 		self.createProductTypesTable()

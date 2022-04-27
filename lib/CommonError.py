@@ -1,7 +1,7 @@
 from lib.Issue import Issue
 
 class CommonError:
-	def __init__(self, products):
+	def __init__(self, products:dict):
 		self.products = products
 
 	# Check if name has two "last dashes"

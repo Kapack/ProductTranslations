@@ -1,9 +1,3 @@
-# coding=utf-8
-import sys
-# Fixing can't encode unichar issue
-reload(sys)
-sys.setdefaultencoding('utf8')
-
 # Translation
 from lib.Translate.CoverCase.CoverCaseBeforeLastDash import CoverCaseBeforeLastDash
 from lib.Translate.CoverCase.CoverCaseAfterLastDash import CoverCaseAfterLastDash
@@ -11,12 +5,12 @@ from lib.Translate.Screenprotector.Screenprotector import Screenprotector
 from lib.Translate.Watchstrap.Watchstrap import Watchstrap
 
 class Translate:
-	def __init__(self, country, products):		
+	def __init__(self, country:str, products:dict):		
 		self.country = country		
 		self.products = products
 
 	# ProductType: Covers And Cases - Translate Words BEFORE Last Dash
-	def makeCoverCaseBeforeLastDash(self, products):
+	def makeCoverCaseBeforeLastDash(self, products) -> dict:
 		translateBeforeLastDash = CoverCaseBeforeLastDash()		
 		for product in products:			
 			if products[product]['productType'] == 'cover' or products[product]['productType'] == 'case':			
@@ -26,7 +20,7 @@ class Translate:
 		return products
 	
 	# ProductType: Covers And Cases - Translate Words AFTER Last Dash
-	def makeCoverCaseAfterLastDash(self, products):
+	def makeCoverCaseAfterLastDash(self, products:dict) -> dict:
 		translateAfterLastDash = CoverCaseAfterLastDash()		
 
 		for product in products:
@@ -36,7 +30,7 @@ class Translate:
 		return products
 
 	# ProductType: Screen Protectors - Translate Screen Protectos
-	def makeScreenProtector(self, products):
+	def makeScreenProtector(self, products:dict) -> dict:
 		translateScreenProtector = Screenprotector()
 
 		for product in products:
@@ -46,7 +40,7 @@ class Translate:
 		return products
 
 	# ProductType: Watchstraps
-	def makeWatchstrap(self, products):		
+	def makeWatchstrap(self, products:dict) -> dict:		
 		translateWatchstrap = Watchstrap()
 
 		for product in products:

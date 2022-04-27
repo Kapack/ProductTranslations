@@ -1,4 +1,4 @@
-#!/usr/bin/env python2.7
+#!/usr/bin/env python3
 
 # DO NOT CHANGE ANY FILE NAMES!
 
@@ -27,7 +27,8 @@ class Main:
 	def __init__(self):
 		userAnswer = self.userInput()
 		week = userAnswer[0]
-		createDatabaseMsg = userAnswer[1]		
+		createDatabaseMsg = userAnswer[1]	
+
 		# If any .csv has been updated, so database will be updated
 		if (createDatabaseMsg == 'y'):
 			self.createDatabase(createDatabaseMsg)
@@ -42,52 +43,53 @@ class Main:
 			products = self.translateItems(country, products)
 			products = self.makeDescriptions(country, products)
 			products = self.corrections(country, products)
-			
-			self.issues(products)
+
+			self.issues(products, country)
 			self.saveCsv(country, week, products)
 
 		# User Success Message
 		print('\x1b[0;30;42m' + 'Translations Complete' + '\x1b[0m')	
 
 	# User Input
-	def userInput(self):	
-		week = raw_input("Week number?: ")
-		createDatabaseMsg = raw_input("Do you want to update the database? / Has any .csv files been updated? [y/n] ").lower()
-		country = raw_input("Write country abbreviation (eg. dk, se, fi, de, nl etc.) Write all for every country: ").lower()
+	def userInput(self) -> list:	
 		# week = '00'
 		# createDatabaseMsg = 'n'
-		# country = 'se'
+		# country = 'dk'
+		week = input("Week number?: ")
+		createDatabaseMsg = input("Do you want to update the database? / Has any .csv files been updated? [y/n] ").lower()
+		country = input("Write country abbreviation (eg. dk, se, fi, de, nl etc.) Write all for every country: ").lower()		
 		country = [country]		
+
 		if country == ['all']:
 			country = ['se', 'dk', 'no', 'fi', 'de', 'nl']
 		
 		return [week, createDatabaseMsg, country]
 
 	# Create Database
-	def createDatabase(self, createDatabaseMsg):
+	def createDatabase(self, createDatabaseMsg:str) -> None:
 		print('Creating database...')
 		database = Database(createDatabaseMsg)
 		database.createAndInsertTables()		
 
 	# Create Folders
-	def createFolders(self, week, country):
+	def createFolders(self, week:str, country:str) -> None:
 		createFolder = CreateFolder(week, country)
 		createFolder.folder()
 
 	# Get CSV Items
-	def getCsv(self, week, country):
+	def getCsv(self, week:str, country:str) -> dict:
 		openCsv = OpenCsv(week, country)
 		# File Needs SKU, Name and Description
 		products = openCsv.initFile()
 		return products
 
 	# Check for common errors, before any changes have been made
-	def commonErrors(self, products):
+	def commonErrors(self, products:dict) -> None:
 		commonError = CommonError(products)
 		commonError.dobuleDash()
 
 	# Analyse Skus and Names. Append correct values to products = {...}
-	def getAttributes(self, country, products):
+	def getAttributes(self, country:str, products:dict) -> dict:
 		append = Append(country, products)
 		append.productType()
 		append.deviceAndModel()		
@@ -96,11 +98,11 @@ class Main:
 		append.attributeFeature()
 		append.attributeSize()
 		append.product2021Template()
-		products = append.product2020Template()
+		products = append.product2020Template()		
 		return products
 
 	# Translate
-	def translateItems(self, country, products):	
+	def translateItems(self, country:str, products:dict) -> dict:	
 		print('Translating ' + country + '...')
 		translate = Translate(country, products)
 		products = translate.makeCoverCaseBeforeLastDash(products)
@@ -110,14 +112,14 @@ class Main:
 		return products
 
 	# Make Description from productTemplates
-	def makeDescriptions(self, country, products):
+	def makeDescriptions(self, country:str, products:dict) -> dict:		
 		print('Adding template descriptions...')
-		products = Description(country, products)
-		products = products.loopProducts()
+		products = Description(country, products)		
+		products = products.loopProducts()		
 		return products
 
 	# Corrections
-	def corrections(self, country, products):
+	def corrections(self, country:str, products:dict) -> dict:
 		print('Making corrections...')
 		correct = Correction(country)
 		products = correct.formatName(products)
@@ -125,13 +127,13 @@ class Main:
 		return products
 
 	# Check for common issues
-	def issues(self, products):
-		issue = Issue(products)	
+	def issues(self, products:dict, country:str) -> None:		
+		issue = Issue(products, country)	
 		issue.checkForEmptyManAndDevName()
 		issue.doubleSpace()
 
 	# Create CSV and Folder
-	def saveCsv(self, country, week, products):
+	def saveCsv(self, country:str, week:str, products:dict) -> None:
 		print('Saving ' + country + ' files...')
 		createCsv = CreateCsv(country, week, products)
 		createCsv.saveFile()

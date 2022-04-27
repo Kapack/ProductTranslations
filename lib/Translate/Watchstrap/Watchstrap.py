@@ -1,9 +1,3 @@
-# coding=utf-8
-import sys
-# Fixing can't encode unichar issue
-reload(sys)
-sys.setdefaultencoding('utf8')
-
 from lib.Helper import Helper
 from db.Select import Select
 from lib.Translate.Shared.Shared import Shared
@@ -26,6 +20,10 @@ class Watchstrap:
 		beforeLastDash = self.material(beforeLastDash, country, product)
 		beforeLastDash = self.productNameType(beforeLastDash, country, product)
 		afterLastDash = self.productNameColor(afterLastDash, country)
+		afterLastDash = self.singleColorCatchAll(afterLastDash, country)		
+		afterLastDash = self.productNameSingularMotif(afterLastDash, country)
+		afterLastDash = self.productPluralMotifAndColor(afterLastDash, country)
+		afterLastDash = self.productPrepositions(afterLastDash, country)
 		afterLastDash = self.colorWithSize(afterLastDash, country)
 		afterLastDash = self.size(afterLastDash, country, product)		
 		
@@ -80,6 +78,27 @@ class Watchstrap:
 	def productNameColor(self, afterLastDash, country):
 		shared = Shared()
 		afterLastDashString = shared.productNameSingleColor(afterLastDash, country)
+		return afterLastDashString
+
+	def singleColorCatchAll(self, afterLastDash, country):
+		shared = Shared()
+		afterLastDashString = shared.singleColorCatchAll(afterLastDash, country)
+		return afterLastDashString
+	
+	def productNameSingularMotif(self, afterLastDash, country):
+		shared = Shared()
+		afterLastDashString = shared.productNameSingularMotif(afterLastDash, country)
+		return afterLastDashString
+
+	def productPluralMotifAndColor(self, afterLastDash, country):		
+		shared = Shared()
+		afterLastDashString = shared.productPluralMotifAndColor(afterLastDash, country)
+		return afterLastDashString
+	
+	# Replaces / Translate Prepositions (with, in, and, for)
+	def productPrepositions(self, afterLastDash, country):
+		shared = Shared()
+		afterLastDashString = shared.productPrepositions(afterLastDash, country)
 		return afterLastDashString
 
 	# Where afterLastDash contains eg. black size: s

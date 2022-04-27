@@ -12,14 +12,14 @@ class Watchstrap:
         # Give where only DeviceName, so we alwaus have at least one translated
         for template in watchstrapTemplates:
             # if ('[DEVICE NAME]' in watchstrapTemplates[template]) and ('[MATERIAL]' not in watchstrapTemplates[template]) and ('[COLOR]' not in watchstrapTemplates[template]):
-            if ('[DEVICE NAME]' in watchstrapTemplates[template]):
+            if ('[DEVICE NAME]' in watchstrapTemplates[template]) and ('[MATERIAL]' not in watchstrapTemplates[template]) and ('[COLOR]' not in watchstrapTemplates[template]):
                 # Append Matching Templates to a list
                 watchTemplate.append(watchstrapTemplates[template])
                 # Pick a random, and make it first element of our description
                 product['description'] = random.choice(watchTemplate) + ' '	
 
 		# If product has Both color And material
-        if (product['attributes']['color'] and product['attributes']['material']):
+        if product['attributes']['color'] and product['attributes']['material'] != '':
             # Find each template that has both
             for template in watchstrapTemplates:	
                 if ('[COLOR]' in watchstrapTemplates[template]) and ('[MATERIAL]' in watchstrapTemplates[template]):	
@@ -29,9 +29,9 @@ class Watchstrap:
                     product['description'] = random.choice(watchTemplate) + ' '	
 		
         # # If product only has Color
-        if (product['attributes']['color'] and str(product['attributes']['material']) == ''):           
+        if product['attributes']['color'] and str(product['attributes']['material']) == '':
             # Find each template that has Color and Not Material
-            for template in watchstrapTemplates:	
+            for template in watchstrapTemplates:	                
                 if ('[COLOR]' in watchstrapTemplates[template]) and ('[MATERIAL]' not in watchstrapTemplates[template]):	
                     # Append Matching Templates to a list
                     watchTemplate.append(watchstrapTemplates[template])
@@ -39,7 +39,7 @@ class Watchstrap:
                     product['description'] = random.choice(watchTemplate) + ' '
 
         # If product only has Material
-        if (not product['attributes']['color'] and str(product['attributes']['material']) != ''):                   
+        if not product['attributes']['color'] and str(product['attributes']['material']) != '':
             for matTem in materialTemplates:
                 # If product has a material attribute, matches materialTemplate and translated version exists
                 if materialTemplates[matTem]['material'] == product['attributes']['material'] and materialTemplates[matTem]['template'] != '' :
