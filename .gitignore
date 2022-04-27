@@ -1,6 +1,7 @@
 BC/*
 csv/decap
 import/*
+log/*
 products.db
 .DS_Store
 *.pyc
