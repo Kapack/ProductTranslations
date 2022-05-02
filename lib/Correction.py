@@ -37,6 +37,9 @@ class Correction:
 				if word.lower() == 'imak':
 					word = 'IMAK'
 
+				if word.lower() == 'iml':
+					word = 'IML'										
+
 				if word.lower() == 'tpu':
 					word = 'TPU'
 
@@ -63,7 +66,7 @@ class Correction:
 
 				if word.lower() == 'etrex':
 					word = 'eTrex'
-				
+								
 				# Translated Prepositions with lowercase
 				if word.lower() in prepositions.values():
 					word = word.lower()
