@@ -103,7 +103,7 @@ class Main:
 
 	# Translate
 	def translateItems(self, country:str, products:dict) -> dict:	
-		print('Translating ' + country + '....')
+		print('Translating ' + country + '...')
 		translate = Translate(country, products)
 		products = translate.makeCoverCaseBeforeLastDash(products)
 		products = translate.makeCoverCaseAfterLastDash(products)
