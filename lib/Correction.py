@@ -80,9 +80,6 @@ class Correction:
 		return products
 
 	def formatDeviceName(self, products:dict) -> dict:
-		# select = Select(self.country)
-		# deviceList = select.deviceList()
-
 		for product in products:
 			# if devName in lowercase exists in productName string in lowercase
 			if products[product]['device']['devName'].lower() in products[product]['name'].lower() or products[product]['device']['manName'].lower() in products[product]['name'].lower():
@@ -96,3 +93,12 @@ class Correction:
 				products[product]['name'] = src_str.sub(products[product]['device']['devName'], products[product]['name'])				
 
 		return products
+	
+	# If description starts with a space (Due to missing variable).
+	def startsWithSpace(self, products:dict) -> dict:
+		for product in products:
+			if product['description'].startswith(' '):
+				# Remove space
+				product['description'] = product['description'].lstrip(' ')
+		
+		return product

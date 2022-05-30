@@ -23,9 +23,9 @@ class Translate:
 	def makeCoverCaseAfterLastDash(self, products:dict) -> dict:
 		translateAfterLastDash = CoverCaseAfterLastDash()		
 
-		for product in products:
+		for product in products:			
 			if products[product]['productType'] == 'cover' or products[product]['productType'] == 'case':
-				products[product]['name'] = translateAfterLastDash.make(productName=products[product]['name'], country=self.country, product=products[product])
+				products[product]['name'] = translateAfterLastDash.make(productName=products[product]['name'], country=self.country)
 		# Return
 		return products
 

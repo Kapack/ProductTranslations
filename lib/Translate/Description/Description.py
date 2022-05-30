@@ -3,7 +3,8 @@
 from db.Select import Select
 from lib.Translate.Description.Smartphone import Smartphone
 from lib.Translate.Description.Watchstrap import Watchstrap
-
+# Constants
+from common.Constants import ATTRIBUTES_VARIABLES
 
 class Description:
 	def __init__(self, country:str, products:dict):
@@ -51,40 +52,41 @@ class Description:
 		colorSingle = colors[0]
 		materials = select.productMaterials()
 
-		# Replacing variables [COLOR] in text
-		if product['description'].find('[COLOR]') != -1:
-			# Get translated color
-			descColor = ''
-			for color in product['attributes']['color']:				
-				descColor = ''.join(colorSingle[color]['local'])				
+		for ATTRIBUTES_VARIABLE in ATTRIBUTES_VARIABLES:
+			# If a attribute exists in the text			
+			if ATTRIBUTES_VARIABLE in product['description']:
+				# Getting the translated Attribute
+				translatedAttr = ''
+				# Replace [VARIALBE] in Text
+				if ATTRIBUTES_VARIABLE == '[COLOR]':
+					# Get translated color		
+					for color in product['attributes']['color']:				
+						try:
+							translatedAttr = ''.join(colorSingle[color]['local'])
+						except Exception as e:
+							print(e)
 
-			# Replace variable in description			
-			product['description'] = product['description'].replace('[COLOR]', descColor)
-		
-		if product['description'].find('[COLOR_NEUTRUM]') != -1:
-			# Get translated color
-			descColor = ''
-			for color in product['attributes']['color']:				
-				descColor = ''.join(colorSingle[color]['color_neutrum'])				
+				if ATTRIBUTES_VARIABLE == '[COLOR_NEUTRUM]':
+					for color in product['attributes']['color']:				
+						try:
+							translatedAttr = ''.join(colorSingle[color]['neutrum'])	
+						except Exception as e:
+							print(e)
+				
+				if ATTRIBUTES_VARIABLE == '[MATERIAL]':
+					try:
+						translatedAttr = materials[product['attributes']['material']]						
+					except Exception as e:
+						print(e)
+				
+				if ATTRIBUTES_VARIABLE == '[DEVICE NAME]':
+					try:
+						translatedAttr = product['device']['manName'] + ' ' + product['device']['devName']
+					except Exception as e:
+						print(e)
 
-			# Replace variable in description			
-			product['description'] = product['description'].replace('[COLOR_NEUTRUM]', descColor)
-
-		# Replacing variables [MATERIAL] in text		
-		if product['description'].find('[MATERIAL]') != -1:
-			try:
-				product['description'] = product['description'].replace('[MATERIAL]', materials[product['attributes']['material']])
-			except Exception as e:
-				print(e)
-
-		# Replace [DEVICE NAME]
-		if product['description'].find('[DEVICE NAME]') != -1:			
-			product['description'] = product['description'].replace('[DEVICE NAME]', product['device']['manName'] + ' ' + product['device']['devName'])
-		
-		# If description starts with a space (Due to missing variable).
-		if product['description'].startswith(' '):
-			# Remove space
-			product['description'] = product['description'].lstrip(' ')
-					
-		# return product base
+			# Replace Variable			
+			product['description'] = product['description'].replace(ATTRIBUTES_VARIABLE, translatedAttr)	
+							
+		# return product
 		return product

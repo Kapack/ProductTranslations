@@ -118,12 +118,13 @@ class Main:
 		products = products.loopProducts()		
 		return products
 
-	# Corrections
+	# Correct Common Errors
 	def corrections(self, country:str, products:dict) -> dict:
 		print('Making corrections...')
 		correct = Correction(country)
 		products = correct.formatName(products)
 		products = correct.formatDeviceName(products)
+		products = correct.startsWithSpace(products)				
 		return products
 
 	# Check for common issues
