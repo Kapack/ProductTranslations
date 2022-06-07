@@ -8,12 +8,12 @@ class CreateCsv:
 		self.week = week
 		self.products = products
 
-	def saveFile(self) -> None:
+	def saveCsv(self) -> None:
 		country = self.country
 		week = self.week
 		products = self.products
 		# Path to save file
-		path = os.getcwd() + '/import/' + week + '/' + self.country + '/'
+		path = os.getcwd() + '/import/' + week + '/'
 
 		# DE, AT, CH
 		if country.lower() == 'de':

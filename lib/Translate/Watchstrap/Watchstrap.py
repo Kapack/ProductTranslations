@@ -1,6 +1,6 @@
 from lib.Helper import Helper
 from db.Select import Select
-from lib.Translate.Shared.Shared import Shared
+from lib.Shared.Shared import Shared
 
 """
 Translated Product Types: Watchstraps

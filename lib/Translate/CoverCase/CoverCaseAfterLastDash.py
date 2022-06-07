@@ -1,6 +1,6 @@
 from db.Select import Select
 from lib.Helper import Helper
-from lib.Translate.Shared.Shared import Shared
+from lib.Shared.Shared import Shared
 
 """
 Translates all words AFTER last dash (Motifs, colors etc.)

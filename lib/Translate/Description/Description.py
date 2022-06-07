@@ -22,7 +22,7 @@ class Description:
 
 			# Smartphones and if product has a template attribute		
 			if products[product]['productType'] == 'cover' or products[product]['productType'] == 'case' and products[product]['template'] != '':
-				products[product] = self.smartphoneDesc(products[product], self.country)				
+				products[product] = self.smartphoneDesc(products[product], self.country)
 
 			# WIP REPLACE VARIABLES	
 			products[product] = self.replaceDescriptionVariables(products[product])
@@ -54,7 +54,7 @@ class Description:
 
 		for ATTRIBUTES_VARIABLE in ATTRIBUTES_VARIABLES:
 			# If a attribute exists in the text			
-			if ATTRIBUTES_VARIABLE in product['description']:
+			if ATTRIBUTES_VARIABLE in product['description']:				
 				# Getting the translated Attribute
 				translatedAttr = ''
 				# Replace [VARIALBE] in Text
@@ -81,12 +81,12 @@ class Description:
 				
 				if ATTRIBUTES_VARIABLE == '[DEVICE NAME]':
 					try:
-						translatedAttr = product['device']['manName'] + ' ' + product['device']['devName']
+						translatedAttr = product['device']['manName'] + ' ' + product['device']['devName']											
 					except Exception as e:
 						print(e)
+				
+				# Replace Variable							
+				product['description'] = product['description'].replace(ATTRIBUTES_VARIABLE, translatedAttr)											
 
-			# Replace Variable			
-			product['description'] = product['description'].replace(ATTRIBUTES_VARIABLE, translatedAttr)	
-							
 		# return product
 		return product

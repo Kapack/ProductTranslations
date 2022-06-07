@@ -1,9 +1,12 @@
 # coding=utf-8
 #!/usr/bin/python
 import sqlite3
+from common.Logging import Log
+
 
 class Select:
 	def __init__(self, country):
+		self.log = Log()
 		self.country = country
 		global conn
 		global c
@@ -117,23 +120,34 @@ class Select:
 
 	# 2020 Templates
 	def product2020Templates(self):				
-		sql = 'SELECT template,' + self.country + ' FROM product2020Templates'
+		sql = 'SELECT template, ' + self.country + ' FROM product2020Templates'
 		c.execute(sql)						
 		# Create Dict from data
 		rows = c.fetchall()
-		templates = { template[0].lower() : template[1] for template in rows}
+		templates = { template[0].lower() : template[1] for template in rows}		
 		# Return Dict
 		return templates
 		
 	# 2021 templates
 	def product2021Templates(self):				
-		sql = 'SELECT template,' + self.country + ' FROM product2021Templates'
+		sql = 'SELECT template, eng, ' + self.country + ' FROM product2021Templates'
 		c.execute(sql)						
 		# Create Dict from data
 		rows = c.fetchall()
-		templates = { template[0].lower() : template[1] for template in rows}
-		# Return Dict
-		return templates
+
+		# templates = { self.country + '_' + template[0].lower() : template[1] for template in rows}
+		eng_templates = { template[0].lower() : template[1] for template in rows }
+		local_templates = { template[0].lower() : template[2] for template in rows }
+		
+		# If local is missing translation, give the english text, so we won't have empty values.
+		for local in local_templates:
+			if local_templates[local] == '':								
+				local_templates[local] = eng_templates[local]	
+				# If missing, then add in log	
+				self.log.missingSmartphoneTemplate(country = self.country, key = local)		 				
+		
+		# Return Dict 
+		return local_templates
 	
 	# Watchstraps templates 
 	def watchstrapTemplates(self):

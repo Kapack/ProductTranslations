@@ -1,13 +1,16 @@
 from lib.Helper import Helper
 from db.Select import Select
 from itertools import permutations
-from lib.Issue import Issue
+from common.Logging import Log
 
 """
 Translated Product Types: Screenprotectors
 """
 
 class Screenprotector:
+	def __init__(self) -> None:
+		self.log = Log()
+
 	def make(self, productName, country, product):		
 		# Go Trough Translations methods		
 		productName = self.prepositions(productName, country, product)
@@ -31,7 +34,6 @@ class Screenprotector:
 	def productNameType(self, productName, country):		
 		select = Select(country)
 		productTypes = select.productTypes()
-		issue = Issue()
 				
 		# Each permutation of name
 		for permutation in permutations(productName.lower().split(' '), 2):			
@@ -45,6 +47,6 @@ class Screenprotector:
 			## ERROR MSG
 			# If permutation exists but translated version is empty
 			if permutation in productTypes.keys() and productTypes[permutation] == '':
-				issue.warningErrorMsg(permutation + ' missing translated version')
+				self.log.missingWord(country= country, word = permutation)
 		
 		return productName

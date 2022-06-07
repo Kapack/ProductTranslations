@@ -22,30 +22,29 @@ from lib.Translate.Translate import Translate
 from lib.Translate.Description.Description import Description
 from lib.Issue import Issue
 from lib.Correction import Correction
+# import os
+# import shutil
 
 class Main:
 	def __init__(self):
 		userAnswer = self.userInput()
 		week = userAnswer[0]
 		createDatabaseMsg = userAnswer[1]	
-
+		countries = userAnswer[2]
 		# If any .csv has been updated, so database will be updated
 		if (createDatabaseMsg == 'y'):
 			self.createDatabase(createDatabaseMsg)
 		
-		countries = userAnswer[2]
-		
-		for country in countries:					
-			self.createFolders(week, country)
+		self.initFolders(week=week)
+		for country in countries:											
 			products = self.getCsv(week, country)
 			self.commonErrors(products)
 			products = self.getAttributes(country, products)
 			products = self.translateItems(country, products)
 			products = self.makeDescriptions(country, products)
 			products = self.corrections(country, products)
-
 			self.issues(products, country)
-			self.saveCsv(country, week, products)
+			self.saveFiles(country, week, products)
 
 		# User Success Message
 		print('\x1b[0;30;42m' + 'Translations Complete' + '\x1b[0m')	
@@ -65,16 +64,19 @@ class Main:
 		
 		return [week, createDatabaseMsg, country]
 
-	# Create Database
 	def createDatabase(self, createDatabaseMsg:str) -> None:
+	# Create Database
 		print('Creating database...')
 		database = Database(createDatabaseMsg)
 		database.createAndInsertTables()		
+		
+	# Create and delete folders/files
+	def initFolders(self, week:str) -> None:
+		createFolder = CreateFolder(week = week)
+		issue = Issue()
 
-	# Create Folders
-	def createFolders(self, week:str, country:str) -> None:
-		createFolder = CreateFolder(week, country)
-		createFolder.folder()
+		createFolder.folder()		
+		issue.clearLogFile()
 
 	# Get CSV Items
 	def getCsv(self, week:str, country:str) -> dict:
@@ -108,14 +110,14 @@ class Main:
 		products = translate.makeCoverCaseBeforeLastDash(products)
 		products = translate.makeCoverCaseAfterLastDash(products)
 		products = translate.makeScreenProtector(products)
-		products = translate.makeWatchstrap(products)
+		products = translate.makeWatchstrap(products)		
 		return products
 
 	# Make Description from productTemplates
 	def makeDescriptions(self, country:str, products:dict) -> dict:		
 		print('Adding template descriptions...')
 		products = Description(country, products)		
-		products = products.loopProducts()		
+		products = products.loopProducts()				
 		return products
 
 	# Correct Common Errors
@@ -124,21 +126,21 @@ class Main:
 		correct = Correction(country)
 		products = correct.formatName(products)
 		products = correct.formatDeviceName(products)
-		products = correct.startsWithSpace(products)				
+		# products = correct.startsWithSpace(products)				
 		return products
 
 	# Check for common issues
 	def issues(self, products:dict, country:str) -> None:		
-		issue = Issue(products, country)	
+		issue = Issue(products = products, country = country)	
 		issue.checkForEmptyManAndDevName()
-		issue.doubleSpace()
+		issue.doubleSpace()		
+		issue.checkForLogFiles()
 
 	# Create CSV and Folder
-	def saveCsv(self, country:str, week:str, products:dict) -> None:
-		print('Saving ' + country + ' files...')
+	def saveFiles(self, country:str, week:str, products:dict) -> None:		
 		createCsv = CreateCsv(country, week, products)
-		createCsv.saveFile()
-
+		createCsv.saveCsv()
+	
 # Calling Main
 if __name__ == '__main__':
 	Main()

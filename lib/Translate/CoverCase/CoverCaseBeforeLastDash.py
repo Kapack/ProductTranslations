@@ -1,7 +1,9 @@
+from common.Logging import Log
 from db.Select import Select
-from lib.Helper import Helper
-from lib.Issue import Issue
+from lib.Helper import Helper 
 import re
+
+
 
 """
 Translates all words BEFORE last dash (Material, feature etc.)
@@ -9,6 +11,9 @@ Translated Product Types: Covers and Cases.
 """
 
 class CoverCaseBeforeLastDash:
+	def __init__(self) -> None:
+		self.log = Log()
+
 	def make(self, productName, country, product=None):
 		helper = Helper()
 		# Break up name
@@ -33,7 +38,6 @@ class CoverCaseBeforeLastDash:
 	def productNameType(self, beforeLastDash, country, product):				
 		select = Select(country)
 		productTypes = select.productTypes()
-		issue = Issue()
 
 		# Loop through productTypes, start with the longest (word count) productType key
 		for productType in sorted(productTypes, key=len, reverse=True):			
@@ -45,7 +49,8 @@ class CoverCaseBeforeLastDash:
 					# Replace translated productType in beforeLastDash
 					beforeLastDash = beforeLastDash.lower().replace(productType, productTypes[productType])			
 			else:
-				issue.warningErrorMsg('Missing Translated productType: ' + productType)				
+				self.log.missingProductType(country = country, productType = productType)
+				# issue.warningErrorMsg('Missing Translated productType: ' + productType)				
 		
 		return beforeLastDash
 
@@ -75,7 +80,6 @@ class CoverCaseBeforeLastDash:
 	def productNameType(self, beforeLastDash, country, product):				
 		select = Select(country)
 		productTypes = select.productTypes()
-		issue = Issue()
 
 		# Loop through productTypes, start with the longest (word count) productType key
 		for productType in sorted(productTypes, key=len, reverse=True):
@@ -87,15 +91,15 @@ class CoverCaseBeforeLastDash:
 					# Replace translated productType in beforeLastDash
 					beforeLastDash = beforeLastDash.lower().replace(productType, productTypes[productType])			
 			else:
-				issue.warningErrorMsg('Missing Translated productType: ' + productType)				
+				self.log.missingProductType(country = country, productType = productType)
+			
 		
 		return beforeLastDash
 
 	# Replace productType / Flip case, Cover, Leather flip case etc.
 	def productNameType(self, beforeLastDash, country, product):				
 		select = Select(country)
-		productTypes = select.productTypes()
-		issue = Issue()
+		productTypes = select.productTypes()		
 
 		# Loop through productTypes, start with the longest (word count) productType key
 		for productType in sorted(productTypes, key=len, reverse=True):						
@@ -106,7 +110,8 @@ class CoverCaseBeforeLastDash:
 					# Replace translated productType in beforeLastDash
 					beforeLastDash = beforeLastDash.lower().replace(productType, productTypes[productType])		
 				else:
-					issue.warningErrorMsg('Missing Translated productNameType: ' + productType)				
+					self.log.missingProductType(country = country, productType = productType)
+					
 		
 		return beforeLastDash
 

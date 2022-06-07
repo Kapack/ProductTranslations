@@ -1,12 +1,10 @@
 import os
 
 class CreateFolder:
-	def __init__(self, weekInput:str, countryInput:str):
-		self.countryInput = countryInput
-		self.weekInput = weekInput
+	def __init__(self, week:str):		
+		self.week = week
 
-	def folder(self) -> None:		
-		# Create /import/Week/Country/ Folder				
-		path = os.getcwd() + '/import/' + self.weekInput + '/' + self.countryInput + '/'
+	def folder(self) -> None:
+		path = os.getcwd() + '/import/' + self.week
 		if not os.path.exists(path):		
-			os.makedirs(path)	
+			os.makedirs(path)

@@ -1,10 +1,11 @@
 # coding=utf-8
-from lib.Issue import Issue
+from common.Logging import Log
 
 class Helper:
+	def __init__(self) -> None:
+		self.log = Log()
 
 	def beforeAndAfterLastDash(self, productName):
-
 		if ' - ' in productName:
 			beforeLastDash = productName.split(' - ')[0]
 			afterLastDash = productName.split(' - ')[-1].lower().split(' ')
@@ -22,13 +23,11 @@ class Helper:
 			productName = beforeLastDash + ' - ' + afterLastDashString
 		return productName
 
-	def dictKeyInString(self, typeDict, string, product):
-		issue = Issue()		
+	def dictKeyInString(self, typeDict, string, product):		
 		# String into a list / We a splitting the list into. a string, so we replace standalone words.
 		stringList = string.lower().split()		
 		# New stringList / We will convert this to a string lastly
 		newStringList = []		
-		
 
 		# Loop trough the list of strings, save index and word to variable
 		for (index, word) in enumerate(stringList):
@@ -42,7 +41,8 @@ class Helper:
 					currentWord = typeDict[currentWord]
 				# Give error message, if translated version does not exists
 				else:
-					issue.warningErrorMsg(currentWord + ' Missing Translated Version')
+					self.log.missingWord(country='CO', word = currentWord)
+					# issue.warningErrorMsg(currentWord + ' Missing Translated Version'
 
 			# Double words / CurrentWord + NextWord (Watch Band)
 			# If the index number +1 is lower than the length of stringList, we can check if currentWord or currentWord + nextWord has a match
@@ -60,7 +60,7 @@ class Helper:
 
 					# Give error message, if translated version does not exists
 					else:
-						issue.warningErrorMsg(currentWord + ' ' + nextWord + ' Missing Translated Version')
+						self.log.missingWord(country='CO', word = currentWord + ' ' + nextWord)						
 							
 			# Append Word (translated or english)			
 			newStringList.append(currentWord)			
@@ -74,8 +74,6 @@ class Helper:
 	def checkIfTranslatedExists(self, typeDict, word, key=None):
 		# Check if translated version exists. 
 		# If True return translated. If False return original (English)
-		issue = Issue()		
-
 		if key:
 			# If translated version exists
 			if typeDict[word][key]:
@@ -84,7 +82,8 @@ class Helper:
 
 			# Else Give Error Message
 			else:
-				issue.warningErrorMsg(key + ' : ' + word + ' Missing Translated Version')		
+				self.log.missingWord(country='CO', word = word)
+
 		else:			
 			# If translated version exists
 			if typeDict[word]:
@@ -93,7 +92,7 @@ class Helper:
 
 			# Else Give Error Message
 			else:
-				issue.warningErrorMsg(word + ' Missing Translated Version')
+				self.log.missingWord(country='CO', word = word)
 
 		# Return Word
 		return word
