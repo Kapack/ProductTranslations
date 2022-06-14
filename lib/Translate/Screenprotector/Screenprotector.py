@@ -11,27 +11,27 @@ class Screenprotector:
 	def __init__(self) -> None:
 		self.log = Log()
 
-	def make(self, productName, country, product):		
+	def make(self, productName:str, country:str, product:dict) -> str:		
 		# Go Trough Translations methods		
-		productName = self.prepositions(productName, country, product)
-		productName = self.productNameType(productName, country)
+		productName = self.prepositions(productName = productName, country = country, product = product)
+		productName = self.productNameType(productName = productName, country = country)
 		
 		# Return new name		
 		return productName
 
 	# Replaces / Translate Prepositions (with, in, and, for)
-	def prepositions(self, productName, country, product):
+	def prepositions(self, productName:str, country:str, product:dict) -> str:
 		select = Select(country)		
 		helper = Helper()
 		prepositions = select.prepositions()
 
 		# Check if prepositionsKey is in name, and replace
-		productName = helper.dictKeyInString(prepositions, productName, product)
+		productName = helper.dictKeyInString(typeDict = prepositions, productName = productName, product = product)
 
 		return productName
 
 	# Replace productType / tempered glass, etc.
-	def productNameType(self, productName, country):		
+	def productNameType(self, productName:str, country:str) -> str:		
 		select = Select(country)
 		productTypes = select.productTypes()
 				
@@ -47,6 +47,6 @@ class Screenprotector:
 			## ERROR MSG
 			# If permutation exists but translated version is empty
 			if permutation in productTypes.keys() and productTypes[permutation] == '':
-				self.log.missingWord(country= country, word = permutation)
+				self.log.missingWord(country = country, word = permutation)
 		
 		return productName

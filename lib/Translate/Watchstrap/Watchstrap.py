@@ -7,36 +7,36 @@ Translated Product Types: Watchstraps
 """
 
 class Watchstrap:
-	def make(self, productName, country, product):		
+	def translateName(self, productName:str, country:str, product:dict) -> str:
 		helper = Helper()
 		# Break up name
-		beforeAndAfterLastDash = helper.beforeAndAfterLastDash(productName)
+		beforeAndAfterLastDash = helper.beforeAndAfterLastDash(productName = productName)
 		beforeLastDash = beforeAndAfterLastDash[0]
-		afterLastDash = beforeAndAfterLastDash[1]		
+		afterLastDash = beforeAndAfterLastDash[1]
 
 		# Go Trough Translations methods
-		beforeLastDash = self.feature(beforeLastDash, country, product)
-		beforeLastDash = self.prepositions(beforeLastDash, country, product)
-		beforeLastDash = self.material(beforeLastDash, country, product)
-		beforeLastDash = self.productNameType(beforeLastDash, country, product)
-		afterLastDash = self.productNameColor(afterLastDash, country)
-		afterLastDash = self.singleColorCatchAll(afterLastDash, country)		
-		afterLastDash = self.productNameSingularMotif(afterLastDash, country)
-		afterLastDash = self.productPluralMotifAndColor(afterLastDash, country)
-		afterLastDash = self.productPrepositions(afterLastDash, country)
-		afterLastDash = self.colorWithSize(afterLastDash, country)
-		afterLastDash = self.size(afterLastDash, country, product)		
+		beforeLastDash = self.feature(beforeLastDash = beforeLastDash, country = country, product = product)
+		beforeLastDash = self.prepositions(beforeLastDash = beforeLastDash, country = country, product = product)
+		beforeLastDash = self.material(beforeLastDash = beforeLastDash, country = country, product = product)
+		beforeLastDash = self.productNameType(beforeLastDash = beforeLastDash, country = country, product = product)
+		afterLastDash = self.productNameColor(afterLastDash = afterLastDash, country = country)
+		afterLastDash = self.singleColorCatchAll(afterLastDash = afterLastDash, country = country)
+		afterLastDash = self.productNameSingularMotif(afterLastDash = afterLastDash, country = country)
+		afterLastDash = self.productPluralMotifAndColor(afterLastDash = afterLastDash, country = country)
+		afterLastDash = self.productPrepositions(afterLastDash = afterLastDash, country = country)
+		afterLastDash = self.colorWithSize(afterLastDash = afterLastDash, country = country)
+		afterLastDash = self.size(afterLastDash = afterLastDash, country = country, product = product)
 		
 		# Create new name		
 		# Converting [afterLastDash] to a String				
-		afterLastDashString = ''.join([str(elem) for elem in afterLastDash])		
+		afterLastDashString = ''.join([str(elem) for elem in afterLastDash])
 		productName = helper.createName(beforeLastDash, afterLastDashString)
-				
+
 		# Return productname
 		return productName
 
 	# Product Feature
-	def feature(self, beforeLastDash, country, product):
+	def feature(self, beforeLastDash:str, country:str, product:dict) -> str:
 		helper = Helper()
 		select = Select(country)
 		productFeatures = select.productFeatures()
@@ -45,7 +45,7 @@ class Watchstrap:
 		beforeLastDash = helper.dictKeyInString(productFeatures, beforeLastDash, product)
 		return beforeLastDash
 
-	def prepositions(self, beforeLastDash, country, product):
+	def prepositions(self, beforeLastDash:str, country:str, product:dict) -> str:
 		helper = Helper()
 		select = Select(country)
 		prepositions = select.prepositions()
@@ -55,7 +55,7 @@ class Watchstrap:
 		return beforeLastDash
 
 	# Product Material
-	def material(self, beforeLastDash, country, product):
+	def material(self, beforeLastDash:str, country:str, product:dict) -> str:
 		helper = Helper()
 		select = Select(country)		
 		productMaterials = select.productMaterials()
@@ -64,7 +64,7 @@ class Watchstrap:
 		return beforeLastDash
 	
 	# Replace productType / watchstrap etc.
-	def productNameType(self, beforeLastDash, country, product):		
+	def productNameType(self, beforeLastDash:str, country:str, product:dict) -> str:		
 		helper = Helper()
 		select = Select(country)
 		productTypes = select.productTypes()
@@ -75,34 +75,34 @@ class Watchstrap:
 
 	# Replace Colors (Where afterLastDash only exists of colors, and not motif)
 	# Translated Single Colors (Incl. slashes ) in afterLastDash
-	def productNameColor(self, afterLastDash, country):
+	def productNameColor(self, afterLastDash:str, country:str) -> str:
 		shared = Shared()
 		afterLastDashString = shared.productNameSingleColor(afterLastDash, country)
 		return afterLastDashString
 
-	def singleColorCatchAll(self, afterLastDash, country):
+	def singleColorCatchAll(self, afterLastDash:str, country:str) -> str:
 		shared = Shared()
 		afterLastDashString = shared.singleColorCatchAll(afterLastDash, country)
 		return afterLastDashString
 	
-	def productNameSingularMotif(self, afterLastDash, country):
+	def productNameSingularMotif(self, afterLastDash:str, country:str) -> str:
 		shared = Shared()
 		afterLastDashString = shared.productNameSingularMotif(afterLastDash, country)
 		return afterLastDashString
 
-	def productPluralMotifAndColor(self, afterLastDash, country):		
+	def productPluralMotifAndColor(self, afterLastDash:str, country:str) -> str:		
 		shared = Shared()
 		afterLastDashString = shared.productPluralMotifAndColor(afterLastDash, country)
 		return afterLastDashString
 	
 	# Replaces / Translate Prepositions (with, in, and, for)
-	def productPrepositions(self, afterLastDash, country):
+	def productPrepositions(self, afterLastDash:str, country:str) -> str:
 		shared = Shared()
 		afterLastDashString = shared.productPrepositions(afterLastDash, country)
 		return afterLastDashString
 
 	# Where afterLastDash contains eg. black size: s
-	def colorWithSize(self, afterLastDash, country):
+	def colorWithSize(self, afterLastDash:str, country:str) -> str:
 		select = Select(country)
 		colors = select.colors()
 		colorSingle = colors[0]
@@ -122,8 +122,7 @@ class Watchstrap:
 		return afterLastDash
 
 	# Translate size in after last dash
-	def size(self, afterLastDash, country, product):
-		helper = Helper()
+	def size(self, afterLastDash:str, country:str) -> list:
 		select = Select(country)
 		productSizes = select.productSizes()
 

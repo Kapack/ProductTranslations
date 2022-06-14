@@ -4,7 +4,7 @@ from lib.Helper import Helper
 
 # Analyse Skus
 class Append:	
-	def __init__(self, country:str, products:dict):
+	def __init__(self, country:str, products:dict) -> None:
 		self.country = country
 		self.products = products
 
@@ -158,7 +158,7 @@ class Append:
 
 		for product in products:			
 			# Break up name
-			beforeAndAfterLastDash = helper.beforeAndAfterLastDash(products[product]['name'])
+			beforeAndAfterLastDash = helper.beforeAndAfterLastDash(productName = products[product]['name'])
 			afterLastDash = beforeAndAfterLastDash[1]
 								
 			# If single Color
@@ -186,7 +186,7 @@ class Append:
 
 		for product in products:
     		# Break up name
-			beforeAndAfterLastDash = helper.beforeAndAfterLastDash(products[product]['name'])
+			beforeAndAfterLastDash = helper.beforeAndAfterLastDash(productName = products[product]['name'])
 			beforeLastDash = beforeAndAfterLastDash[0]
 			# Convert beforeLastDash into a list
 			beforeLastDashList = beforeLastDash.lower().split()
@@ -208,10 +208,10 @@ class Append:
 
 		for product in products:			
     		# Break up name
-			beforeAndAfterLastDash = helper.beforeAndAfterLastDash(products[product]['name'])
+			beforeAndAfterLastDash = helper.beforeAndAfterLastDash(productName = products[product]['name'])
 			beforeLastDash = beforeAndAfterLastDash[0]
 			# Convert beforeLastDash into a list
-			beforeLastDashList = beforeLastDash.lower().split()
+			# beforeLastDashList = beforeLastDash.lower().split()
 			# Loop trough features
 			for feature in featuresList:
 				# If feature is beforeLastDash string
@@ -271,7 +271,7 @@ class Append:
 		# Loop trough producs
 		i = 0
 		for product in products:
-			beforeAndAfterLastDash = helper.beforeAndAfterLastDash(products[product]['name'])
+			beforeAndAfterLastDash = helper.beforeAndAfterLastDash(productName = products[product]['name'])
 			beforeLastDash = beforeAndAfterLastDash[0]			
 			
 			# Looping trough each key

@@ -5,7 +5,7 @@ import os
 import csv
 
 class Database:
-	def __init__(self, createDatabaseMsg = None):
+	def __init__(self, createDatabaseMsg: str = None):
 		print(createDatabaseMsg)
 		global conn
 		global c

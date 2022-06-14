@@ -1,19 +1,20 @@
 from lib.Helper import Helper
 from db.Select import Select
-from lib.Issue import Issue
+from common.Logging import Log
 
 """
 Translated Product Types: Shared Methods
 """
 
 class Shared:
+	def __init__(self):
+		self.log = Log()
+
 	# Translated Single Colors (Incl. slashes ) in afterLastDash
-	def productNameSingleColor(self, afterLastDash, country):				
+	def productNameSingleColor(self, afterLastDash:str, country:str) -> str:				
 		select = Select(country)
 		colors = select.colors()
-		colorSingle = colors[0]
-		# helper = Helper()
-		issue = Issue()						
+		colorSingle = colors[0]				
 
 		# Convert AfterLastDash from List to String, with space between elements
 		afterLastDashString = str('')
@@ -29,7 +30,8 @@ class Shared:
 
 			# Else give a error message (If transled color missing)
 			else:
-				issue.criticalErrorMsg(''.join(afterLastDash) + ' ' + country + ' Missing Translated Version')							
+				self.log.missingWord(country = country, word = ''.join(afterLastDash))				
+
 			# Converting [afterLastDash] to a proper String				
 			afterLastDashString = ''.join([str(elem) for elem in afterLastDash])
 
@@ -49,7 +51,8 @@ class Shared:
 
 					# Else give a error message (If transled color missing)
 					else:
-						issue.criticalErrorMsg(''.join(afterLastDash) + ' ' + country + ' Missing Translated Version')	
+						self.log.missingWord(country = country, word = ''.join(afterLastDash))
+
 
 		# If and in afterLastDash
 		if ' and ' in afterLastDashString:
@@ -67,7 +70,7 @@ class Shared:
 
 					# Else give a error message (If transled color missing)
 					else:
-						issue.criticalErrorMsg(''.join(afterLastDash) + ' ' + country + ' Missing Translated Version')	
+						self.log.missingWord(country = country, word = ''.join(afterLastDash))
 
 		# Translate Single Words				
 		# If afterLastDash contains a single word And exists as a color keys		
@@ -79,7 +82,7 @@ class Shared:
 			
 			# Else give a error message (If translated color missing)
 			else:
-				issue.criticalErrorMsg(''.join(afterLastDash) + ' ' + country + ' Missing Translated Version')
+				self.log.missingWord(country = country, word = ''.join(afterLastDash))
 
 			# Converting [afterLastDash] to a proper String				
 			afterLastDashString = ''.join([str(elem) for elem in afterLastDash])			
@@ -88,12 +91,10 @@ class Shared:
 		return afterLastDashString
 
 	# Getting Single Colors like "black stripe"
-	def singleColorCatchAll(self, afterLastDash, country):
+	def singleColorCatchAll(self, afterLastDash:str, country:str) -> str:
 		select = Select(country)
 		colors = select.colors()
-		colorSingle = colors[0]
-		issue = Issue()
-
+		colorSingle = colors[0]		
 		# Convert to string to list
 		afterLastDashList = list(afterLastDash.split(" "))
 		
@@ -104,8 +105,7 @@ class Shared:
 				if colorSingle[word]['local']:
 					afterLastDashList[i] = str(colorSingle[word]['local'])
 				else:
-					issue.criticalErrorMsg('Color: ' + word + ' in ' + country + ' Missing Translated Version')
-		
+					self.log.missingWord(country = country, word = 'Color: ' + word)		
 			i += 1
 		# Converting [afterLastDash] to a proper String				
 		afterLastDashString = ' '.join([str(elem) for elem in afterLastDashList])
@@ -113,12 +113,10 @@ class Shared:
 		return afterLastDashString
 
 	# Replace Colors (Where afterLastDash only exists of colors, and not motif)
-	def productNameLongColor(self, afterLastDash, country):
+	def productNameLongColor(self, afterLastDash:str, country:str) -> str:
 		select = Select(country)
 		colors = select.colorWords()
 		colorLong = colors[1]
-		# helper = Helper()
-		# issue = Issue()
 		
 		# Convert AfterLastDash from List to String, with space between elements
 		afterLastDashString = str('')
@@ -131,13 +129,11 @@ class Shared:
 			if afterLastDashString.find(key) == 0:				
 				afterLastDashString = afterLastDashString.replace(key, colorLong[key])
 
-				# print(afterLastDashString)
-
 		# return
 		return afterLastDashString
 	
 	# SINGULAR LOOK WORDS: (Single Mofif word / Green Leaf, Yellow Owl)
-	def productNameSingularMotif(self, afterLastDash, country):
+	def productNameSingularMotif(self, afterLastDash:str, country:str) -> str:
 		select = Select(country)
 		helper = Helper()
 		
@@ -187,7 +183,7 @@ class Shared:
 		return afterLastDashString		
 	
 	# PLURAL LOOK WORDS: (Plural Mofif words / Green Leafs, Yellow Owls)
-	def productPluralMotifAndColor(self, afterLastDash, country):
+	def productPluralMotifAndColor(self, afterLastDash:str, country:str) -> str:
 		select = Select(country)
 		helper = Helper()
 		# Looks
@@ -230,7 +226,7 @@ class Shared:
 		return afterLastDashString		
 	
 	# Replaces / Translate Prepositions (with, in, and, for)
-	def productPrepositions(self, afterLastDash, country):
+	def productPrepositions(self, afterLastDash:str, country:str) -> str:
 		helper = Helper()
 		select = Select(country)
 		prepositions = select.prepositions()		

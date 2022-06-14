@@ -5,7 +5,7 @@ class Helper:
 	def __init__(self) -> None:
 		self.log = Log()
 
-	def beforeAndAfterLastDash(self, productName):
+	def beforeAndAfterLastDash(self, productName:str) -> list:
 		if ' - ' in productName:
 			beforeLastDash = productName.split(' - ')[0]
 			afterLastDash = productName.split(' - ')[-1].lower().split(' ')
@@ -16,14 +16,14 @@ class Helper:
 
 		return [beforeLastDash, afterLastDash]
 
-	def createName(self, beforeLastDash, afterLastDashString):
+	def createName(self, beforeLastDash:str, afterLastDashString:str) -> str:
 		if afterLastDashString == '':
 			productName = beforeLastDash
 		else:
 			productName = beforeLastDash + ' - ' + afterLastDashString
 		return productName
 
-	def dictKeyInString(self, typeDict, string, product):		
+	def dictKeyInString(self, typeDict:dict, string:str, product:dict) -> list:		
 		# String into a list / We a splitting the list into. a string, so we replace standalone words.
 		stringList = string.lower().split()		
 		# New stringList / We will convert this to a string lastly
@@ -71,7 +71,7 @@ class Helper:
 		# Return list
 		return newStringList
 
-	def checkIfTranslatedExists(self, typeDict, word, key=None):
+	def checkIfTranslatedExists(self, typeDict:dict, word:str, key:str = None) -> str:
 		# Check if translated version exists. 
 		# If True return translated. If False return original (English)
 		if key:

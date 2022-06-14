@@ -1,5 +1,5 @@
 import os
-from common.Constants import LOG_PATH
+from common.Constants import LOG_PATH, BGCOLORS
 
 class Issue:
 	def __init__(self, products:dict = None, country:str = None):		
@@ -38,10 +38,6 @@ class Issue:
 			for file in os.listdir(LOG_PATH):
 				os.remove(LOG_PATH + '/' + file)
 
-	def checkForLogFiles(self) -> None:		
+	def checkForLogFiles(self) -> None:	
 		if len(os.listdir(LOG_PATH)) >= 0:
-			print('Logfiles has been created')
-		
-					
-		
-		
+			print(BGCOLORS['WARNING'] + 'Logfiles has been created!' + BGCOLORS['ENDC'])

@@ -22,8 +22,7 @@ from lib.Translate.Translate import Translate
 from lib.Translate.Description.Description import Description
 from lib.Issue import Issue
 from lib.Correction import Correction
-# import os
-# import shutil
+from common.Constants import BGCOLORS
 
 class Main:
 	def __init__(self):
@@ -37,30 +36,31 @@ class Main:
 		
 		self.initFolders(week=week)
 		for country in countries:											
-			products = self.getCsv(week, country)
-			self.commonErrors(products)
-			products = self.getAttributes(country, products)
-			products = self.translateItems(country, products)
-			products = self.makeDescriptions(country, products)
-			products = self.corrections(country, products)
-			self.issues(products, country)
-			self.saveFiles(country, week, products)
+			products = self.getCsv(week = week, country = country)
+			self.commonErrors(products = products)
+			products = self.getAttributes(country = country, products = products)
+			products = self.translateNames(country = country, products = products)
+			products = self.makeDescriptions(country = country, products = products)
+			products = self.corrections(country = country, products = products)
+			self.issues(country = country, products = products)
+			self.saveFiles(country = country, week = week, products = products)
 
 		# User Success Message
-		print('\x1b[0;30;42m' + 'Translations Complete' + '\x1b[0m')	
+		print(BGCOLORS['SUCCESS'] + 'Translations Complete' + BGCOLORS['ENDC'])	
 
 	# User Input
 	def userInput(self) -> list:	
-		# week = '00'
-		# createDatabaseMsg = 'n'
-		# country = 'dk'
-		week = input("Week number?: ")
-		createDatabaseMsg = input("Do you want to update the database? / Has any .csv files been updated? [y/n] ").lower()
-		country = input("Write country abbreviation (eg. dk, se, fi, de, nl etc.) Write all for every country: ").lower()		
-		country = [country]		
+		week = '00'
+		createDatabaseMsg = 'n'
+		country = ['dk']
 
-		if country == ['all']:
-			country = ['se', 'dk', 'no', 'fi', 'de', 'nl']
+		# week = input("Week number?: ")
+		# createDatabaseMsg = input("Do you want to update the database? / Has any .csv files been updated? [y/n] ").lower()
+		# country = input("Write country abbreviation (eg. dk, se, fi, de, nl etc.) Write all for every country: ").lower()		
+		# country = [country]		
+
+		# if country == ['all']:
+		# 	country = ['se', 'dk', 'no', 'fi', 'de', 'nl']
 		
 		return [week, createDatabaseMsg, country]
 
@@ -80,19 +80,20 @@ class Main:
 
 	# Get CSV Items
 	def getCsv(self, week:str, country:str) -> dict:
-		openCsv = OpenCsv(week, country)
+		# openCsv = OpenCsv(week = week, country = country)
+		openCsv = OpenCsv(week = week, country = country)
 		# File Needs SKU, Name and Description
 		products = openCsv.initFile()
 		return products
 
 	# Check for common errors, before any changes have been made
 	def commonErrors(self, products:dict) -> None:
-		commonError = CommonError(products)
+		commonError = CommonError(products = products)
 		commonError.dobuleDash()
 
 	# Analyse Skus and Names. Append correct values to products = {...}
 	def getAttributes(self, country:str, products:dict) -> dict:
-		append = Append(country, products)
+		append = Append(country = country, products = products)
 		append.productType()
 		append.deviceAndModel()		
 		append.attributeColor()
@@ -104,29 +105,30 @@ class Main:
 		return products
 
 	# Translate
-	def translateItems(self, country:str, products:dict) -> dict:	
+	def translateNames(self, country:str, products:dict) -> dict:
 		print('Translating ' + country + '...')
-		translate = Translate(country, products)
-		products = translate.makeCoverCaseBeforeLastDash(products)
-		products = translate.makeCoverCaseAfterLastDash(products)
-		products = translate.makeScreenProtector(products)
-		products = translate.makeWatchstrap(products)		
+		translate = Translate(country = country, products = products)
+		products = translate.getCoverCaseBeforeLastDash(products = products)
+		products = translate.getCoverCaseAfterLastDash(products = products)
+		products = translate.screenProtectorName(products = products)
+		products = translate.watchstrapName(products = products)
 		return products
 
 	# Make Description from productTemplates
 	def makeDescriptions(self, country:str, products:dict) -> dict:		
 		print('Adding template descriptions...')
-		products = Description(country, products)		
-		products = products.loopProducts()				
+		products = Description(country = country, products = products)
+		products = products.loopProducts()
 		return products
 
 	# Correct Common Errors
 	def corrections(self, country:str, products:dict) -> dict:
 		print('Making corrections...')
-		correct = Correction(country)
-		products = correct.formatName(products)
-		products = correct.formatDeviceName(products)
-		# products = correct.startsWithSpace(products)				
+		correct = Correction(country = country)
+		products = correct.formatName(products = products)
+		products = correct.formatDeviceName(products = products)
+		products = correct.descStartsWithSpace(products = products)				
+		products = correct.currentAndNextInDescription(products = products)
 		return products
 
 	# Check for common issues
@@ -138,7 +140,7 @@ class Main:
 
 	# Create CSV and Folder
 	def saveFiles(self, country:str, week:str, products:dict) -> None:		
-		createCsv = CreateCsv(country, week, products)
+		createCsv = CreateCsv(country = country, week = week, products = products)
 		createCsv.saveCsv()
 	
 # Calling Main

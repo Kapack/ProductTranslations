@@ -3,8 +3,6 @@ from db.Select import Select
 from lib.Helper import Helper 
 import re
 
-
-
 """
 Translates all words BEFORE last dash (Material, feature etc.)
 Translated Product Types: Covers and Cases.
@@ -14,28 +12,28 @@ class CoverCaseBeforeLastDash:
 	def __init__(self) -> None:
 		self.log = Log()
 
-	def make(self, productName, country, product=None):
+	def make(self, productName:str, country:str, product: dict = None) -> str:		
 		helper = Helper()
 		# Break up name
-		beforeAndAfterLastDash = helper.beforeAndAfterLastDash(productName)
+		beforeAndAfterLastDash = helper.beforeAndAfterLastDash(productName = productName)
 		beforeLastDash = beforeAndAfterLastDash[0]
 		afterLastDash = beforeAndAfterLastDash[1]
 
 		# Go Trough Translations methods				
-		beforeLastDash = self.productNameType(beforeLastDash, country, product)
-		beforeLastDash = self.productFeature(beforeLastDash, country, product)
-		beforeLastDash = self.productMaterial(beforeLastDash, country, product)			
-		beforeLastDash = self.productPrepositions(beforeLastDash, country)
+		beforeLastDash = self.productNameType(beforeLastDash = beforeLastDash, country = country, product = product)
+		beforeLastDash = self.productFeature(beforeLastDash = beforeLastDash, country = country, product = product)
+		beforeLastDash = self.productMaterial(beforeLastDash = beforeLastDash, country = country, product = product)			
+		beforeLastDash = self.productPrepositions(beforeLastDash = beforeLastDash, country = country)
 			
 		# Converting [afterLastDash] to a String				
 		afterLastDashString = ' '.join([str(elem) for elem in afterLastDash])
 		# Create new name
-		productName = helper.createName(beforeLastDash, afterLastDashString)
+		productName = helper.createName(beforeLastDash = beforeLastDash, afterLastDashString = afterLastDashString)
 		# Return new name		
 		return productName
 		
 	# Replace productType / Flip case, Cover, Leather flip case etc.
-	def productNameType(self, beforeLastDash, country, product):				
+	def productNameType(self, beforeLastDash:str, country:str, product:dict) -> str:
 		select = Select(country)
 		productTypes = select.productTypes()
 
@@ -55,7 +53,7 @@ class CoverCaseBeforeLastDash:
 		return beforeLastDash
 
 	# Product Feature
-	def productFeature(self, beforeLastDash, country, product):
+	def productFeature(self, beforeLastDash:str, country:str, product:dict) -> str:
 		helper = Helper()
 		select = Select(country)
 		productFeatures = select.productFeatures()
@@ -66,18 +64,18 @@ class CoverCaseBeforeLastDash:
 		return beforeLastDash
 
 	# Product Material
-	def productMaterial(self, beforeLastDash, country, product):
+	def productMaterial(self, beforeLastDash:str, country:str, product:dict) -> str:
 		helper = Helper()
 		select = Select(country)		
 		productMaterials = select.productMaterials()				
 
 		# if material exist in beforeLastDash
-		beforeLastDash = helper.dictKeyInString(productMaterials, beforeLastDash, product)		
+		beforeLastDash = helper.dictKeyInString(typeDict = productMaterials, string = beforeLastDash, product = product)		
 
 		return beforeLastDash
 
 	# Replace productType / Flip case, Cover, Leather flip case etc.
-	def productNameType(self, beforeLastDash, country, product):				
+	def productNameType(self, beforeLastDash:str, country:str, product:dict) -> str:				
 		select = Select(country)
 		productTypes = select.productTypes()
 
@@ -97,7 +95,7 @@ class CoverCaseBeforeLastDash:
 		return beforeLastDash
 
 	# Replace productType / Flip case, Cover, Leather flip case etc.
-	def productNameType(self, beforeLastDash, country, product):				
+	def productNameType(self, beforeLastDash:str, country:str, product:dict) -> str:				
 		select = Select(country)
 		productTypes = select.productTypes()		
 
@@ -116,11 +114,10 @@ class CoverCaseBeforeLastDash:
 		return beforeLastDash
 
 	# Replacing / Translate Prepositions (with, in, and, for)
-	def productPrepositions(self, beforeLastDash, country):
+	def productPrepositions(self, beforeLastDash:str, country:str) -> str:
 		select = Select(country)
 		prepositions = select.prepositions()
-		helper = Helper()
-
+		
 		# Convert afterLastDash into a List
 		beforeLastDashList = beforeLastDash.split()
 

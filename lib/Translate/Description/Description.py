@@ -39,10 +39,10 @@ class Description:
 	# Watchstraps templates / WIP
 	def watchStrapDesc(self, product:dict, country:str) -> dict:
 		watchstrap = Watchstrap()		
-		product = watchstrap.initTemplate(product, country)
-		product = watchstrap.attrText(product, country)
-		product = watchstrap.sizeText(product, country)
-		product = watchstrap.endingText(product, country)					
+		product = watchstrap.initTemplate(product = product, country = country)
+		product = watchstrap.attrText(product = product, country = country)
+		product = watchstrap.sizeText(product = product, country = country)
+		product = watchstrap.endingText(product = product, country = country)					
 		return product
 	
 	# Replace variables descriptions

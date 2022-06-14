@@ -3,7 +3,7 @@ from db.Select import Select
 
 class Watchstrap:
 
-    def initTemplate(self, product, country):
+    def initTemplate(self, product:dict, country:str) -> dict:
         select = Select(country)	
         watchstrapTemplates = select.watchstrapTemplates()
         watchTemplate = []
@@ -52,7 +52,7 @@ class Watchstrap:
                             product['description'] = random.choice(watchTemplate) + ' '	        
         return product
     
-    def attrText(self, product, country):
+    def attrText(self, product:dict, country:str) -> dict:
         select = Select(country)	
         materialTemplates = select.watchstrapMaterialTemplates()
         matTemplate = []
@@ -87,7 +87,7 @@ class Watchstrap:
         
         return product
     
-    def sizeText(self, product, country):
+    def sizeText(self, product:dict, country:str) -> dict:
         select = Select(country)	
         sizeTemplates = select.watchstrapSizeTemplates()
 
@@ -121,7 +121,7 @@ class Watchstrap:
         
         return product
     
-    def endingText(self, product, country):
+    def endingText(self, product:dict, country:str) -> dict:
         select = Select(country)	
         endTemplates = select.watchstrapEndings()
 

@@ -1,3 +1,4 @@
+import enum
 import re
 from db.Select import Select
 
@@ -11,11 +12,10 @@ class Correction:
 
 		for product in products:
 			newName = str('')
-
 			# Split name
-			name = products[product]['name'].split(" ")
+			name = products[product]['name'].split(" ")		
 			# Loop trough each word
-			for word in name:						
+			for word in name:
 
 				# If word is lower, capitalize
 				if word.islower():
@@ -95,10 +95,18 @@ class Correction:
 		return products
 	
 	# If description starts with a space (Due to missing variable).
-	def startsWithSpace(self, products:dict) -> dict:
+	def descStartsWithSpace(self, products:dict) -> dict:
 		for product in products:
-			if product['description'].startswith(' '):
+			if products[product]['description'].startswith(' '):
 				# Remove space
-				product['description'] = product['description'].lstrip(' ')
-		
-		return product
+				products[product]['description'] = products[product]['description'].lstrip(' ')		
+		return products
+	
+	def currentAndNextInDescription(self, products:dict) -> dict:
+		for product in products:
+			description = products[product]['description']
+			# if 'Apple Apple' in description:
+			if description.find('Apple Apple') != -1:
+				# Replace
+				products[product]['description'] = description.replace('Apple Apple', 'Apple')
+		return products

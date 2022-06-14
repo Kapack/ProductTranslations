@@ -13,7 +13,3 @@ class Log:
     
     def missingProductType(self, country:str, productType:str) -> None:
         logging.warning('Missing ProductType: ' + productType +  ' . Country' + country)
-
-    
-    
-    

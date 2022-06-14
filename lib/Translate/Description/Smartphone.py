@@ -2,7 +2,7 @@ from db.Select import Select
 
 class Smartphone:
 
-    def assignTemplate(self, product, country) -> dict:
+    def assignTemplate(self, product:dict, country:str) -> dict:
         select = Select(country)
         product2021Templates = select.product2021Templates()
         product2020Templates = select.product2020Templates()

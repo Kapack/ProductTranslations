@@ -2,9 +2,9 @@ import csv
 import os	
 
 class OpenCsv:
-	def __init__(self, weekInput:str, countryInput:str):		
-		self.weekInput = weekInput
-		self.countryInput = countryInput				
+	def __init__(self, week:str, country:str):		
+		self.week = week
+		self.country = country
 
 	# Products iteration, sku and name into a dict
 	def initFile(self) -> dict:		
